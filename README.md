@@ -14,3 +14,4 @@ https://github.com/bfo-ontology/BFO/wiki
 # Common Core Ontologies
 https://github.com/CommonCoreOntology/CommonCoreOntologies
 
+The CCO ontology is imported from the Merged ontology. 
