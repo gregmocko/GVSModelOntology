@@ -5,6 +5,7 @@ The Ground Vehicle Simulation Ontology (GVSO) comprise 4 ontologies that represe
 * Simulation Ontology
 * Model Ontology
 * Ground Vehicle Ontology
+* Ground Vehicle Testing Ontology
 
 
 # Basic Formal Ontology
