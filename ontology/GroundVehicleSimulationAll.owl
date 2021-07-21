@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/gregorymocko/ontologies/2021/6/GroundVehicleAll-ontology-105#"
-     xml:base="http://www.semanticweb.org/gregorymocko/ontologies/2021/6/GroundVehicleAll-ontology-105"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/gregmocko/GVSModelOntology/main/ontology/GroundVehicleSimulationAll.owl?token=AQYUSUEFY6TPQ54ZFNB3F7TA7BZW2#"
+     xml:base="https://raw.githubusercontent.com/gregmocko/GVSModelOntology/main/ontology/GroundVehicleSimulationAll.owl?token=AQYUSUEFY6TPQ54ZFNB3F7TA7BZW2"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/6/GroundVehicleAll-ontology-105">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/gregmocko/GVSModelOntology/main/ontology/GroundVehicleSimulationAll.owl?token=AQYUSUEFY6TPQ54ZFNB3F7TA7BZW2">
         <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2021-03-01/AllCoreOntology"/>
     </owl:Ontology>
 </rdf:RDF>
