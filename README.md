@@ -13,6 +13,13 @@ The Ground Vehicle Simulation Ontology (GVSO) comprise 4 XXXX ontologies that re
 * Ground Vehicle Ontology
 * Ground Vehicle Testing Ontology
 =======
+Process
+Step 0: Create integrated ontology GVOSO, Import Ontologies from Step 1 onward
+Step 1: Create a ontology in OWL formate for the specific subontology.
+Step 2: Import CCO from Minhal URL ....
+
+For every change that is made to the Subontolgies, they will be committed to the GIThub so that we all are using hte correct ontology.
+Do not download any ontology locally ....
 
 
 # Basic Formal Ontology
