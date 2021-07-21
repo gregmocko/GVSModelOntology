@@ -20,10 +20,14 @@ Step 2: Import CCO from Minhal URL ....
 
 For every change that is made to the Subontolgies, they will be committed to the GIThub so that we all are using hte correct ontology.
 Do not download any ontology locally ....
+
 Step 0: create integrated ontology and import all sub-ontology
 While working on the ontology: 
+
 Step 1: Create subontology as OWl file, import CCO/BFo using URL
+
 Step 2: Save subontology to ontology folder, remove import,
+
 Step 3: committ saved ontology to Github
 
 Please check this. 
