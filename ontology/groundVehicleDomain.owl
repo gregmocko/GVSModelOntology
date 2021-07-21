@@ -1,0 +1,2523 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/minha/ontologies/2021/4/ground-vehicle-domain#"
+     xml:base="http://www.semanticweb.org/minha/ontologies/2021/4/ground-vehicle-domain"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/SI_unit_label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SI_unit_label"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/acronym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/acronym"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/alternative_label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/alternative_label"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/definition_source -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/definition_source"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/example_of_usage -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/example_of_usage"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000080"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001018 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001018"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001019 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001019"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/uses"/>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#contains_passenger -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#contains_passenger">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001019"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#passenger_contained_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_EPA_class -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_EPA_class">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_description_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <rdfs:label>has EPA class</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_battery_capacity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_battery_capacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_battery_quality"/>
+        <rdfs:label>has battery capacity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_battery_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_battery_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_electric_component_quality"/>
+        <rdfs:label>has battery quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_battery_voltage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_battery_voltage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_battery_quality"/>
+        <rdfs:label>has battery voltage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_brake -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_brake">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_part"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Brake"/>
+        <rdfs:label>has brake</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_brand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_brand">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_description_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Brand"/>
+        <rdfs:label>has brand</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_city_fuel_economy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_city_fuel_economy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_economy_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#City_Fuel_Economy"/>
+        <rdfs:label>has city fuel economy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_cold_cranking_at_0_F -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_cold_cranking_at_0_F">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_battery_quality"/>
+        <rdfs:label>has cold cranking at 0F</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_combined_fuel_economy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_combined_fuel_economy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_economy_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Combined_Fuel_Economy"/>
+        <rdfs:label>has combined fuel economy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_combustion_engine_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_combustion_engine_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_quality"/>
+        <rdfs:label>has combustion engine quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_compression_ratio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_compression_ratio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_combustion_engine_quality"/>
+        <rdfs:label>has compression ratio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_differential_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_differential_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_energy_transmitter_quality"/>
+        <rdfs:label>has differential quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_drive_wheel_configuration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_drive_wheel_configuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_tires_quality"/>
+        <rdfs:label>has drive wheel configuration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_electric_component_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_electric_component_quality">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <rdfs:label>has electric component quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_electric_motor_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_electric_motor_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_quality"/>
+        <rdfs:label>has electric motor quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_electric_range -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_electric_range">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_range_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Maximum_Range"/>
+        <rdfs:label>has electric range</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_electrical_power_source -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_electrical_power_source">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_part"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricalPowerSource"/>
+        <rdfs:label>has electrical power source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_emission_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_emission_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#emission_rate"/>
+        <rdfs:label>has emission quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_energy_converter_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_energy_converter_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_quality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_energy_transmitter_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_energy_transmitter_quality">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PowerTransmissionArtifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_energy_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_energy_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_quality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_part"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Engine"/>
+        <rdfs:label>has engine</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_displacement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_displacement">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_combustion_engine_quality"/>
+        <rdfs:label>has engine displacement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_power -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_power">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_combustion_engine_quality"/>
+        <rdfs:label>has engine power</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_power_rotational_frequency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_power_rotational_frequency">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_combustion_engine_quality"/>
+        <rdfs:label>has engine power rotational frequency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_quality">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <rdfs:label>has engine quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_torque -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_torque">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_combustion_engine_quality"/>
+        <rdfs:label>has engine torque</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_torque_rotational_frequency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_engine_torque_rotational_frequency">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_combustion_engine_quality"/>
+        <rdfs:label>has engine torque rotational frequency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_final_drive_axle_ratio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_final_drive_axle_ratio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_energy_transmitter_quality"/>
+        <rdfs:label>has final drive ratio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_first_gear_transmission_ratio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_first_gear_transmission_ratio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_transmission_quality"/>
+        <rdfs:label>has first gear transmission ratio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_frontal_area -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_frontal_area">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_two_dimensional_extent_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Surface_Area"/>
+        <rdfs:label>has frontal area</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_economy_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_economy_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#fuel_consumption_rate"/>
+        <CommonCoreOntologies:definition>A vehicle has some fuel economy that describes the amount of fuel consumed per unit of distance travelled</CommonCoreOntologies:definition>
+        <rdfs:label>has fuel economy quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_range -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_range">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_range_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Maximum_Range"/>
+        <rdfs:label>has fuel range</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_tank_capacity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_tank_capacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_tank_quality"/>
+        <rdfs:label>has fuel tank capacity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_tank_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_tank_quality">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <rdfs:label>has fuel tank quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_part">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundMotorVehicle"/>
+        <rdfs:comment>Should these &apos;has part&apos; relationships be further defined in the GV ontology?</rdfs:comment>
+        <rdfs:label>has ground vehicle part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_suspension -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_suspension">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_part"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Ground_Vehicle_Suspension"/>
+        <rdfs:label>has ground vehicle suspension</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_height -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_height">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_one_dimensional_extent_quality"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Height"/>
+        <rdfs:label>has height</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_highway_fuel_economy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_highway_fuel_economy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_fuel_economy_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Highway_Fuel_Economy"/>
+        <rdfs:label>has highway fuel economy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_length -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_length">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_one_dimensional_extent_quality"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
+        <rdfs:label>has length</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_market_value -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_market_value">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_monetary_value_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Market_Value"/>
+        <rdfs:label>has market value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_model -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_model">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_description_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vehicle_Model"/>
+        <rdfs:label>has model</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_monetary_value_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_monetary_value_quality">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Monetary_Value"/>
+        <CommonCoreOntologies:definition>An independent continuant has a monetary value that can be measured in some currency</CommonCoreOntologies:definition>
+        <rdfs:label>has value quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_motor_power -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_motor_power">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_electric_motor_quality"/>
+        <rdfs:label>has motor power</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_msrp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_msrp">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_monetary_value_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#MSRP_Value"/>
+        <rdfs:label>has msrp value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_number_of_cylinders -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_number_of_cylinders">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_combustion_engine_quality"/>
+        <rdfs:label>has number of cylinders</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_number_of_differentials -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_number_of_differentials">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_differential_quality"/>
+        <rdfs:label>has number of differentials</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_number_of_tracks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_number_of_tracks">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_track_quality"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Amount"/>
+        <rdfs:label>has number of tracks</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_number_of_transmission_speeds -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_number_of_transmission_speeds">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_transmission_quality"/>
+        <rdfs:label>has number of tranmission speeds</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_one_dimensional_extent_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_one_dimensional_extent_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_size_quallity"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/OneDimensionalExtent"/>
+        <rdfs:label>has one dimensional extent quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_power_transmission_artifact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_power_transmission_artifact">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_part"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PowerTransmissionArtifact"/>
+        <rdfs:label>has power transmission artifact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_propulsion_system -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_propulsion_system">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_part"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystem"/>
+        <rdfs:label>has propulsion system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_range_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_range_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_quality"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Distance_Quality"/>
+        <CommonCoreOntologies:definition>A vehicle has a range quality as it can travel a certain distance on a single charge/fuel tank</CommonCoreOntologies:definition>
+        <rdfs:label>has range quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_second_gear_transmission_ratio -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_second_gear_transmission_ratio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_transmission_quality"/>
+        <rdfs:label>has second gear transmission ratio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_size_quallity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_size_quallity">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SizeQuality"/>
+        <CommonCoreOntologies:definition>A material entity has some dimensional qualities that are used to measure its size</CommonCoreOntologies:definition>
+        <rdfs:label>has size quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_steering_control_system -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_steering_control_system">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_part"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SteeringControlSystem"/>
+        <rdfs:label>has steering control system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_tailpipe_emission -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_tailpipe_emission">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_emission_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#tailpipe_emission_rate"/>
+        <rdfs:label>has tailpipe emission</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_tires_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_tires_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_energy_transmitter_quality"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Tire"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_track_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_track_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_energy_transmitter_quality"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Track"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_track_width -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_track_width">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_track_quality"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Width"/>
+        <rdfs:label>has track width</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_transmission_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_transmission_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_energy_transmitter_quality"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PowerTransmissionArtifact"/>
+        <rdfs:label>has transmission quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_trim -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_trim">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_description_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trim"/>
+        <rdfs:label>has trim</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_two_dimensional_extent_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_two_dimensional_extent_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_size_quallity"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent"/>
+        <rdfs:label>has two dimensional extent quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_description_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_description_quality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Description_Quality"/>
+        <rdfs:label>has vehicle description quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_frame -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_frame">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_part"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame"/>
+        <rdfs:label>has vehicle frame</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_quality">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Vehicle"/>
+        <rdfs:label>has vehicle quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_transmission -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_transmission">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_ground_vehicle_part"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
+        <rdfs:label>has vehicle transmission</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_wheelbase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_wheelbase">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_one_dimensional_extent_quality"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
+        <rdfs:label>has wheelbase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_width -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_width">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_one_dimensional_extent_quality"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Width"/>
+        <rdfs:label>has width</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_year_of_make -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_year_of_make">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_vehicle_quality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Year_of_Make"/>
+        <rdfs:label>has year of make</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#passenger_contained_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#passenger_contained_in">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001018"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Amount -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Amount"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ArmoredPersonnelCarrier -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArmoredPersonnelCarrier"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Artifact -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Automobile -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Automobile">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Alternator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Suspension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Tire"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Description_Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Tire"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Brake -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Brake"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ElectricBattery -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricBattery"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ElectricGenerator -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricGenerator"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ElectricMotor -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricMotor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricBattery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ElectricalPowerSource -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricalPowerSource"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Engine -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Engine"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/GroundMotorVehicle -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GroundMotorVehicle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Brake"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PowerTransmissionArtifact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SteeringControlSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Ground_Vehicle_Suspension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#has_electrical_power_source"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricalPowerSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Height -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Height"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Length -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Mass -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Mass"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnit -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnit"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/OneDimensionalExtent -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/OneDimensionalExtent"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Person -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PowerTransmissionArtifact -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PowerTransmissionArtifact"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystem -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundMotorVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystemComponent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystemComponent -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystemComponent"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/SizeQuality -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SizeQuality"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/SteeringControlSystem -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SteeringControlSystem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundMotorVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Tank -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Tank">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Track"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ThreeDimensionalExtent -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ThreeDimensionalExtent"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Vehicle -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Vehicle"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundMotorVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Weight -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Weight"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Width -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Width"/>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Active_Differential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Active_Differential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Differential"/>
+        <CommonCoreOntologies:definition>In active differentials an electronic control unit (ECU) uses inputs from multiple sensors, including yaw rate, steering input angle, and lateral acceleration—and adjusts the distribution of torque to compensate for undesirable handling behaviours such as understeer.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Differential_(mechanical_device)#Active_differentials</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Active Differential</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Active_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Active_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Suspension"/>
+        <CommonCoreOntologies:definition>An active suspension is a type of automotive suspension on a vehicle. It uses an onboard system to control the vertical movement of the vehicle&apos;s wheels relative to the chassis or vehicle body rather than the passive suspension provided by large springs where the movement is determined entirely by the road surface.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Active Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Adaptive_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Adaptive_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Active_Suspension"/>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Adaptive Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Age -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Age">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Time_Quality"/>
+        <CommonCoreOntologies:definition>A time quality inhering in a bearer by virtue of how long the bearer has existed.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source>http://purl.obolibrary.org/obo/PATO_0000011</CommonCoreOntologies:definition_source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Air_Ride_Trailer_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Air_Ride_Trailer_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailer_Suspension"/>
+        <rdfs:label>Air Ride Trailer Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Alternator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Alternator">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricGenerator"/>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Alternator_(automotive)</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:comment>An alternator is a type of electric generator used in vehicles to charge the battery and to power the electrical system when its engine is running.</rdfs:comment>
+        <rdfs:isDefinedBy>Minhal</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automated_Manual_Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automated_Manual_Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Semi-Automatic_Transmission"/>
+        <CommonCoreOntologies:alternative_label>Semi-automatic Transmission</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:definition>Automated manual transmission (AMT), also known as a clutchless manual, denotes a type of multi-speed motor vehicle transmission system that is closely based on the mechanical design and build of a conventional manual transmission, but uses automation to operate either the clutch, and/or the gear shifting.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Automated_manual_transmission</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Automated Manual Transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automatic_Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automatic_Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
+        <CommonCoreOntologies:definition>An automatic transmission (sometimes abbreviated to auto or AT) is a multi-speed transmission used in motor vehicles that does not require any driver input to change gears under normal driving conditions.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Automatic_transmission</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Automatic Transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Description_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Description_Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Automobile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Qualities that inhere in some automobile used to describe it</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Automobile Description Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Ground_Vehicle_Suspension"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Automobile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Suspension is the system of tires, tire air, springs, shock absorbers and linkages that connects a vehicle to its wheels and allows relative motion between the two.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Car_suspension</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Automobile Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Axle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Axle">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PowerTransmissionArtifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundMotorVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>An axle is a central shaft for a rotating wheel or gear. On wheeled vehicles, the axle may be fixed to the wheels, rotating with them, or fixed to the vehicle, with the wheels rotating around the axle.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Axle</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Axle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Bandvagn_206 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Bandvagn_206">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ArmoredPersonnelCarrier"/>
+        <CommonCoreOntologies:acronym>Bv 206</CommonCoreOntologies:acronym>
+        <CommonCoreOntologies:alternative_label>Tracked Vehicle 206</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:definition>Bandvagn 206 is a tracked articulated, all-terrain carrier developed by Hägglunds</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/Bandvagn_206</CommonCoreOntologies:definition_source>
+        <rdfs:label>Bandvagn 206</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Bandvagn_206S -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Bandvagn_206S">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Bandvagn_206"/>
+        <CommonCoreOntologies:definition>The Bv 206S is an armoured personnel carrier variant of the Bv 206, which provides protection from small arms fire for the occupants</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/Bandvagn_206#Bv_206S</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Bandvagn 206 S</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Bandvagn_206_Tracks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Bandvagn_206_Tracks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Track"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Bandvagn_206"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Beam_Axle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Beam_Axle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Dependent_Suspension"/>
+        <CommonCoreOntologies:alternative_label>Live Axle</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:alternative_label>Rigid Axle</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:definition>A beam axle is a dependent suspension design, in which a set of wheels is connected laterally by a single beam or shaft. Beam axles were once commonly used at the rear wheels of a vehicle, but historically they have also been used as front axles in four-wheel-drive vehicles. In most automobiles, beam axles have been replaced with front and rear independent suspensions.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Beam_axle</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Beam Axle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Brand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Brand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Description_Quality"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Brand</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Brushless_DC_Motor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Brushless_DC_Motor">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricMotor"/>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Brushless DC Motor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Cargo_Type_Vans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Cargo_Type_Vans">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Cargo Type Vans</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Chapman_Strut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Chapman_Strut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Independent_Suspension"/>
+        <CommonCoreOntologies:definition>The Chapman strut is a design of independent rear suspension used for light cars, particularly sports and racing cars. It takes its name from, and is best known for its use by, Colin Chapman of Lotus.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Chapman_strut</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Chapman Strut</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#City_Fuel_Economy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#City_Fuel_Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#fuel_consumption_rate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Combined_Fuel_Economy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Combined_Fuel_Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#fuel_consumption_rate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Compact_Cars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Compact_Cars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Compact Cars</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Continuously_Variable_Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Continuously_Variable_Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
+        <CommonCoreOntologies:definition>A continuously variable transmission (CVT) is an automatic transmission that can change seamlessly through a continuous range of gear ratios. This contrasts with other transmissions that provide a limited number of gear ratios in fixed steps. The flexibility of a CVT with suitable control may allow the engine to operate at a constant RPM while the vehicle moves at varying speeds.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Continuously_variable_transmission</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Continuously Variable Transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Curb_Weight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Curb_Weight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vehicle_Weight"/>
+        <obo:IAO_0000118>Kerb Weight</obo:IAO_0000118>
+        <CommonCoreOntologies:definition>Curb weight is the total mass of a vehicle with standard equipment and all necessary operating consumables such as motor oil, transmission oil, brake fluid, coolant, air conditioning refrigerant, and sometimes a full tank of fuel, while not loaded with either passengers or cargo.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight#Curb_weight</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Curb Weight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#DC_Series_Motor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#DC_Series_Motor">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricMotor"/>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>DC Series Motor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#DeDion_Axle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#DeDion_Axle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Dependent_Suspension"/>
+        <CommonCoreOntologies:definition>A de Dion tube is an automobile suspension technology. It is a sophisticated form of non-independent suspension and is a considerable improvement over the swing axle, Hotchkiss drive, or beam axle.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/De_Dion_tube</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>DeDion Axle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Dependent_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Dependent_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Suspension"/>
+        <CommonCoreOntologies:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">A dependent suspension normally has a beam (a simple &apos;cart&apos; axle) or a (driven) live axle that holds wheels parallel to each other and perpendicular to the axle. When the camber of one wheel changes, the camber of the opposite wheel changes in the same way (by convention, on one side, this is a positive change in the camber, and on the other side, this a negative change).</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Car_suspension#Dependent_suspensions</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:example_of_usage>De Dion suspensions are a dependent suspension as they rigidly connect the wheels together.</CommonCoreOntologies:example_of_usage>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Dependent Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Differential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Differential">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PowerTransmissionArtifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundMotorVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>A differential is a gear train with three shafts that has the property that the rotational speed of one shaft is the average of the speeds of the others, or a fixed multiple of that average.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Differential_(mechanical_device)</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Differential</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Distance_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Distance_Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <CommonCoreOntologies:definition>Distance quality describing the one dimensional distance used to measure the displacement between two points</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Distance Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Double_Wishbone_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Double_Wishbone_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Independent_Suspension"/>
+        <CommonCoreOntologies:definition>In automobiles, a double wishbone suspension is an independent suspension design using two (occasionally parallel) wishbone-shaped arms to locate the wheel. Each wishbone or arm has two mounting points to the chassis and one joint at the knuckle. The shock absorber and coil spring mount to the wishbones to control vertical movement.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Double_wishbone_suspension</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Double Wishbone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Driver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Driver">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Dry_Weight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Dry_Weight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vehicle_Weight"/>
+        <CommonCoreOntologies:definition>Dry weight is the weight of a vehicle without any consumables, passengers, or cargo. It is significantly less than the weight of a vehicle in a driveable condition and therefore rarely used. Quoting a dry weight can make a car&apos;s weight and power-to-weight figures appear far more favorable than those of rival cars using curb weight.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight#Dry_weight</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Dry Weight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Description_Quality"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>EPA Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Economic_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Economic_Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Economic Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Electric_Variable_Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Electric_Variable_Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
+        <CommonCoreOntologies:definition>The Electric Variable Transmission (EVT or e-CVT) combines a transmission with an electric motor to provide the illusion of a single CVT. In the common implementation, a gasoline engine is connected to a traditional transmission, which is in turn connected to an epicyclic gear system&apos;s planet carrier.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Transmission_(mechanics)#Electric_variable</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Electric Variable Transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Engine_Displacement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Engine_Displacement">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ThreeDimensionalExtent"/>
+        <CommonCoreOntologies:definition>Engine displacement is the measure of the cylinder volume swept by all of the pistons of a piston engine, excluding the combustion chambers. It is commonly used as an expression of an engine&apos;s size, and by extension as a loose indicator of the power an engine might be capable of producing and the amount of fuel it should be expected to consume.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Engine_displacement</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Engine Displacement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Force Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Friction_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Friction_Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:comment>Does this quality make sense? Does friction inhere in a bearer? Or is the quality roughness and friction is the resulting interaction between two surfaces interacting?</rdfs:comment>
+        <rdfs:label>Friction Quality</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Gross_Axle_Weight_Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Gross_Axle_Weight_Rating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vehicle_Weight"/>
+        <CommonCoreOntologies:definition>The gross axle weight rating (GAWR) is the maximum distributed weight that may be supported by an axle of a road vehicle. Typically, GAWR is followed by either the letters FR or RR, which indicate front or rear axles respectively.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight#Gross_axle_weight_rating</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Gross Axle Weight Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Gross_Combined_Weight_Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Gross_Combined_Weight_Rating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vehicle_Weight"/>
+        <CommonCoreOntologies:definition>The gross combined weight rating or gross combination weight rating (GCWR), also referred to as the gross combination mass (GCM), gross train weight (GTW), is the maximum allowable combined mass of a road vehicle, the passengers and cargo in the tow vehicle, plus the mass of the trailer and cargo in the trailer.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight#Gross_combined_weight_rating</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Gross Combined Weight Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Gross_Vehicle_Weight_Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Gross_Vehicle_Weight_Rating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vehicle_Weight"/>
+        <CommonCoreOntologies:definition>The gross vehicle weight rating (GVWR), or gross vehicle mass (GVM), is the maximum operating weight/mass of a vehicle as specified by the manufacturer[6] including the vehicle&apos;s chassis, body, engine, engine fluids, fuel, accessories, driver, passengers and cargo but excluding that of any trailers.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight#Gross_vehicle_weight_rating</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Gross Vehicle Weight Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Ground_Vehicle_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Ground_Vehicle_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundMotorVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Ground Vehicle Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Heavy_Duty_Adjustable_Trailer_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Heavy_Duty_Adjustable_Trailer_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailer_Suspension"/>
+        <rdfs:label>Heavy Duty Adjustable Trailer Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Highway_Fuel_Economy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Highway_Fuel_Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#fuel_consumption_rate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Independent_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Independent_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Suspension"/>
+        <CommonCoreOntologies:definition>Independent suspension is any automobile suspension system that allows each wheel on the same axle to move vertically (i.e. reacting to a bump on the road) independently of the others.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Independent_suspension</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Independent Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Large_Cars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Large_Cars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Large Cars</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Leaf_Spring_Trailer_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Leaf_Spring_Trailer_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailer_Suspension"/>
+        <rdfs:label>Leaf Spring Trailer Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Lifespan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Lifespan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Time_Quality"/>
+        <CommonCoreOntologies:definition>A time quality inhering in a bearer by virtue of the bearer&apos;s expected maximum age.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source>http://purl.obolibrary.org/obo/PATO_0000050</CommonCoreOntologies:definition_source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Limited-slip_Differential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Limited-slip_Differential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Differential"/>
+        <CommonCoreOntologies:definition>A limited-slip differential (LSD) is a type of differential that allows its two output shafts to rotate at different speeds but limits the maximum difference between the two shafts. In an automobile, such limited-slip differentials are sometimes used in place of a standard differential, where they convey certain dynamic advantages, at the expense of greater complexity.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Limited_slip_differential</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Limited-slip Differential</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Locking_Differential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Locking_Differential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Differential"/>
+        <CommonCoreOntologies:definition>A locking differential is designed to overcome the chief limitation of a standard open differential by essentially &quot;locking&quot; both wheels on an axle together as if on a common shaft. This forces both wheels to turn in unison, regardless of the traction (or lack thereof) available to either wheel individually.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Locking_differential</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Locking Differential</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#MSRP_Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#MSRP_Value">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Monetary_Value"/>
+        <obo:IAO_0000118>Recommended Retail Price</obo:IAO_0000118>
+        <obo:IAO_0000118>Suggested Retail Price</obo:IAO_0000118>
+        <CommonCoreOntologies:alternative_label>Manufacturer&apos;s Suggested Retail Price</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:definition>The MSRP of a product is the price at which the manufacturer recommends that the retailer sell the product.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/List_price</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>MSRP Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#MacPherson_Strut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#MacPherson_Strut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Independent_Suspension"/>
+        <CommonCoreOntologies:definition>The MacPherson strut is a type of automotive suspension system that uses the top of a telescopic damper as the upper steering pivot. It is widely used in the front suspension of modern vehicles and is named for American automotive engineer Earle S. MacPherson, who invented and developed the design</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/MacPherson_strut</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>MacPherson Strut</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Manual_Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Manual_Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
+        <CommonCoreOntologies:definition>A manual transmission (also known as a manual gearbox; abbreviated as MT, and sometimes called a standard transmission in Canada) is a multi-speed motor vehicle transmission system, where gear changes require the driver to manually select the gears by operating a gear stick and clutch (which is usually a foot pedal for cars, or a hand lever for motorcycles).</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Manual_transmission</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Manual Transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Manumatic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Manumatic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Semi-Automatic_Transmission"/>
+        <CommonCoreOntologies:alternative_label>Tiptronic Transmission</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:definition>The modern usage of the automotive term manumatic denotes an automatic transmission that allows the driver to select a specific gear, typically using paddle-shifters, steering wheel-mounted push-buttons, or &quot;+&quot; and &quot;-&quot; controls on the gear selector.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Manumatic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Market_Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Market_Value">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Monetary_Value"/>
+        <CommonCoreOntologies:alternative_label>Open Market Valuation</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:definition>Market value or OMV (Open Market Valuation) is the price at which an asset would trade in a competitive auction setting.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/Market_value</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Market Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Maximum_Range -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Maximum_Range">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Distance_Quality"/>
+        <CommonCoreOntologies:definition>The maximum range traversable by an artifact without refueling/recharging</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Maximum Range</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Measurement_Unit_of_Stiffness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Measurement_Unit_of_Stiffness">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnit"/>
+        <CommonCoreOntologies:SI_unit_label>N/m</CommonCoreOntologies:SI_unit_label>
+        <CommonCoreOntologies:is_curated_in_ontology>A measurement unit used in measurements of an objects ability to resist deformation in response to an applied force.</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Measurement Unit of Stiffness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Midsize_Cars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Midsize_Cars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Midsize Cars</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Midsize_Large_Station_Wagons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Midsize_Large_Station_Wagons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Midsize Large Station Wagons</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Midsize_Station_Wagons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Midsize_Station_Wagons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Midsize Station Wagons</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Minicompact_Cars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Minicompact_Cars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Minicompact Cars</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Minivans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Minivans">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Minivans</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Moment_of_Force_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Moment_of_Force_Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <CommonCoreOntologies:definition>In physics, a moment is an expression involving the product of a distance and physical quantity, and in this way it accounts for how the physical quantity is located or arranged.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/Moment_(physics)</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Moment of Force Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Monetary_Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Monetary_Value">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Economic_Quality"/>
+        <CommonCoreOntologies:definition>The monetary value is used to price the value in cash of  tangible property, intangible property, labor, and commodities.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Monetary Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Multi-link_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Multi-link_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Independent_Suspension"/>
+        <CommonCoreOntologies:definition>A multi-link suspension is a type of vehicle suspension design typically used in independent suspensions, using three or more lateral arms, and one or more longitudinal arms. A wider definition can consider any independent suspensions having three control links or more multi-link suspensions.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Multi-link_suspension</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Multi-Link Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Non-synchronous_Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Non-synchronous_Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
+        <CommonCoreOntologies:definition>A non-synchronous transmission, also called a crash gearbox, is a form of manual transmission based on gears that do not use synchronizing mechanisms. They require the driver to manually synchronize the transmission&apos;s input speed (engine RPM) and output speed (driveshaft speed).</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Non-synchronous_transmission</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Non-Synchronous Transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Panhard_Rod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Panhard_Rod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Dependent_Suspension"/>
+        <CommonCoreOntologies:definition>A Panhard rod (also called Panhard bar, track bar, or track rod) is a suspension link that provides lateral location of the axle.[1] Originally invented by the Panhard automobile company of France in the early twentieth century, this device has been widely used ever since.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Panhard_rod</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Panhard Rod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Passenger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Passenger">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Passenger_Type_Vans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Passenger_Type_Vans">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Passenger Type Vans</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Permanent_Magnet_Synchronous_Motor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Permanent_Magnet_Synchronous_Motor">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricMotor"/>
+        <CommonCoreOntologies:definition>A permanent-magnet synchronous motor (PMSM) uses permanent magnets embedded in the steel rotor to create a constant magnetic field. The stator carries windings connected to an AC supply to produce a rotating magnetic field (as in an asynchronous motor).</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Synchronous_motor#Permanent-magnet_motors</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Permanent Magnet Synchronous Motor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Real_Active_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Real_Active_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Active_Suspension"/>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Real Active Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Semi-Automatic_Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Semi-Automatic_Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
+        <CommonCoreOntologies:definition>Semi-automatic transmission denotes a multi-speed motor vehicle transmission where part of its operation is automated (typically the clutch actuation), but the driver&apos;s input is still required to launch the vehicle from a standstill and to manually change gears.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Semi-automatic_transmission</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Semi-Automatic Transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Semi-Independent_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Semi-Independent_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Suspension"/>
+        <CommonCoreOntologies:definition>In semi-independent suspensions, the wheels of an axle are able to move relative to one another, as in an independent suspension, but the position of one wheel has an effect on the position and attitude of the other wheel. This effect is achieved through the twisting or deflecting of suspension parts under load.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Car_suspension#Semi-independent_suspension</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Semi-Independent Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Semi-Trailing_Arm_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Semi-Trailing_Arm_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailing_Arm_Suspension"/>
+        <CommonCoreOntologies:definition>A semi-trailing arm suspension is a supple independent rear suspension system for automobiles where each wheel hub is located only by a large, roughly triangular arm that pivots at two points. Viewed from the top, the line formed by the two pivots is somewhere between parallel and perpendicular to the car&apos;s longitudinal axis; it is generally parallel to the ground. Trailing-arm and multilink suspension designs are much more commonly used for the rear wheels of a vehicle where they can allow for a flatter floor and more cargo room.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Trailing-arm_suspension#Semi-trailing_arm</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Semi-Trailing Arm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Sliding_Pillar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Sliding_Pillar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Independent_Suspension"/>
+        <CommonCoreOntologies:definition>A sliding pillar suspension is a form of independent front suspension for light cars. The stub axle and wheel assembly are attached to a vertical pillar or kingpin which slides up and down through a bush or bushes which are attached to the vehicle chassis, usually as part of transverse outrigger assemblies, sometimes resembling a traditional beam axle, although fixed rigidly to the chassis.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Sliding_pillar</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Sliding Pillar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Small_Pickup_Trucks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Small_Pickup_Trucks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Small Pickup Trucks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Small_Sport_Utility_Vehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Small_Sport_Utility_Vehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Small Sport Utility Vehicles</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Small_Station_Wagons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Small_Station_Wagons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Small Station Wagons</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Special_Purpose_Vehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Special_Purpose_Vehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Special Purpose Vehicles</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Sport_Utility_Vehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Sport_Utility_Vehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Sports Utility Vehicles</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Standard_Pickup_Trucks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Standard_Pickup_Trucks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Standard Pickup Trucks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Standard_Sport_Utility_Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Standard_Sport_Utility_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Standard Sports Utility Vehicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Stiffness_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Stiffness_Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <CommonCoreOntologies:definition>A quality inhering in a material describing the extent to which an object resists deformation in response to an applied force</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Stiffness Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Stress_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Stress_Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Stress Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Strut_Bar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Strut_Bar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Semi-Independent_Suspension"/>
+        <CommonCoreOntologies:alternative_label>Strut brace</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:alternative_label>Strut tower brace</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:definition>A strut bar is an automotive suspension accessory on a monocoque or unibody chassis to provide extra stiffness between the strut towers.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Strut_bar</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Strut Bar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Subcompact_Cars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Subcompact_Cars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Subcompact Cars</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Surface_Area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Surface_Area">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent"/>
+        <rdfs:label>Surface Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Swing_Axle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Swing_Axle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Independent_Suspension"/>
+        <CommonCoreOntologies:definition>A swing axle is a simple type of independent (rear wheel) suspension designed and patented by Edmund Rumpler in 1903. This was a revolutionary invention in the automotive industry, allowing wheels to react to irregularities of road surfaces independently, and enable the vehicle to maintain a strong road holding.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Swing_axle</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Swing Axle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Switched_Reluctance_Motor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Switched_Reluctance_Motor">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricMotor"/>
+        <CommonCoreOntologies:definition>The switched reluctance motor (SRM) is an electric motor that runs by reluctance torque. Unlike common brushed DC motor types, power is delivered to windings in the stator (case) rather than the rotor. This greatly simplifies mechanical design as power does not have to be delivered to a moving part, but it complicates the electrical design as some sort of switching system needs to be used to deliver power to the different windings. Electronic devices can precisely time switching, facilitating SRM configurations. Its main drawback is torque ripple.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Switched_reluctance_motor</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Switched Reluctance Motor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Three_Phase_Induction_Motor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Three_Phase_Induction_Motor">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricMotor"/>
+        <CommonCoreOntologies:definition>An induction motor or asynchronous motor is an AC electric motor in which the electric current in the rotor needed to produce torque is obtained by electromagnetic induction from the magnetic field of the stator winding.[1] An induction motor can therefore be made without electrical connections to the rotor.[a] An induction motor&apos;s rotor can be either wound type or squirrel-cage type.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Induction_motor</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ArtifactOntology</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Three Phase Induction Motor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Time_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Time_Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <CommonCoreOntologies:definition>A quality in which events occur in sequence.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source>http://purl.obolibrary.org/obo/PATO_0000165</CommonCoreOntologies:definition_source>
+        <rdfs:label>Time Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Tire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Tire">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PowerTransmissionArtifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundMotorVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:alternative_label>Tyre</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:definition>A tire is a ring-shaped component that surrounds a wheel&apos;s rim to transfer a vehicle&apos;s load from the axle through the wheel to the ground and to provide traction on the surface over which the wheel travels.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Tire</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Tire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Torque-vectoring_Differential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Torque-vectoring_Differential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Differential"/>
+        <CommonCoreOntologies:definition>Torque vectoring is a technology employed in automobile differentials that has the ability to vary the torque to each half-shaft with an electronic system. This method of power transfer has recently become popular in all-wheel drive vehicles</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Torque_vectoring</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Torque-vectoring Differential</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Torque_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Torque_Quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Moment_of_Force_Quality"/>
+        <CommonCoreOntologies:definition>A quality inhering in some object from the product of a force on an object and the distance from the reference point to the object.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Torque Quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Torsion_Trailer_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Torsion_Trailer_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailer_Suspension"/>
+        <rdfs:label>Torsion Trailer Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Track -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Track">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/PowerTransmissionArtifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Tank"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailer">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Brake"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SteeringControlSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailer_Suspension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>A trailer is an unpowered vehicle towed by a powered vehicle. It is commonly used for the transport of goods and materials.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/Trailer_(vehicle)</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Trailer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailer_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailer_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Ground_Vehicle_Suspension"/>
+        <rdfs:label>Trailer Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailing_Arm_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trailing_Arm_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Independent_Suspension"/>
+        <CommonCoreOntologies:definition>A trailing-arm suspension, sometimes referred as trailing-link is a vehicle suspension design in which one or more arms (or &quot;links&quot;) are connected between (and perpendicular to and forward of) the axle and a pivot point (located on the chassis of a motor vehicle). It is typically used on the rear axle of a motor vehicle.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Trailing-arm_suspension</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Trailing Arm Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trim -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Trim">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Description_Quality"/>
+        <rdfs:label>Trim</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Twist_Beam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Twist_Beam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Semi-Independent_Suspension"/>
+        <CommonCoreOntologies:alternative_label>Compound Crank</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:alternative_label>Deformable Torsion Beam</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:alternative_label>Torsion-beam Axle</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:definition>The twist-beam rear suspensionis a type of automobile suspension based on a large H or C shaped member. The front of the H attaches to the body via rubber bushings, and the rear of the H carries each stub-axle assembly, on each side of the car. The cross beam of the H holds the two trailing arms together, and provides the roll stiffness of the suspension, by twisting as the two trailing arms move vertically, relative to each other.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>https://en.wikipedia.org/wiki/Twist-beam_rear_suspension</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Twist Beam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Two_Seaters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Two_Seaters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Two Seaters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vans">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#EPA_Class"/>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Vans</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vehicle_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vehicle_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Automobile_Description_Quality"/>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Vehicle Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vehicle_Weight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Vehicle_Weight">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Automobile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Vehicle weight is a measurement of wheeled motor vehicles; either an actual measured weight of the vehicle under defined conditions or a gross weight rating for its weight carrying capacity.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Vehicle Weight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Year_of_Make -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Year_of_Make">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Time_Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>The calander year in which an artifact was manufactured or produced.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Year of Make</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#emission_rate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#emission_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <CommonCoreOntologies:definition>A quality inhering in an artifact that releases emissions at some rate over distance travelled</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Emission Rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#fuel_consumption_rate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#fuel_consumption_rate">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Vehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>A quality inhereing in a vehicle that describes the rate of fuel consumption per unit of distance travelled</CommonCoreOntologies:definition>
+        <rdfs:label>Fuel Consumption Rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#tailpipe_emission_rate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#tailpipe_emission_rate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#emission_rate"/>
+        <CommonCoreOntologies:definition>The rate at which exhaust gas or flue gas is emitted as a result of the combustion of fuels such as natural gas, gasoline (petrol), diesel fuel, fuel oil, biodiesel blends, or coal. 
+According to the type of engine, it is discharged into the atmosphere through an exhaust pipe, flue gas stack, or propelling nozzle. It often disperses downwind in a pattern called an exhaust plume.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/Exhaust_gas</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Tailpipe Emission Rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Watt&apos;s_Linkage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Watt&apos;s_Linkage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Dependent_Suspension"/>
+        <CommonCoreOntologies:definition>Watt&apos;s linkage it is used in automobile suspensions, allowing the axle of a vehicle to travel vertically while preventing sideways motion.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Watt%27s_linkage</CommonCoreOntologies:definition_source>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Watt&apos;s Linkage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Newton_per_Meter_Unit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Newton_per_Meter_Unit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Measurement_Unit_of_Stiffness"/>
+        <CommonCoreOntologies:SI_unit_label>N/m</CommonCoreOntologies:SI_unit_label>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>Newton per Meter Unit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Static_Coefficient_Of_Friction">
+        <rdfs:comment>What kind of quality is the coefficent of frction? Since it does not inhere in an object but rather from the interaction between two objects how do we classify it?</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
