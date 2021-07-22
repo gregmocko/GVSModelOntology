@@ -14,7 +14,8 @@
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/gregmocko/GVSModelOntology/main/ontology/GroundVehicleSimulationAll.owl">
         <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2021-03-01/AllCoreOntology"/>
-        <rdfs:comment>Testing version</rdfs:comment>
+        <rdfs:comment>Testing version
+This is a second test.</rdfs:comment>
     </owl:Ontology>
 </rdf:RDF>
 
