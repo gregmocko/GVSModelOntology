@@ -17,8 +17,6 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod">
-        <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2021-03-01/AllCoreOntology"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch"/>
         <rdfs:comment>Includes: The model characteristics, an all inclusive list of parameters, variables interface (inputs, outputs)
 The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;s)</rdfs:comment>
         <rdfs:comment>Model Interface and Documentation Ontology</rdfs:comment>
@@ -97,6 +95,18 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
@@ -136,6 +146,12 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/designated_by -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/designates -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
     
 
 
@@ -820,6 +836,12 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -887,9 +909,21 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Bicycle -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Bicycle"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/CountMeasurementInformationContentEntity -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CountMeasurementInformationContentEntity"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
     
 
 
@@ -1008,6 +1042,12 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Person -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PointingOrientation -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PointingOrientation"/>
@@ -1035,6 +1075,18 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/SparkIgnitionEngine -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SparkIgnitionEngine"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
     
 
 
