@@ -1219,12 +1219,6 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnitOfForce"/>
             </owl:Restriction>
@@ -1243,12 +1237,6 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_Front_Force_y_axis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
@@ -1271,12 +1259,6 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnitOfForce"/>
             </owl:Restriction>
@@ -1295,12 +1277,6 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_Rear_Force_x_axis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
@@ -1323,12 +1299,6 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnitOfForce"/>
             </owl:Restriction>
@@ -1347,12 +1317,6 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_Rear_Force_z_axis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
@@ -1747,12 +1711,6 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheel_Rear_Force_3D_Matrix">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
@@ -2843,12 +2801,6 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model_Variable_Specification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Curb_Weight"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnitOfMass"/>
             </owl:Restriction>
@@ -3024,12 +2976,6 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model_Variable_Specification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Torque_Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnitOfTorque"/>
             </owl:Restriction>
@@ -3092,12 +3038,6 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Front_Braking_Force">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model_Variable_Specification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
@@ -3412,12 +3352,6 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model_Variable_Specification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnitOfForce"/>
             </owl:Restriction>
@@ -3628,18 +3562,6 @@ It&apos;s not a proportionality ratio because friction can be &gt;1</rdfs:commen
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Suspension_Stiffness">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model_Variable_Specification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Stiffness_Quality"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Measurement_Unit_of_Stiffness"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
@@ -3918,12 +3840,6 @@ It&apos;s not a proportionality ratio because friction can be &gt;1</rdfs:commen
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_simulated_in"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Ground_Wheel_Simulation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#models"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Tire"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Querying: find allparticipants that are participants in the bicycle, then you can find the models that are a part of that</rdfs:comment>
@@ -5317,12 +5233,6 @@ THe concceptual model must exist</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#0-60_mph_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Engine_Displacement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/uses_measurement_unit"/>
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnitOfVolume"/>
             </owl:Restriction>
@@ -5519,50 +5429,6 @@ THe concceptual model must exist</rdfs:comment>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>0-60 mph Simulation</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Curb_Weight -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Curb_Weight"/>
-    
-
-
-    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Engine_Displacement -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Engine_Displacement"/>
-    
-
-
-    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Force_Quality">
-        <rdfs:label>Force Quality</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Measurement_Unit_of_Stiffness -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Measurement_Unit_of_Stiffness"/>
-    
-
-
-    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Stiffness_Quality -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Stiffness_Quality"/>
-    
-
-
-    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Tire -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Tire"/>
-    
-
-
-    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Torque_Quality -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain#Torque_Quality"/>
     
 
 
