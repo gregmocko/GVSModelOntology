@@ -1,0 +1,573 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/eloui/ontologies/2021/6/untitled-ontology-34"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/eloui/ontologies/2021/6/untitled-ontology-34">
+    <Prefix name="" IRI="http://www.semanticweb.org/eloui/ontologies/2021/6/untitled-ontology-34"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_16a496a2_c3eb_4757_a954_cf1c21396f1e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_21da2b57_b61a_4ae9_a485_7a6084c9d978"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_27ec7af2_b8f8_470f_bf15_9c9b169ff0dc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_2fa98612_bb7e_41f4_a923_602d427a0a90"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_4d6fb0f0_5ed3_4102_a4f5_e698dc9ee1e8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_5fa7ef1d_009b_43c0_84a9_0d56a50a34c6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_785e852e_733b_46c0_a3ef_1f12a57c39f3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_8dcff76d_e399_4cc1_8b2e_ac6b6c2a7093"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_9e1bdd6e_437f_451b_8fe5_9d401a966a3b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_b3130ec3_2cc5_4679_98d8_95675ce24b92"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_e6bc9e1b_d713_4a94_90c5_a55d0288ebe4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#SimulationPlaceholder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/has_process_part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/has_spatial_part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_0af30aba_4731_4dd7_8284_badfb05181ae"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_3171656f_64c6_4fe2_9a68_b808ee2e4cdc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_3e7fa19d_cd4a_43da_9ed1_478a80f7dc69"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_64932545_c9bf_47d0_9a4d_438ea09cb056"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_78e7b8ea_b1cf_4aa1_8fac_def2e568c77a"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_b8c52a5b_af6a_46ea_88f1_14cab795003b"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasDriveCycle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasKPI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasDriveCycle"/>
+            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasEnvironment"/>
+            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasDriveCycle"/>
+            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasEnvironment"/>
+            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#OWLObjectProperty_b8c52a5b_af6a_46ea_88f1_14cab795003b"/>
+            <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasQuality"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#OWLObjectProperty_b8c52a5b_af6a_46ea_88f1_14cab795003b"/>
+            <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasQuality"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#OWLClass_16a496a2_c3eb_4757_a954_cf1c21396f1e"/>
+        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_21da2b57_b61a_4ae9_a485_7a6084c9d978"/>
+        <Class IRI="#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_27ec7af2_b8f8_470f_bf15_9c9b169ff0dc"/>
+        <Class IRI="#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_2fa98612_bb7e_41f4_a923_602d427a0a90"/>
+        <Class IRI="#OWLClass_4d6fb0f0_5ed3_4102_a4f5_e698dc9ee1e8"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_2fa98612_bb7e_41f4_a923_602d427a0a90"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000057"/>
+            <Class IRI="#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_2fa98612_bb7e_41f4_a923_602d427a0a90"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by"/>
+            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#SimulationPlaceholder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_4d6fb0f0_5ed3_4102_a4f5_e698dc9ee1e8"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5fa7ef1d_009b_43c0_84a9_0d56a50a34c6"/>
+        <Class IRI="#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_785e852e_733b_46c0_a3ef_1f12a57c39f3"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_8dcff76d_e399_4cc1_8b2e_ac6b6c2a7093"/>
+        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9e1bdd6e_437f_451b_8fe5_9d401a966a3b"/>
+        <Class IRI="#OWLClass_785e852e_733b_46c0_a3ef_1f12a57c39f3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9e1bdd6e_437f_451b_8fe5_9d401a966a3b"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <Class IRI="#OWLClass_2fa98612_bb7e_41f4_a923_602d427a0a90"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_9e1bdd6e_437f_451b_8fe5_9d401a966a3b"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/describes"/>
+            <Class IRI="#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b3130ec3_2cc5_4679_98d8_95675ce24b92"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_e6bc9e1b_d713_4a94_90c5_a55d0288ebe4"/>
+        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
+            <Class IRI="#OWLClass_9e1bdd6e_437f_451b_8fe5_9d401a966a3b"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasKPI"/>
+            <Class IRI="#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
+            <Class IRI="#OWLClass_9e1bdd6e_437f_451b_8fe5_9d401a966a3b"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0010001"/>
+            <Class IRI="#OWLClass_9e1bdd6e_437f_451b_8fe5_9d401a966a3b"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#SimulationPlaceholder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
+            <Class IRI="#OWLClass_2fa98612_bb7e_41f4_a923_602d427a0a90"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#SimulationPlaceholder"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
+            <Class IRI="#OWLClass_2fa98612_bb7e_41f4_a923_602d427a0a90"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/has_spatial_part"/>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/has_process_part"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#OWLObjectProperty_0af30aba_4731_4dd7_8284_badfb05181ae"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#OWLObjectProperty_3171656f_64c6_4fe2_9a68_b808ee2e4cdc"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#OWLObjectProperty_3e7fa19d_cd4a_43da_9ed1_478a80f7dc69"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#OWLObjectProperty_64932545_c9bf_47d0_9a4d_438ea09cb056"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#OWLObjectProperty_78e7b8ea_b1cf_4aa1_8fac_def2e568c77a"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#OWLObjectProperty_b8c52a5b_af6a_46ea_88f1_14cab795003b"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasDriveCycle"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasEnvironment"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasKPI"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasQuality"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </SubObjectPropertyOf>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OWLObjectProperty_b8c52a5b_af6a_46ea_88f1_14cab795003b"/>
+        <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_16a496a2_c3eb_4757_a954_cf1c21396f1e</IRI>
+        <Literal xml:lang="en">SurfaceProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_21da2b57_b61a_4ae9_a485_7a6084c9d978</IRI>
+        <Literal xml:lang="en">DriverInput</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_27ec7af2_b8f8_470f_bf15_9c9b169ff0dc</IRI>
+        <Literal xml:lang="en">DriverInterface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_2fa98612_bb7e_41f4_a923_602d427a0a90</IRI>
+        <Literal xml:lang="en">GroundVehicleTest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_4d6fb0f0_5ed3_4102_a4f5_e698dc9ee1e8</IRI>
+        <Literal xml:lang="en">Act of Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7</IRI>
+        <Literal xml:lang="en">EnvironmentComponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_5fa7ef1d_009b_43c0_84a9_0d56a50a34c6</IRI>
+        <Literal xml:lang="en">InitialCondition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_785e852e_733b_46c0_a3ef_1f12a57c39f3</IRI>
+        <Literal xml:lang="en">Test Scenario Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_8dcff76d_e399_4cc1_8b2e_ac6b6c2a7093</IRI>
+        <Literal xml:lang="en">MeteorologicalEffect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84</IRI>
+        <Literal xml:lang="en">TestingContext</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_9e1bdd6e_437f_451b_8fe5_9d401a966a3b</IRI>
+        <Literal xml:lang="en">TOP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_b3130ec3_2cc5_4679_98d8_95675ce24b92</IRI>
+        <Literal xml:lang="en">DesiredVehicleQuality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b</IRI>
+        <Literal xml:lang="en">DriveCycleComponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd</IRI>
+        <Literal xml:lang="en">KeyPerformanceIndicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_e6bc9e1b_d713_4a94_90c5_a55d0288ebe4</IRI>
+        <Literal xml:lang="en">Topography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9</IRI>
+        <Literal xml:lang="en">TestingScenario</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_0af30aba_4731_4dd7_8284_badfb05181ae</IRI>
+        <Literal xml:lang="en">is part ofEnv</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_3171656f_64c6_4fe2_9a68_b808ee2e4cdc</IRI>
+        <Literal xml:lang="en">is part ofKPI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_3e7fa19d_cd4a_43da_9ed1_478a80f7dc69</IRI>
+        <Literal xml:lang="en">is part ofContext</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_64932545_c9bf_47d0_9a4d_438ea09cb056</IRI>
+        <Literal xml:lang="en">is part ofQuality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_78e7b8ea_b1cf_4aa1_8fac_def2e568c77a</IRI>
+        <Literal xml:lang="en">is part ofDriveCycle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_b8c52a5b_af6a_46ea_88f1_14cab795003b</IRI>
+        <Literal xml:lang="en">hasContext</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
