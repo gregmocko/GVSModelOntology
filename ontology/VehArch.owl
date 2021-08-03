@@ -1375,6 +1375,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Brand">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Automobile_Description_Quality"/>
+        <CommonCoreOntologies:definition>The brand of a vehicle</CommonCoreOntologies:definition>
         <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Brand</rdfs:label>
     </owl:Class>

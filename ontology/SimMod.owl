@@ -317,21 +317,26 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
     <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_file_extension -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_file_extension">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_file_extension_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Simulation_Model_File"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#File_Extension"/>
+        <CommonCoreOntologies:definition>A simulation model or software program has a file extension that points to a certain type of file extension.</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:definition_source>Minhal 8/3/21</CommonCoreOntologies:definition_source>
+        <rdfs:label>has file extension</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable -->
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model"/>
         <CommonCoreOntologies:definition>A simulation model has a variable that is stored in model files that describes its behavior</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source>Minhal</CommonCoreOntologies:definition_source>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod</CommonCoreOntologies:is_curated_in_ontology>
-        <rdfs:label>has input variable</rdfs:label>
+        <rdfs:label>has input parameter</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -377,12 +382,12 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
     
 
 
-    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_variable -->
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_parameter -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_variable">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_parameter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model"/>
-        <rdfs:label>has output variable</rdfs:label>
+        <rdfs:label>has output parameter</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -450,19 +455,10 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
     <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_file_extension_of -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_file_extension_of">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#File_Extension"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Simulation_Model_File"/>
         <rdfs:label>is file extension of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model"/>
-        <CommonCoreOntologies:definition>A variable if a simulation model is stored in a model file and is used to describe its behavior</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod</CommonCoreOntologies:is_curated_in_ontology>
-        <rdfs:label>is variable of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -498,6 +494,17 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_reused_in"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model_Modification"/>
         <rdfs:label>is modified in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model"/>
+        <CommonCoreOntologies:definition>A variable if a simulation model is stored in a model file and is used to describe its behavior</CommonCoreOntologies:definition>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label>is parameter of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -911,7 +918,14 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
 
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Bicycle -->
 
-    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Bicycle"/>
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Bicycle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_modeled_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -1190,7 +1204,7 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Frame_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1205,7 +1219,7 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Frame_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1225,7 +1239,7 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Frame_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1245,7 +1259,7 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Frame_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1265,7 +1279,7 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Frame_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1285,7 +1299,7 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Frame_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1305,7 +1319,7 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Frame_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1325,7 +1339,7 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Frame_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1339,7 +1353,7 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Frame_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1449,7 +1463,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#RBM_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1463,7 +1477,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#RBM_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1477,7 +1491,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Front_Shock_Absorber_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1491,7 +1505,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Front_Shock_Absorber_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1511,7 +1525,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Front_Shock_Absorber_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1539,7 +1553,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Ground_Wheel_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1565,7 +1579,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Front_Shock_Absorber_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1597,7 +1611,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Ground_Wheel_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1629,7 +1643,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Ground_Wheel_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1661,7 +1675,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Ground_Wheel_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1693,7 +1707,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Ground_Wheel_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1719,7 +1733,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Ground_Wheel_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1733,7 +1747,7 @@ You have a &apos;thing&apos; but then you refer to the thing by its role! You ha
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Ground_Wheel_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1888,7 +1902,7 @@ For example, a variable over a non-empty range of the real numbers is continuous
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model"/>
         <CommonCoreOntologies:definition>Declearation of design parameters.  Abstract representation of an artifact without ouputs, not nessesarily part of a simulation process??</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition>For example a  CAD model could be a design model?</CommonCoreOntologies:definition>
-        <rdfs:comment>What is this??</rdfs:comment>
+        <rdfs:comment>To be updated</rdfs:comment>
     </owl:Class>
     
 
@@ -2036,6 +2050,21 @@ Similar level definitions may be used to describe individual model feature conte
     
 
 
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#File_Extension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#File_Extension">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_file_extension_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Simulation_Model_File"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>File Extension</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Flow_Rate_Quality -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Flow_Rate_Quality">
@@ -2081,55 +2110,55 @@ Similar level definitions may be used to describe individual model feature conte
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_3D_Object"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_Front_Force_x_axis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_Front_Force_y_axis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_Front_Force_z_axis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_Rear_Force_x_axis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_Rear_Force_y_axis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_Rear_Force_z_axis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_Deformed_3D_Object"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Frame_Stress_3D_Matrix"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2157,15 +2186,6 @@ Similar level definitions may be used to describe individual model feature conte
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#uses_software"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Abaqus"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Is this a good idea??? 
-If you&apos;re further specializing bicycle model
-DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</rdfs:comment>
         <rdfs:comment>add a participates in relationship to the Bicycle model</rdfs:comment>
     </owl:Class>
     
@@ -2243,19 +2263,19 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Shock_Absorber_Forces_3D_Matrix"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheel_Front_Height_Rate_of_change"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Shock_Absorber_Deformed_3D_Object"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2412,7 +2432,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Critical_Angle_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2445,7 +2465,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2472,7 +2492,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Braking_System_Grade_Holding_Ability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2499,7 +2519,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Braking_System_Grade_Holding_Ability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2526,25 +2546,25 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Applied_Braking_Percentage"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Critical_Angle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Front_Braking_Force"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Rear_Braking_Force"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2625,7 +2645,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Critical_Angle_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2658,7 +2678,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Critical_Angle_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2691,13 +2711,13 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Braking_System_Grade_Holding_Ability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Critical_Angle_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2725,7 +2745,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Static_Coefficient_Of_Friction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2807,7 +2827,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2844,7 +2864,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model_Variable_Specification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Vehicle_Engine_and_Transmission_Grade_Performance_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2864,13 +2884,13 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Longitudinal_Slope_Sustained_Speed_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Side_Slope_Performance_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2893,13 +2913,13 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model_Variable_Specification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Longitudinal_Slope_Sustained_Speed_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Side_Slope_Performance_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2917,13 +2937,13 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model_Variable_Specification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Longitudinal_Slope_Sustained_Speed_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Vehicle_Engine_and_Transmission_Grade_Performance_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2949,13 +2969,13 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Longitudinal_Slope_Sustained_Speed_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Side_Slope_Performance_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2982,13 +3002,13 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Longitudinal_Slope_Sustained_Speed_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Side_Slope_Performance_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3014,13 +3034,13 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Longitudinal_Slope_Sustained_Speed_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Side_Slope_Performance_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3046,7 +3066,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Braking_System_Grade_Holding_Ability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3066,7 +3086,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model_Variable_Specification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Side_Slope_Performance_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3120,37 +3140,37 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Driver_Throttle_Command"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Dynamic_Coefficient_Of_Friction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Engine_Speed"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Engine_Torque"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Final_Drive_Ratio"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Transmission_Gear_Drive_Ratio"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3219,43 +3239,43 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Angle_of_Slope"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_CG_Distance_Front"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_CG_Distance_Rear"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Curb_Weight"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Suspension_Sag"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Suspension_Stiffness"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Wheelbase"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3336,7 +3356,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Variable_Field"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3358,7 +3378,7 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Braking_System_Grade_Holding_Ability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3384,49 +3404,49 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Driver_Throttle_Command"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Dynamic_Coefficient_Of_Friction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Engine_Speed"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Engine_Torque"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Final_Drive_Ratio"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Gear_Selected"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Transmission_Gear_Drive_Ratio"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Vehicle_Speed"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3501,13 +3521,13 @@ DOES NOT MAKE SENSE.. could be &apos;bicycle model&apos; has part Frame Model</r
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model_Variable_Specification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Braking_System_Grade_Holding_Ability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Critical_Angle_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3543,7 +3563,7 @@ It&apos;s not a proportionality ratio because friction can be &gt;1</rdfs:commen
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3564,7 +3584,7 @@ It&apos;s not a proportionality ratio because friction can be &gt;1</rdfs:commen
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model_Variable_Specification"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3590,13 +3610,13 @@ It&apos;s not a proportionality ratio because friction can be &gt;1</rdfs:commen
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Longitudinal_Slope_Sustained_Speed_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Side_Slope_Performance_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3622,13 +3642,13 @@ It&apos;s not a proportionality ratio because friction can be &gt;1</rdfs:commen
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Driver_Steering_Command"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Dynamic_Stability_Performance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3709,7 +3729,7 @@ It&apos;s not a proportionality ratio because friction can be &gt;1</rdfs:commen
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Side_Slope_Performance_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3741,7 +3761,7 @@ It&apos;s not a proportionality ratio because friction can be &gt;1</rdfs:commen
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3790,43 +3810,43 @@ It&apos;s not a proportionality ratio because friction can be &gt;1</rdfs:commen
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheel_3D_Object"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheel_Front_Position_x_axis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheel_Front_Position_y_axis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheel_Front_Position_z_axis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheel_Front_to_Rear_Distance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_parameter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheel_Front_Position_x_axis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_parameter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheel_Front_Position_y_axis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_parameter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheel_Front_Position_z_axis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheel_Rear_Force_3D_Matrix"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Wheels_Deformed_3D_Object"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3922,6 +3942,21 @@ It&apos;s not a proportionality ratio because friction can be &gt;1</rdfs:commen
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#High_Fidelity">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Qualitative_Fidelity"/>
         <rdfs:label>High Fidelity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Last_used_attribute_for_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Last_used_attribute_for_model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model"/>
+        <rdfs:comment>Add a &apos;model last used&apos; object property that points to the last use of the specific model</rdfs:comment>
+        <rdfs:comment>design variables</rdfs:comment>
+        <rdfs:comment>input signals
+input parameters
+output signals
+output parameters</rdfs:comment>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4345,6 +4380,7 @@ antenna may have a radiation pattern.</CommonCoreOntologies:example_of_usage>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Model Name</rdfs:label>
     </owl:Class>
     
 
@@ -4645,13 +4681,13 @@ Time-sharing operating systems schedule tasks for efficient use of the system an
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Path_2D_Geometry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_output_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Repositioned_Geometry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4864,7 +4900,7 @@ intelligence. This is challenging because of the many dimensions of model fideli
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_file_extension"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Software_File_Extension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#File_Extension"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4939,14 +4975,6 @@ THe concceptual model must exist</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Software">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Software_File_Extension -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Software_File_Extension">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
     </owl:Class>
     
 
@@ -5127,7 +5155,7 @@ THe concceptual model must exist</rdfs:comment>
     <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.dat -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.dat">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Software_File_Extension"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#File_Extension"/>
     </owl:Class>
     
 
@@ -5135,7 +5163,7 @@ THe concceptual model must exist</rdfs:comment>
     <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.m -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.m">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Software_File_Extension"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#File_Extension"/>
     </owl:Class>
     
 
@@ -5143,7 +5171,7 @@ THe concceptual model must exist</rdfs:comment>
     <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.obj -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.obj">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Software_File_Extension"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#File_Extension"/>
     </owl:Class>
     
 
@@ -5151,7 +5179,7 @@ THe concceptual model must exist</rdfs:comment>
     <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.ply -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.ply">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Software_File_Extension"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#File_Extension"/>
     </owl:Class>
     
 
@@ -5159,7 +5187,7 @@ THe concceptual model must exist</rdfs:comment>
     <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.py -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.py">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Software_File_Extension"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#File_Extension"/>
     </owl:Class>
     
 
@@ -5167,7 +5195,7 @@ THe concceptual model must exist</rdfs:comment>
     <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.stl -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#.stl">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Software_File_Extension"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#File_Extension"/>
     </owl:Class>
     
 
@@ -5200,7 +5228,7 @@ THe concceptual model must exist</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#0-60_mph_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5239,7 +5267,7 @@ THe concceptual model must exist</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#0-60_mph_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5261,19 +5289,19 @@ THe concceptual model must exist</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#0-60_mph_Acceleration_Time"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#0-60_mph_Engine_Displacement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_variable"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_input_parameter"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#0-60_mph_Number_of_Cylinders"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5357,7 +5385,7 @@ THe concceptual model must exist</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_input_variable_of"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#is_parameter_of"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#0-60_mph_Model"/>
             </owl:Restriction>
         </rdfs:subClassOf>
