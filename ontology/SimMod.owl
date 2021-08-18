@@ -1367,6 +1367,12 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Simulation_Model"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_File"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_model_part"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Frame_Model"/>
             </owl:Restriction>
@@ -1407,8 +1413,6 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Bicycle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Don&apos;t confuse notions and roles! 
-You have a &apos;thing&apos; but then you refer to the thing by its role! You have a person and husband,</rdfs:comment>
         <rdfs:label>Bicycle Model</rdfs:label>
     </owl:Class>
     
@@ -2186,7 +2190,6 @@ Similar level definitions may be used to describe individual model feature conte
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>add a participates in relationship to the Bicycle model</rdfs:comment>
     </owl:Class>
     
 
@@ -4709,6 +4712,7 @@ Time-sharing operating systems schedule tasks for efficient use of the system an
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#RBM_Simulation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>RBM Model</rdfs:label>
     </owl:Class>
     
 
@@ -4883,6 +4887,7 @@ intelligence. This is challenging because of the many dimensions of model fideli
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A simulation model is a representation of an independandant continuant in a computer language. The model iA simulation model uses a software and is carried in a file.</rdfs:comment>
+        <rdfs:label>Simulation Model</rdfs:label>
     </owl:Class>
     
 
@@ -5055,6 +5060,15 @@ THe concceptual model must exist</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Transmission_Model_File">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Simulation_Model_File"/>
         <rdfs:label>Tranmission Model File</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Update_to_model_relationships -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Update_to_model_relationships">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 

@@ -1181,7 +1181,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Differential"/>
         <CommonCoreOntologies:definition>In active differentials an electronic control unit (ECU) uses inputs from multiple sensors, including yaw rate, steering input angle, and lateral acceleration—and adjusts the distribution of torque to compensate for undesirable handling behaviours such as understeer.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Differential_(mechanical_device)#Active_differentials</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Active Differential</rdfs:label>
     </owl:Class>
     
@@ -1192,7 +1192,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Active_Suspension">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Automobile_Suspension"/>
         <CommonCoreOntologies:definition>An active suspension is a type of automotive suspension on a vehicle. It uses an onboard system to control the vertical movement of the vehicle&apos;s wheels relative to the chassis or vehicle body rather than the passive suspension provided by large springs where the movement is determined entirely by the road surface.</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Active Suspension</rdfs:label>
     </owl:Class>
     
@@ -1202,7 +1202,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Adaptive_Suspension">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Active_Suspension"/>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Adaptive Suspension</rdfs:label>
     </owl:Class>
     
@@ -1232,7 +1232,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Alternator">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricGenerator"/>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Alternator_(automotive)</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:comment>An alternator is a type of electric generator used in vehicles to charge the battery and to power the electrical system when its engine is running.</rdfs:comment>
         <rdfs:isDefinedBy>Minhal</rdfs:isDefinedBy>
     </owl:Class>
@@ -1246,7 +1246,7 @@
         <CommonCoreOntologies:alternative_label>Semi-automatic Transmission</CommonCoreOntologies:alternative_label>
         <CommonCoreOntologies:definition>Automated manual transmission (AMT), also known as a clutchless manual, denotes a type of multi-speed motor vehicle transmission system that is closely based on the mechanical design and build of a conventional manual transmission, but uses automation to operate either the clutch, and/or the gear shifting.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Automated_manual_transmission</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Automated Manual Transmission</rdfs:label>
     </owl:Class>
     
@@ -1258,7 +1258,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
         <CommonCoreOntologies:definition>An automatic transmission (sometimes abbreviated to auto or AT) is a multi-speed transmission used in motor vehicles that does not require any driver input to change gears under normal driving conditions.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Automatic_transmission</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Automatic Transmission</rdfs:label>
     </owl:Class>
     
@@ -1275,7 +1275,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition>Qualities that inhere in some automobile used to describe it</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Automobile Description Quality</rdfs:label>
     </owl:Class>
     
@@ -1293,7 +1293,7 @@
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition>Suspension is the system of tires, tire air, springs, shock absorbers and linkages that connects a vehicle to its wheels and allows relative motion between the two.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Car_suspension</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Automobile Suspension</rdfs:label>
     </owl:Class>
     
@@ -1311,7 +1311,7 @@
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition>An axle is a central shaft for a rotating wheel or gear. On wheeled vehicles, the axle may be fixed to the wheels, rotating with them, or fixed to the vehicle, with the wheels rotating around the axle.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Axle</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Axle</rdfs:label>
     </owl:Class>
     
@@ -1336,7 +1336,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Bandvagn_206"/>
         <CommonCoreOntologies:definition>The Bv 206S is an armoured personnel carrier variant of the Bv 206, which provides protection from small arms fire for the occupants</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/Bandvagn_206#Bv_206S</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Bandvagn 206 S</rdfs:label>
     </owl:Class>
     
@@ -1352,7 +1352,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Bandvagn_206"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
     </owl:Class>
     
 
@@ -1365,7 +1365,7 @@
         <CommonCoreOntologies:alternative_label>Rigid Axle</CommonCoreOntologies:alternative_label>
         <CommonCoreOntologies:definition>A beam axle is a dependent suspension design, in which a set of wheels is connected laterally by a single beam or shaft. Beam axles were once commonly used at the rear wheels of a vehicle, but historically they have also been used as front axles in four-wheel-drive vehicles. In most automobiles, beam axles have been replaced with front and rear independent suspensions.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Beam_axle</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Beam Axle</rdfs:label>
     </owl:Class>
     
@@ -1376,7 +1376,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Brand">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Automobile_Description_Quality"/>
         <CommonCoreOntologies:definition>The brand of a vehicle</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Brand</rdfs:label>
     </owl:Class>
     
@@ -1396,7 +1396,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Cargo_Type_Vans">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Cargo Type Vans</rdfs:label>
     </owl:Class>
     
@@ -1408,7 +1408,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Independent_Suspension"/>
         <CommonCoreOntologies:definition>The Chapman strut is a design of independent rear suspension used for light cars, particularly sports and racing cars. It takes its name from, and is best known for its use by, Colin Chapman of Lotus.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Chapman_strut</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Chapman Strut</rdfs:label>
     </owl:Class>
     
@@ -1434,7 +1434,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Compact_Cars">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Compact Cars</rdfs:label>
     </owl:Class>
     
@@ -1446,7 +1446,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
         <CommonCoreOntologies:definition>A continuously variable transmission (CVT) is an automatic transmission that can change seamlessly through a continuous range of gear ratios. This contrasts with other transmissions that provide a limited number of gear ratios in fixed steps. The flexibility of a CVT with suitable control may allow the engine to operate at a constant RPM while the vehicle moves at varying speeds.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Continuously_variable_transmission</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Continuously Variable Transmission</rdfs:label>
     </owl:Class>
     
@@ -1459,7 +1459,7 @@
         <obo:IAO_0000118>Kerb Weight</obo:IAO_0000118>
         <CommonCoreOntologies:definition>Curb weight is the total mass of a vehicle with standard equipment and all necessary operating consumables such as motor oil, transmission oil, brake fluid, coolant, air conditioning refrigerant, and sometimes a full tank of fuel, while not loaded with either passengers or cargo.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight#Curb_weight</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Curb Weight</rdfs:label>
     </owl:Class>
     
@@ -1481,7 +1481,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Dependent_Suspension"/>
         <CommonCoreOntologies:definition>A de Dion tube is an automobile suspension technology. It is a sophisticated form of non-independent suspension and is a considerable improvement over the swing axle, Hotchkiss drive, or beam axle.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/De_Dion_tube</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>DeDion Axle</rdfs:label>
     </owl:Class>
     
@@ -1494,7 +1494,7 @@
         <CommonCoreOntologies:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">A dependent suspension normally has a beam (a simple &apos;cart&apos; axle) or a (driven) live axle that holds wheels parallel to each other and perpendicular to the axle. When the camber of one wheel changes, the camber of the opposite wheel changes in the same way (by convention, on one side, this is a positive change in the camber, and on the other side, this a negative change).</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Car_suspension#Dependent_suspensions</CommonCoreOntologies:definition_source>
         <CommonCoreOntologies:example_of_usage>De Dion suspensions are a dependent suspension as they rigidly connect the wheels together.</CommonCoreOntologies:example_of_usage>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Dependent Suspension</rdfs:label>
     </owl:Class>
     
@@ -1512,7 +1512,7 @@
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition>A differential is a gear train with three shafts that has the property that the rotational speed of one shaft is the average of the speeds of the others, or a fixed multiple of that average.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Differential_(mechanical_device)</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Differential</rdfs:label>
     </owl:Class>
     
@@ -1523,7 +1523,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Distance_Quality">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <CommonCoreOntologies:definition>Distance quality describing the one dimensional distance used to measure the displacement between two points</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Distance Quality</rdfs:label>
     </owl:Class>
     
@@ -1535,7 +1535,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Independent_Suspension"/>
         <CommonCoreOntologies:definition>In automobiles, a double wishbone suspension is an independent suspension design using two (occasionally parallel) wishbone-shaped arms to locate the wheel. Each wishbone or arm has two mounting points to the chassis and one joint at the knuckle. The shock absorber and coil spring mount to the wishbones to control vertical movement.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Double_wishbone_suspension</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Double Wishbone</rdfs:label>
     </owl:Class>
     
@@ -1545,7 +1545,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Driver">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
     </owl:Class>
     
 
@@ -1556,7 +1556,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Vehicle_Weight"/>
         <CommonCoreOntologies:definition>Dry weight is the weight of a vehicle without any consumables, passengers, or cargo. It is significantly less than the weight of a vehicle in a driveable condition and therefore rarely used. Quoting a dry weight can make a car&apos;s weight and power-to-weight figures appear far more favorable than those of rival cars using curb weight.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight#Dry_weight</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Dry Weight</rdfs:label>
     </owl:Class>
     
@@ -1566,7 +1566,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Automobile_Description_Quality"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>EPA Class</rdfs:label>
     </owl:Class>
     
@@ -1576,7 +1576,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Economic_Quality">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Economic Quality</rdfs:label>
     </owl:Class>
     
@@ -1588,7 +1588,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
         <CommonCoreOntologies:definition>The Electric Variable Transmission (EVT or e-CVT) combines a transmission with an electric motor to provide the illusion of a single CVT. In the common implementation, a gasoline engine is connected to a traditional transmission, which is in turn connected to an epicyclic gear system&apos;s planet carrier.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Transmission_(mechanics)#Electric_variable</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Electric Variable Transmission</rdfs:label>
     </owl:Class>
     
@@ -1600,7 +1600,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ThreeDimensionalExtent"/>
         <CommonCoreOntologies:definition>Engine displacement is the measure of the cylinder volume swept by all of the pistons of a piston engine, excluding the combustion chambers. It is commonly used as an expression of an engine&apos;s size, and by extension as a loose indicator of the power an engine might be capable of producing and the amount of fuel it should be expected to consume.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Engine_displacement</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Engine Displacement</rdfs:label>
     </owl:Class>
     
@@ -1610,7 +1610,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Force_Quality">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Force Quality</rdfs:label>
     </owl:Class>
     
@@ -1620,7 +1620,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Friction_Quality">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:comment>Does this quality make sense? Does friction inhere in a bearer? Or is the quality roughness and friction is the resulting interaction between two surfaces interacting?</rdfs:comment>
         <rdfs:label>Friction Quality</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -1634,7 +1634,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Vehicle_Weight"/>
         <CommonCoreOntologies:definition>The gross axle weight rating (GAWR) is the maximum distributed weight that may be supported by an axle of a road vehicle. Typically, GAWR is followed by either the letters FR or RR, which indicate front or rear axles respectively.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight#Gross_axle_weight_rating</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Gross Axle Weight Rating</rdfs:label>
     </owl:Class>
     
@@ -1646,7 +1646,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Vehicle_Weight"/>
         <CommonCoreOntologies:definition>The gross combined weight rating or gross combination weight rating (GCWR), also referred to as the gross combination mass (GCM), gross train weight (GTW), is the maximum allowable combined mass of a road vehicle, the passengers and cargo in the tow vehicle, plus the mass of the trailer and cargo in the trailer.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight#Gross_combined_weight_rating</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Gross Combined Weight Rating</rdfs:label>
     </owl:Class>
     
@@ -1658,7 +1658,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Vehicle_Weight"/>
         <CommonCoreOntologies:definition>The gross vehicle weight rating (GVWR), or gross vehicle mass (GVM), is the maximum operating weight/mass of a vehicle as specified by the manufacturer[6] including the vehicle&apos;s chassis, body, engine, engine fluids, fuel, accessories, driver, passengers and cargo but excluding that of any trailers.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight#Gross_vehicle_weight_rating</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Gross Vehicle Weight Rating</rdfs:label>
     </owl:Class>
     
@@ -1674,7 +1674,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundMotorVehicle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Ground Vehicle Suspension</rdfs:label>
     </owl:Class>
     
@@ -1703,7 +1703,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Automobile_Suspension"/>
         <CommonCoreOntologies:definition>Independent suspension is any automobile suspension system that allows each wheel on the same axle to move vertically (i.e. reacting to a bump on the road) independently of the others.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Independent_suspension</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Independent Suspension</rdfs:label>
     </owl:Class>
     
@@ -1713,7 +1713,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Large_Cars">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Large Cars</rdfs:label>
     </owl:Class>
     
@@ -1744,7 +1744,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Differential"/>
         <CommonCoreOntologies:definition>A limited-slip differential (LSD) is a type of differential that allows its two output shafts to rotate at different speeds but limits the maximum difference between the two shafts. In an automobile, such limited-slip differentials are sometimes used in place of a standard differential, where they convey certain dynamic advantages, at the expense of greater complexity.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Limited_slip_differential</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Limited-slip Differential</rdfs:label>
     </owl:Class>
     
@@ -1756,7 +1756,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Differential"/>
         <CommonCoreOntologies:definition>A locking differential is designed to overcome the chief limitation of a standard open differential by essentially &quot;locking&quot; both wheels on an axle together as if on a common shaft. This forces both wheels to turn in unison, regardless of the traction (or lack thereof) available to either wheel individually.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Locking_differential</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Locking Differential</rdfs:label>
     </owl:Class>
     
@@ -1771,7 +1771,7 @@
         <CommonCoreOntologies:alternative_label>Manufacturer&apos;s Suggested Retail Price</CommonCoreOntologies:alternative_label>
         <CommonCoreOntologies:definition>The MSRP of a product is the price at which the manufacturer recommends that the retailer sell the product.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/List_price</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>MSRP Value</rdfs:label>
     </owl:Class>
     
@@ -1783,7 +1783,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Independent_Suspension"/>
         <CommonCoreOntologies:definition>The MacPherson strut is a type of automotive suspension system that uses the top of a telescopic damper as the upper steering pivot. It is widely used in the front suspension of modern vehicles and is named for American automotive engineer Earle S. MacPherson, who invented and developed the design</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/MacPherson_strut</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>MacPherson Strut</rdfs:label>
     </owl:Class>
     
@@ -1795,7 +1795,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
         <CommonCoreOntologies:definition>A manual transmission (also known as a manual gearbox; abbreviated as MT, and sometimes called a standard transmission in Canada) is a multi-speed motor vehicle transmission system, where gear changes require the driver to manually select the gears by operating a gear stick and clutch (which is usually a foot pedal for cars, or a hand lever for motorcycles).</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Manual_transmission</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Manual Transmission</rdfs:label>
     </owl:Class>
     
@@ -1807,7 +1807,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Semi-Automatic_Transmission"/>
         <CommonCoreOntologies:alternative_label>Tiptronic Transmission</CommonCoreOntologies:alternative_label>
         <CommonCoreOntologies:definition>The modern usage of the automotive term manumatic denotes an automatic transmission that allows the driver to select a specific gear, typically using paddle-shifters, steering wheel-mounted push-buttons, or &quot;+&quot; and &quot;-&quot; controls on the gear selector.</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Manumatic</rdfs:label>
     </owl:Class>
     
@@ -1820,7 +1820,7 @@
         <CommonCoreOntologies:alternative_label>Open Market Valuation</CommonCoreOntologies:alternative_label>
         <CommonCoreOntologies:definition>Market value or OMV (Open Market Valuation) is the price at which an asset would trade in a competitive auction setting.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/Market_value</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Market Value</rdfs:label>
     </owl:Class>
     
@@ -1831,7 +1831,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Maximum_Range">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Distance_Quality"/>
         <CommonCoreOntologies:definition>The maximum range traversable by an artifact without refueling/recharging</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Maximum Range</rdfs:label>
     </owl:Class>
     
@@ -1843,7 +1843,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnit"/>
         <CommonCoreOntologies:SI_unit_label>N/m</CommonCoreOntologies:SI_unit_label>
         <CommonCoreOntologies:is_curated_in_ontology>A measurement unit used in measurements of an objects ability to resist deformation in response to an applied force.</CommonCoreOntologies:is_curated_in_ontology>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Measurement Unit of Stiffness</rdfs:label>
     </owl:Class>
     
@@ -1853,7 +1853,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Midsize_Cars">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Midsize Cars</rdfs:label>
     </owl:Class>
     
@@ -1863,7 +1863,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Midsize_Large_Station_Wagons">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Midsize Large Station Wagons</rdfs:label>
     </owl:Class>
     
@@ -1873,7 +1873,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Midsize_Station_Wagons">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Midsize Station Wagons</rdfs:label>
     </owl:Class>
     
@@ -1883,7 +1883,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Minicompact_Cars">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Minicompact Cars</rdfs:label>
     </owl:Class>
     
@@ -1893,7 +1893,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Minivans">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Minivans</rdfs:label>
     </owl:Class>
     
@@ -1905,7 +1905,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <CommonCoreOntologies:definition>In physics, a moment is an expression involving the product of a distance and physical quantity, and in this way it accounts for how the physical quantity is located or arranged.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/Moment_(physics)</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Moment of Force Quality</rdfs:label>
     </owl:Class>
     
@@ -1916,7 +1916,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Monetary_Value">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Economic_Quality"/>
         <CommonCoreOntologies:definition>The monetary value is used to price the value in cash of  tangible property, intangible property, labor, and commodities.</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Monetary Value</rdfs:label>
     </owl:Class>
     
@@ -1928,7 +1928,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Independent_Suspension"/>
         <CommonCoreOntologies:definition>A multi-link suspension is a type of vehicle suspension design typically used in independent suspensions, using three or more lateral arms, and one or more longitudinal arms. A wider definition can consider any independent suspensions having three control links or more multi-link suspensions.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Multi-link_suspension</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Multi-Link Suspension</rdfs:label>
     </owl:Class>
     
@@ -1940,7 +1940,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
         <CommonCoreOntologies:definition>A non-synchronous transmission, also called a crash gearbox, is a form of manual transmission based on gears that do not use synchronizing mechanisms. They require the driver to manually synchronize the transmission&apos;s input speed (engine RPM) and output speed (driveshaft speed).</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Non-synchronous_transmission</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Non-Synchronous Transmission</rdfs:label>
     </owl:Class>
     
@@ -1952,7 +1952,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Dependent_Suspension"/>
         <CommonCoreOntologies:definition>A Panhard rod (also called Panhard bar, track bar, or track rod) is a suspension link that provides lateral location of the axle.[1] Originally invented by the Panhard automobile company of France in the early twentieth century, this device has been widely used ever since.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Panhard_rod</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Panhard Rod</rdfs:label>
     </owl:Class>
     
@@ -1962,7 +1962,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Passenger">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
     </owl:Class>
     
 
@@ -1971,7 +1971,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Passenger_Type_Vans">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Passenger Type Vans</rdfs:label>
     </owl:Class>
     
@@ -1993,7 +1993,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Real_Active_Suspension">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Active_Suspension"/>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Real Active Suspension</rdfs:label>
     </owl:Class>
     
@@ -2005,7 +2005,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleTransmission"/>
         <CommonCoreOntologies:definition>Semi-automatic transmission denotes a multi-speed motor vehicle transmission where part of its operation is automated (typically the clutch actuation), but the driver&apos;s input is still required to launch the vehicle from a standstill and to manually change gears.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Semi-automatic_transmission</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Semi-Automatic Transmission</rdfs:label>
     </owl:Class>
     
@@ -2017,7 +2017,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Automobile_Suspension"/>
         <CommonCoreOntologies:definition>In semi-independent suspensions, the wheels of an axle are able to move relative to one another, as in an independent suspension, but the position of one wheel has an effect on the position and attitude of the other wheel. This effect is achieved through the twisting or deflecting of suspension parts under load.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Car_suspension#Semi-independent_suspension</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Semi-Independent Suspension</rdfs:label>
     </owl:Class>
     
@@ -2029,7 +2029,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Trailing_Arm_Suspension"/>
         <CommonCoreOntologies:definition>A semi-trailing arm suspension is a supple independent rear suspension system for automobiles where each wheel hub is located only by a large, roughly triangular arm that pivots at two points. Viewed from the top, the line formed by the two pivots is somewhere between parallel and perpendicular to the car&apos;s longitudinal axis; it is generally parallel to the ground. Trailing-arm and multilink suspension designs are much more commonly used for the rear wheels of a vehicle where they can allow for a flatter floor and more cargo room.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Trailing-arm_suspension#Semi-trailing_arm</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Semi-Trailing Arm</rdfs:label>
     </owl:Class>
     
@@ -2041,7 +2041,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Independent_Suspension"/>
         <CommonCoreOntologies:definition>A sliding pillar suspension is a form of independent front suspension for light cars. The stub axle and wheel assembly are attached to a vertical pillar or kingpin which slides up and down through a bush or bushes which are attached to the vehicle chassis, usually as part of transverse outrigger assemblies, sometimes resembling a traditional beam axle, although fixed rigidly to the chassis.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Sliding_pillar</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Sliding Pillar</rdfs:label>
     </owl:Class>
     
@@ -2051,7 +2051,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Small_Pickup_Trucks">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Small Pickup Trucks</rdfs:label>
     </owl:Class>
     
@@ -2061,7 +2061,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Small_Sport_Utility_Vehicles">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Small Sport Utility Vehicles</rdfs:label>
     </owl:Class>
     
@@ -2071,7 +2071,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Small_Station_Wagons">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Small Station Wagons</rdfs:label>
     </owl:Class>
     
@@ -2081,7 +2081,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Special_Purpose_Vehicles">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Special Purpose Vehicles</rdfs:label>
     </owl:Class>
     
@@ -2091,7 +2091,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Sport_Utility_Vehicles">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Sports Utility Vehicles</rdfs:label>
     </owl:Class>
     
@@ -2101,7 +2101,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Standard_Pickup_Trucks">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Standard Pickup Trucks</rdfs:label>
     </owl:Class>
     
@@ -2111,7 +2111,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Standard_Sport_Utility_Vehicle">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Standard Sports Utility Vehicle</rdfs:label>
     </owl:Class>
     
@@ -2122,7 +2122,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Stiffness_Quality">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <CommonCoreOntologies:definition>A quality inhering in a material describing the extent to which an object resists deformation in response to an applied force</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Stiffness Quality</rdfs:label>
     </owl:Class>
     
@@ -2132,7 +2132,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Stress_Quality">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Stress Quality</rdfs:label>
     </owl:Class>
     
@@ -2146,7 +2146,7 @@
         <CommonCoreOntologies:alternative_label>Strut tower brace</CommonCoreOntologies:alternative_label>
         <CommonCoreOntologies:definition>A strut bar is an automotive suspension accessory on a monocoque or unibody chassis to provide extra stiffness between the strut towers.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Strut_bar</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Strut Bar</rdfs:label>
     </owl:Class>
     
@@ -2156,7 +2156,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Subcompact_Cars">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Subcompact Cars</rdfs:label>
     </owl:Class>
     
@@ -2177,7 +2177,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Independent_Suspension"/>
         <CommonCoreOntologies:definition>A swing axle is a simple type of independent (rear wheel) suspension designed and patented by Edmund Rumpler in 1903. This was a revolutionary invention in the automotive industry, allowing wheels to react to irregularities of road surfaces independently, and enable the vehicle to maintain a strong road holding.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Swing_axle</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Swing Axle</rdfs:label>
     </owl:Class>
     
@@ -2231,7 +2231,7 @@
         <CommonCoreOntologies:alternative_label>Tyre</CommonCoreOntologies:alternative_label>
         <CommonCoreOntologies:definition>A tire is a ring-shaped component that surrounds a wheel&apos;s rim to transfer a vehicle&apos;s load from the axle through the wheel to the ground and to provide traction on the surface over which the wheel travels.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Tire</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Tire</rdfs:label>
     </owl:Class>
     
@@ -2243,7 +2243,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Differential"/>
         <CommonCoreOntologies:definition>Torque vectoring is a technology employed in automobile differentials that has the ability to vary the torque to each half-shaft with an electronic system. This method of power transfer has recently become popular in all-wheel drive vehicles</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Torque_vectoring</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Torque-vectoring Differential</rdfs:label>
     </owl:Class>
     
@@ -2254,7 +2254,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Torque_Quality">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Moment_of_Force_Quality"/>
         <CommonCoreOntologies:definition>A quality inhering in some object from the product of a force on an object and the distance from the reference point to the object.</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Torque Quality</rdfs:label>
     </owl:Class>
     
@@ -2279,7 +2279,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Tank"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
     </owl:Class>
     
 
@@ -2308,7 +2308,7 @@
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition>A trailer is an unpowered vehicle towed by a powered vehicle. It is commonly used for the transport of goods and materials.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/Trailer_(vehicle)</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Trailer</rdfs:label>
     </owl:Class>
     
@@ -2329,7 +2329,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Independent_Suspension"/>
         <CommonCoreOntologies:definition>A trailing-arm suspension, sometimes referred as trailing-link is a vehicle suspension design in which one or more arms (or &quot;links&quot;) are connected between (and perpendicular to and forward of) the axle and a pivot point (located on the chassis of a motor vehicle). It is typically used on the rear axle of a motor vehicle.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Trailing-arm_suspension</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Trailing Arm Suspension</rdfs:label>
     </owl:Class>
     
@@ -2352,7 +2352,7 @@
         <CommonCoreOntologies:alternative_label>Deformable Torsion Beam</CommonCoreOntologies:alternative_label>
         <CommonCoreOntologies:alternative_label>Torsion-beam Axle</CommonCoreOntologies:alternative_label>
         <CommonCoreOntologies:definition>The twist-beam rear suspensionis a type of automobile suspension based on a large H or C shaped member. The front of the H attaches to the body via rubber bushings, and the rear of the H carries each stub-axle assembly, on each side of the car. The cross beam of the H holds the two trailing arms together, and provides the roll stiffness of the suspension, by twisting as the two trailing arms move vertically, relative to each other.</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <CommonCoreOntologies:is_curated_in_ontology>https://en.wikipedia.org/wiki/Twist-beam_rear_suspension</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Twist Beam</rdfs:label>
     </owl:Class>
@@ -2363,7 +2363,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Two_Seaters">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Two Seaters</rdfs:label>
     </owl:Class>
     
@@ -2373,7 +2373,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Vans">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#EPA_Class"/>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Vans</rdfs:label>
     </owl:Class>
     
@@ -2383,7 +2383,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Vehicle_Model">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Automobile_Description_Quality"/>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Vehicle Model</rdfs:label>
     </owl:Class>
     
@@ -2401,7 +2401,7 @@
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition>Vehicle weight is a measurement of wheeled motor vehicles; either an actual measured weight of the vehicle under defined conditions or a gross weight rating for its weight carrying capacity.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Vehicle_weight</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Vehicle Weight</rdfs:label>
     </owl:Class>
     
@@ -2418,7 +2418,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <CommonCoreOntologies:definition>The calander year in which an artifact was manufactured or produced.</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Year of Make</rdfs:label>
     </owl:Class>
     
@@ -2429,7 +2429,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#emission_rate">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <CommonCoreOntologies:definition>A quality inhering in an artifact that releases emissions at some rate over distance travelled</CommonCoreOntologies:definition>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Emission Rate</rdfs:label>
     </owl:Class>
     
@@ -2458,7 +2458,7 @@
         <CommonCoreOntologies:definition>The rate at which exhaust gas or flue gas is emitted as a result of the combustion of fuels such as natural gas, gasoline (petrol), diesel fuel, fuel oil, biodiesel blends, or coal. 
 According to the type of engine, it is discharged into the atmosphere through an exhaust pipe, flue gas stack, or propelling nozzle. It often disperses downwind in a pattern called an exhaust plume.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source>https://en.wikipedia.org/wiki/Exhaust_gas</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Tailpipe Emission Rate</rdfs:label>
     </owl:Class>
     
@@ -2470,7 +2470,7 @@ According to the type of engine, it is discharged into the atmosphere through an
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Dependent_Suspension"/>
         <CommonCoreOntologies:definition>Watt&apos;s linkage it is used in automobile suspensions, allowing the axle of a vehicle to travel vertically while preventing sideways motion.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:definition_source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Watt%27s_linkage</CommonCoreOntologies:definition_source>
-        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Watt&apos;s Linkage</rdfs:label>
     </owl:Class>
     
@@ -2492,7 +2492,7 @@ According to the type of engine, it is discharged into the atmosphere through an
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Newton_per_Meter_Unit">
         <rdf:type rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Measurement_Unit_of_Stiffness"/>
         <CommonCoreOntologies:SI_unit_label>N/m</CommonCoreOntologies:SI_unit_label>
-        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/groundVehicleDomain</CommonCoreOntologies:is_curated_in_ontology>
+        <CommonCoreOntologies:is_curated_in_ontology>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label>Newton per Meter Unit</rdfs:label>
     </owl:NamedIndividual>
     
