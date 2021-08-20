@@ -1086,6 +1086,12 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/SparkIgnitionEngine -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SparkIgnitionEngine"/>
@@ -1367,12 +1373,6 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Simulation_Model"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Bicycle_Model_File"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#has_model_part"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Frame_Model"/>
             </owl:Restriction>
@@ -1413,6 +1413,8 @@ The key performance indiciators (KPI&apos;s) of the vehicle (e.g. from TOP&apos;
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Bicycle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Don&apos;t confuse notions and roles! 
+You have a &apos;thing&apos; but then you refer to the thing by its role! You have a person and husband,</rdfs:comment>
         <rdfs:label>Bicycle Model</rdfs:label>
     </owl:Class>
     
@@ -2190,6 +2192,7 @@ Similar level definitions may be used to describe individual model feature conte
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>add a participates in relationship to the Bicycle model</rdfs:comment>
     </owl:Class>
     
 
@@ -4608,6 +4611,172 @@ progressive stages of model refinement. Each successive level includes the capab
     
 
 
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_13be1115_186c_407e_839e_efbb8049a493 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_13be1115_186c_407e_839e_efbb8049a493">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_1eade44c_a91c_41da_9e09_dac5697c8bda"/>
+        <rdfs:comment>Load Sensitivity refers to how substrate properties, namely coefficient of friction and shearing strength, vary with compressive load. This is applicable for simulations of vehicles on soft soils</rdfs:comment>
+        <rdfs:label xml:lang="en">LoadSensitiveSubstrateModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_16c43d82_843b_4bd3_8060_9347f3058ad7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_16c43d82_843b_4bd3_8060_9347f3058ad7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_b0eed964_43bf_4f34_8482_19265e5daea7"/>
+        <rdfs:comment>2-Dimensional Topography Models are topography models which capture an environmental geometry or path in 2 spatial dimensions.
+Example: a topography model of an incline that includes horizontal travel and vertical ascension
+Example: a top-down topography model, represented as a flat plane, used in a vehicle dynamics bicycle model to evaluate cornering performance</rdfs:comment>
+        <rdfs:label xml:lang="en">2-DimensionalTopographyModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_1eade44c_a91c_41da_9e09_dac5697c8bda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_1eade44c_a91c_41da_9e09_dac5697c8bda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_350d2953_ea8c_45d4_a381_ecbf27154b45"/>
+        <rdfs:comment>SubstrateModel captures the material properties of the environment, including the frictional properties, deformation properties, moisture content, etc. Most of these properties are not disjoint from the others.</rdfs:comment>
+        <rdfs:label xml:lang="en">SubstrateModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_21a8f768_1122_4ec3_b4c8_bef8c770b98f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_21a8f768_1122_4ec3_b4c8_bef8c770b98f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_350d2953_ea8c_45d4_a381_ecbf27154b45"/>
+        <rdfs:comment>MeteorologicalPhenomenaModel captures the meteorological phenonmena of a model, if applicable</rdfs:comment>
+        <rdfs:label xml:lang="en">MeteorologicalPhenomenaModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_350d2953_ea8c_45d4_a381_ecbf27154b45 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_350d2953_ea8c_45d4_a381_ecbf27154b45">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model"/>
+        <rdfs:comment>The representation of a vehicle operations environment in a simulation space. While EnvironmentModel directly maps to OperationsEnvironment, environment models can be highly abstracted from reality, such as the abstraction of a paved hill to a single slope value and coefficient of friction. I have attempted to capture as many common abstractions as possible to allow for the capture of different levels of fidelity. This presents a challenge, as some abstractions are mutually exlcusive to some abstractions, while not mutually exclusive to other abstractions. For example, a 2-D topography model is disjoint from a 3-D topography model - a topography model cannot be both 2-D and 3-D. On the other hand, a 2-D topography model and deformable topography models are not disjoint from one another. To this end, each abstraction subclass does not completely define an environment model, but defines a salienty characteristic of an environment model.</rdfs:comment>
+        <rdfs:label xml:lang="en">EnvironmentModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_59f51408_07fa_4fed_98fa_2f4bbb777839 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_59f51408_07fa_4fed_98fa_2f4bbb777839">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_b0eed964_43bf_4f34_8482_19265e5daea7"/>
+        <rdfs:comment>Freeroam Topography Models define a spatial region&apos;s topography, but not a vehicle&apos;s path through the region. This is useful for pathfinding simulations of self-driving vehicles, or for battlefield-scale mission scenarios.</rdfs:comment>
+        <rdfs:label xml:lang="en">FreeroamTopographyModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_749a922a_72c2_4aea_8d23_88f74f183450 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_749a922a_72c2_4aea_8d23_88f74f183450">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+        <rdfs:label xml:lang="en">ModelKeyPerformanceIndicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_7b7fc0e7_9f46_46b8_982b_89a64e0e9cb9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_7b7fc0e7_9f46_46b8_982b_89a64e0e9cb9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_b0eed964_43bf_4f34_8482_19265e5daea7"/>
+        <rdfs:comment>Route-Based Topography Models prescribe a curve through space that a vehicle will follow over the course of a simulation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Route-BasedTopographyModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_7cebec04_2efe_484b_a2a4_d710a7459175 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_7cebec04_2efe_484b_a2a4_d710a7459175">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_b0eed964_43bf_4f34_8482_19265e5daea7"/>
+        <rdfs:comment>Deformable in this case means the environmental geometry is capable of changing from some initial state, but must remain a continuous, unbroken unit. This is contrasted with destructible terrain, in which pieces of the environment may be &apos;torn&apos; from the whole.
+An example of deformable, non-destructible terrain is a sandpit in which a vehicle&apos;s tires sink into the sand, but do not kick up any sand when wheelspin-inducing torque is applied to the wheels.</rdfs:comment>
+        <rdfs:label xml:lang="en">DeformableTopographyModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_92c9f4d9_7114_4f2d_aad0_cfb9e9b763fc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_92c9f4d9_7114_4f2d_aad0_cfb9e9b763fc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_b0eed964_43bf_4f34_8482_19265e5daea7"/>
+        <rdfs:comment>a 3-Dimensional Topgraphy Model is one which represents a geometry or path in 3 spatial dimensions. 
+Example: a prescribed path around a track that includes both corners and elevation change
+Example: a piece of hilly desert reprented as the 3D geometry within some fiat boundary</rdfs:comment>
+        <rdfs:label xml:lang="en">3-DimensionalTopographyModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_93481f92_df23_40cc_b2a1_fb7fb0c1f144 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_93481f92_df23_40cc_b2a1_fb7fb0c1f144">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_1eade44c_a91c_41da_9e09_dac5697c8bda"/>
+        <rdfs:comment>Temperature, especially for paved surfaces, can impact the coefficient of friction to an extent that a simulation engineer may choose to include temperature sensitivity. Similarly, freezing temperatures change the material properties of moisture-rich soils.</rdfs:comment>
+        <rdfs:label xml:lang="en">TemperatureSensitiveSubstrateModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_accd55b7_90e8_470a_a315_62f0f1df5e37 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_accd55b7_90e8_470a_a315_62f0f1df5e37">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_1eade44c_a91c_41da_9e09_dac5697c8bda"/>
+        <rdfs:comment>Moisture-Sensitive Substrate Models capture the effect of moisture on a substrate&apos;s material properties.</rdfs:comment>
+        <rdfs:label xml:lang="en">MoistureSensitiveSubstrateModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_b0eed964_43bf_4f34_8482_19265e5daea7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_b0eed964_43bf_4f34_8482_19265e5daea7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_350d2953_ea8c_45d4_a381_ecbf27154b45"/>
+        <rdfs:comment>TopographyModel captures the specific geometry of an environment</rdfs:comment>
+        <rdfs:label xml:lang="en">TopographyModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_d9166b5b_0421_494b_b902_aa53bf6195e5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_d9166b5b_0421_494b_b902_aa53bf6195e5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_1eade44c_a91c_41da_9e09_dac5697c8bda"/>
+        <rdfs:comment>A constant coefficient of friction is the simplest way to model a substrate&apos;s coefficient of friction, and reduces the computational cost in cases where it is acceptable to abstract away load sensitivity, temperature dependence, and other frictional modifiers.</rdfs:comment>
+        <rdfs:label xml:lang="en">ConstantFrictionSubstrateModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_eddc58df_6b2a_4b9d_9317_bd803ca386c3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_eddc58df_6b2a_4b9d_9317_bd803ca386c3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_b0eed964_43bf_4f34_8482_19265e5daea7"/>
+        <rdfs:comment>A 1-Dimensional Topography Model is one which can be expressed as a path in one dimension, such as a horizontal surface, with no vertical ascension or curvature in the horizontal plane.</rdfs:comment>
+        <rdfs:comment>Example: Straight-line, flat-terrain braking or acceleration simulations can be abstracted to a 1-D topography model</rdfs:comment>
+        <rdfs:label xml:lang="en">1-DimensionalTopographyModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_f16f6b1a_ad29_4022_b44a_0c4482ae47a4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_f16f6b1a_ad29_4022_b44a_0c4482ae47a4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_b0eed964_43bf_4f34_8482_19265e5daea7"/>
+        <rdfs:comment>Destructible in this case is a specialization of deformable, where an environment&apos;s geometry can be changed by an applied load (deformation), but discrete pieces of the geometry can be removed from the whole when enough load is applied (destructible). This is a complex level of abstraction that will likely not be necessary in many simulations.
+An example of the application of destructible terrain is hard braking in soft dirt. Braking performance is impacted by the amount of dirt that can be built up in front of the tires, necessitating the need for a topography model that can capture dirt being torn away from the road surface and placed ahead of the tires, as well as the shearing stresses between the built-up dirt and main road surface.</rdfs:comment>
+        <rdfs:label xml:lang="en">DestructibleTopographyModel</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Operating_System -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Operating_System">
@@ -4712,7 +4881,6 @@ Time-sharing operating systems schedule tasks for efficient use of the system an
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#RBM_Simulation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>RBM Model</rdfs:label>
     </owl:Class>
     
 
@@ -4865,6 +5033,7 @@ intelligence. This is challenging because of the many dimensions of model fideli
         <CommonCoreOntologies:alternative_label>Simulation Software</CommonCoreOntologies:alternative_label>
         <CommonCoreOntologies:definition>The simulation environment using which models are created</CommonCoreOntologies:definition>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:comment>To avoid confusion with Modeling/Simulation of an Environment, maybe we should change this to its alternative label of &apos;Simulation Software&apos;</rdfs:comment>
         <rdfs:label>Simulation Environment</rdfs:label>
     </owl:Class>
     
@@ -4887,7 +5056,6 @@ intelligence. This is challenging because of the many dimensions of model fideli
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A simulation model is a representation of an independandant continuant in a computer language. The model iA simulation model uses a software and is carried in a file.</rdfs:comment>
-        <rdfs:label>Simulation Model</rdfs:label>
     </owl:Class>
     
 
@@ -5060,15 +5228,6 @@ THe concceptual model must exist</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Transmission_Model_File">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Simulation_Model_File"/>
         <rdfs:label>Tranmission Model File</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Update_to_model_relationships -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Update_to_model_relationships">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Model"/>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5682,6 +5841,33 @@ THe concceptual model must exist</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_16c43d82_843b_4bd3_8060_9347f3058ad7"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_92c9f4d9_7114_4f2d_aad0_cfb9e9b763fc"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_eddc58df_6b2a_4b9d_9317_bd803ca386c3"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_1eade44c_a91c_41da_9e09_dac5697c8bda"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_21a8f768_1122_4ec3_b4c8_bef8c770b98f"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#OWLClass_b0eed964_43bf_4f34_8482_19265e5daea7"/>
+        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 

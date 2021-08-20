@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/eloui/ontologies/2021/6/VehicleOperations">
-    <Prefix name="" IRI="http://www.semanticweb.org/eloui/ontologies/2021/6/untitled-ontology-34"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/eloui/ontologies/2021/6/VehicleOperations"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -34,9 +34,6 @@
         <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OWLClass_16a496a2_c3eb_4757_a954_cf1c21396f1e"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#OWLClass_21da2b57_b61a_4ae9_a485_7a6084c9d978"/>
     </Declaration>
     <Declaration>
@@ -49,16 +46,10 @@
         <Class IRI="#OWLClass_4d6fb0f0_5ed3_4102_a4f5_e698dc9ee1e8"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#OWLClass_5fa7ef1d_009b_43c0_84a9_0d56a50a34c6"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_785e852e_733b_46c0_a3ef_1f12a57c39f3"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_8dcff76d_e399_4cc1_8b2e_ac6b6c2a7093"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
@@ -76,19 +67,10 @@
         <Class IRI="#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OWLClass_e6bc9e1b_d713_4a94_90c5_a55d0288ebe4"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#SimulationPlaceholder"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -156,26 +138,12 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasEnvironment"/>
-            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasDriveCycle"/>
             <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle"/>
         </ObjectAllValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#hasEnvironment"/>
-            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
-        </ObjectAllValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#OWLObjectProperty_b8c52a5b_af6a_46ea_88f1_14cab795003b"/>
@@ -203,10 +171,6 @@
             <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
         </ObjectAllValuesFrom>
     </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="#OWLClass_16a496a2_c3eb_4757_a954_cf1c21396f1e"/>
-        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
-    </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_21da2b57_b61a_4ae9_a485_7a6084c9d978"/>
         <Class IRI="#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b"/>
@@ -227,33 +191,8 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OWLClass_2fa98612_bb7e_41f4_a923_602d427a0a90"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by"/>
-            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#SimulationPlaceholder"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#OWLClass_4d6fb0f0_5ed3_4102_a4f5_e698dc9ee1e8"/>
         <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
-        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_5fa7ef1d_009b_43c0_84a9_0d56a50a34c6"/>
@@ -262,10 +201,6 @@
     <SubClassOf>
         <Class IRI="#OWLClass_785e852e_733b_46c0_a3ef_1f12a57c39f3"/>
         <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/Document"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_8dcff76d_e399_4cc1_8b2e_ac6b6c2a7093"/>
-        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
@@ -314,10 +249,6 @@
     <SubClassOf>
         <Class IRI="#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd"/>
         <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_e6bc9e1b_d713_4a94_90c5_a55d0288ebe4"/>
-        <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9"/>
@@ -376,34 +307,6 @@
             <Class IRI="#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#EnvironmentPlaceholder"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#SimulationPlaceholder"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
-            <Class IRI="#OWLClass_2fa98612_bb7e_41f4_a923_602d427a0a90"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#SimulationPlaceholder"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
-            <Class IRI="#OWLClass_2fa98612_bb7e_41f4_a923_602d427a0a90"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/has_spatial_part"/>
         <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/has_process_part"/>
@@ -456,9 +359,11 @@
         <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_16a496a2_c3eb_4757_a954_cf1c21396f1e</IRI>
-        <Literal xml:lang="en">SurfaceProperty</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OWLClass_21da2b57_b61a_4ae9_a485_7a6084c9d978</IRI>
+        <Literal>Driver input refers to the signals a driver can provide to the subsystems defined by &apos;HMI Subsystem&apos;. This can either be a direct instruction: &quot;Apply 50% throttle&quot;, or set boundaries or vehicle state targets to inform what signals the driver may give the HMI subsystems: &quot;Adhere to the posted speed limits, doing whatever necessary to the brake and accelerator HMI subsystems to achieve this&quot;, or &quot;Give whatever steering inputs necessary to keep the vehicle on the path prescribed by the environment topography&quot;.
+The former is a far simpler way of building a drive cycle, but is limited by needing to fully define what the driver will do prior to the start of a vehicle operation, this carries over into ease of modeling of drive cycles.
+The latter more accurately reflects the nature of operating a vehicle, using environmental and vehicle state cues as feedback to the driver.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -466,9 +371,14 @@
         <Literal xml:lang="en">DriverInput</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OWLClass_27ec7af2_b8f8_470f_bf15_9c9b169ff0dc</IRI>
+        <Literal>The HMI Subsystem prescribes the subsystems with which the driver may interact during a vehicle operation in order for a given KPI&apos;s context to be properly represented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_27ec7af2_b8f8_470f_bf15_9c9b169ff0dc</IRI>
-        <Literal xml:lang="en">DriverInterface</Literal>
+        <Literal xml:lang="en">HMISubsystem</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -481,9 +391,9 @@
         <Literal xml:lang="en">Act of Testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_4daa000e_8265_4792_9045_33151cebe4a7</IRI>
-        <Literal xml:lang="en">EnvironmentComponent</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OWLClass_5fa7ef1d_009b_43c0_84a9_0d56a50a34c6</IRI>
+        <Literal>Initial conditions define the vehicle state at the instant a vehicle operation begins. Initial conditions include the vehicle&apos;s velocity, position, HMI subsystem state, heading, fuel quantity, etc</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -496,9 +406,9 @@
         <Literal xml:lang="en">Test Scenario Document</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_8dcff76d_e399_4cc1_8b2e_ac6b6c2a7093</IRI>
-        <Literal xml:lang="en">MeteorologicalEffect</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84</IRI>
+        <Literal>Testing Context is part of the decomposition of an Operational/Model KPI, the other being Desired Vehicle Quality. Testing Context refers to everything that needs to happen/be in place in order for a vehicle to exhibit some desired performance quality. This is the drive cycle the vehicle must undergo, and the environment in which the drive cycle occurs.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -516,19 +426,30 @@
         <Literal xml:lang="en">DesiredVehicleQuality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b</IRI>
+        <Literal>This class exists for the semantic expressibility of the drive cycle, namely being able to specifically and wholly define that a drive cycle may not be made up of anything that isn&apos;t a component of a drive cycle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_b534c674_571a_4412_888a_6ddbe86b657b</IRI>
         <Literal xml:lang="en">DriveCycleComponent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd</IRI>
-        <Literal xml:lang="en">KeyPerformanceIndicator</Literal>
+        <Literal>The Operational Key Performance Indicator, or Operational KPI, refers to the &apos;goal&apos; of a vehicle operation, and is defined by the quality of vehicle performance that one desires to observe, and the context that makes a vehicle behave in such a way that the desired quality can be observed.
+The simulation analog to Operational KPI is Model KPI, where the above still applies, but is mapped from real world operations to the simulation thereof.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_e6bc9e1b_d713_4a94_90c5_a55d0288ebe4</IRI>
-        <Literal xml:lang="en">Topography</Literal>
+        <IRI>#OWLClass_c3d522bb_8359_4736_a361_29a1a750a4fd</IRI>
+        <Literal xml:lang="en">OperationalKeyPerformanceIndicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OWLClass_f096d09f_a7db_48dd_b4c4_ea33443e39d9</IRI>
+        <Literal>Testing Scenario is an abstract term to describe everything that must exist (either physically or in the form of knowledge) for a Vehicle Operation to occur. Testing Scenario is not the same as the act of executing a Vehicle Operation, since a Vehicle Operation is a process, and testing scenario is a body of knowledge. Similarly, testing scenario cannot be reduced to just the KPI in question, nor just a drive cycle, and so on.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -564,6 +485,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLObjectProperty_b8c52a5b_af6a_46ea_88f1_14cab795003b</IRI>
         <Literal xml:lang="en">hasContext</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle</IRI>
+        <Literal>Drive cycle refers to the set of things a driver has influence over to induce a certain vehicle state, or a change in vehicle state. Drive cycle includes the initial conditions, such as the position, velocity, heading, etc at the instant a vehicle operation begins. It also prescribes the human interface devices which a driver may interact with over the course of a vehicle operation. Drive cycle also prescribes the types of inputs a driver may give to the human interface devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/gregorymocko/ontologies/2021/5/untitled-ontology-73#DriveCycle</IRI>
+        <Literal>DriveCycle</Literal>
     </AnnotationAssertion>
 </Ontology>
 
