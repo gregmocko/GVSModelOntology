@@ -17,6 +17,18 @@
     <Import>http://www.semanticweb.org/eloui/ontologies/2021/7/Environment</Import>
     <Import>http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod</Import>
     <Import>http://www.semanticweb.org/minha/ontologies/2021/4/VehArch</Import>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/eloui/ontologies/2021/6/VehicleOperations#OWLClass_3e37cda9_146c_45da_ac49_ce0fc3c097e7"/>
+        <Class IRI="http://www.semanticweb.org/eloui/ontologies/2021/7/Environment#OWLClass_937990f1_7078_4251_82fd_2652869104d4"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/eloui/ontologies/2021/6/VehicleOperations#OWLClass_3e37cda9_146c_45da_ac49_ce0fc3c097e7"/>
+        <Class IRI="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_404f474f_1122_4f44_b56c_a6ad1ea0933d"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/eloui/ontologies/2021/7/Environment#OWLClass_937990f1_7078_4251_82fd_2652869104d4"/>
+        <Class IRI="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_404f474f_1122_4f44_b56c_a6ad1ea0933d"/>
+    </EquivalentClasses>
 </Ontology>
 
 

@@ -868,6 +868,12 @@
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ArticleOfClothing -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArticleOfClothing"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Artifact -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
@@ -911,6 +917,48 @@
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/CombustionChamber -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CombustionChamber"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/CommunicationInstrument -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CommunicationInstrument"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/CommunicationSystem -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CommunicationSystem"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Container -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Container"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ControlSystem -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ControlSystem"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/CounterfeitInstrument -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CounterfeitInstrument"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Decoy -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Decoy"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ElectricBattery -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ElectricBattery"/>
@@ -942,9 +990,69 @@
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ElectronicComponent -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ElectronicComponent"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Engine -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Engine"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/EnvironmentControlSystem -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/EnvironmentControlSystem"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Facility -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Facility"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Filter -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Filter"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/FinancialInstrument -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/FinancialInstrument"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/FluidControlArtifact -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/FluidControlArtifact"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/FluidControlArtifactComponent -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/FluidControlArtifactComponent"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Flywheel -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Flywheel"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/FuelSystem -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/FuelSystem"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/FuelSystemComponent -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/FuelSystemComponent"/>
     
 
 
@@ -1015,15 +1123,81 @@
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/HeatSink -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/HeatSink"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Height -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Height"/>
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/IgnitionSystem -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IgnitionSystem"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ImagingInstrument -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ImagingInstrument"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingArtifact -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingArtifact"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/InformationMediumArtifact -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationMediumArtifact"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/InformationProcessingArtifact -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationProcessingArtifact"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Laser -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Laser"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/LegalInstrument -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/LegalInstrument"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Length -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Length"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/LightingSystem -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/LightingSystem"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/LubricationSystem -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/LubricationSystem"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/MachineElement -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MachineElement"/>
     
 
 
@@ -1039,15 +1213,51 @@
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/MedicalArtifact -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MedicalArtifact"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/NavigationSystem -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NavigationSystem"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/OneDimensionalExtent -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/OneDimensionalExtent"/>
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/OpticalInstrument -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/OpticalInstrument"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Person -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfProcessedMaterial -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfProcessedMaterial"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PowerSource -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PowerSource"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PowerSourceComponent -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PowerSourceComponent"/>
     
 
 
@@ -1060,6 +1270,7 @@
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystem -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystem">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1085,6 +1296,12 @@
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystemComponent -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystemComponent"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/SensorPlatform -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SensorPlatform"/>
     
 
 
@@ -1132,6 +1349,24 @@
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Tool -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Tool"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Transducer -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Transducer"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Tripod -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Tripod"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/TwoDimensionalExtent"/>
@@ -1144,9 +1379,27 @@
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/VehicleCompartment -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleCompartment"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/VehicleControlSystemComponent -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleControlSystemComponent"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFramePart -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFramePart"/>
     
 
 
@@ -1160,6 +1413,12 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Weapon -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Weapon"/>
     
 
 
@@ -1946,6 +2205,198 @@
     
 
 
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_38c9b8d0_dc67_4c2a_8613_ff2cca3e0f65 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_38c9b8d0_dc67_4c2a_8613_ff2cca3e0f65">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Fuel Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_3b02571e_0b22_4a8e_b7e7_0f729a84fd4d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_3b02571e_0b22_4a8e_b7e7_0f729a84fd4d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Thermal Management Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_3f304496_2a46_4c4a_815b_3cd07635d83d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_3f304496_2a46_4c4a_815b_3cd07635d83d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Suspension Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_404f474f_1122_4f44_b56c_a6ad1ea0933d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_404f474f_1122_4f44_b56c_a6ad1ea0933d">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:comment>The VehArch &apos;copy&apos; of Environment. This is a placeholder (potentially)</rdfs:comment>
+        <rdfs:label xml:lang="en">Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_7b5793d6_d5f8_49e5_bdd8_72bdf041a7bb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_7b5793d6_d5f8_49e5_bdd8_72bdf041a7bb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Braking Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_8137a7a0_5e92_48bb_b135_624d5095ae1b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_8137a7a0_5e92_48bb_b135_624d5095ae1b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Tracks Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_869eb0e4_93f9_47c2_9df0_176a4c5644b9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_869eb0e4_93f9_47c2_9df0_176a4c5644b9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Electrical Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_8c7c2fe1_1dbf_482c_bfbb_00373702a5c5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_8c7c2fe1_1dbf_482c_bfbb_00373702a5c5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Steering Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a0f13146_c40f_4fc8_9c68_eac7eb81d5e0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a0f13146_c40f_4fc8_9c68_eac7eb81d5e0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Wheels Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a4b45f0c_ad5c_424b_bda8_2a8b8cbcd749 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a4b45f0c_ad5c_424b_bda8_2a8b8cbcd749">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Body-Frame Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a4d13053_d37d_4138_abb6_559f98839b1d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a4d13053_d37d_4138_abb6_559f98839b1d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Power Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a544f193_5b72_4532_a0eb_c894ca82cfe8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a544f193_5b72_4532_a0eb_c894ca82cfe8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Power Take-off Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_b41cd856_d9a1_46b2_b5de_2436cdbb7320 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_b41cd856_d9a1_46b2_b5de_2436cdbb7320">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Auxiliary Power Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_c44a2148_fedb_4648_8417_864640e09158 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_c44a2148_fedb_4648_8417_864640e09158">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_404f474f_1122_4f44_b56c_a6ad1ea0933d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Passenger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From SAE J3049:
+
+&quot;A system that describes the interaction of people (driver and passengers) with their environment through the use of a mechanism (vehicle) for them to move themselves and their goods from one point to another on the surface of the earth (ground), to perform work on the surface, and to affect their environmental surroundings. It describes and captures all of the interactions between the people, the mechanism, and the environment and their resulting effects on each other.&quot;</rdfs:comment>
+        <rdfs:comment>I am categorizing Ground Vehicle System (GVS) as an Artifact, even though it is comprised of not only a Ground Vehicle (an artifact), but also Drivers/Passengers and an Environment. Since all 3 components are definitely material entities, I do not want to place GVS under an Information Content Entity or other, similarly abstract definitiong. Perhaps GVS fits under &apos;material entity&apos;, but that seems like a very general parent class for a rather specific system of material entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ground Vehicle System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_d8c136e6_543a_4f24_a512_535ff8bb8aac -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_d8c136e6_543a_4f24_a512_535ff8bb8aac">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Driveline Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e2ecfc62_4e59_4c86_a761_2155ddc47234 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e2ecfc62_4e59_4c86_a761_2155ddc47234">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Transmission Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <rdfs:comment>Generic class to keep all of the J3049 vehicle subsystems together. Mainly a means of keeping entries in the Artifact class less cluttered</rdfs:comment>
+        <rdfs:label xml:lang="en">Ground Vehicle Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_f974b0bc_759f_474e_8939_e2f21f0badc0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_f974b0bc_759f_474e_8939_e2f21f0badc0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e4387ef3_1975_452f_b5e3_770c7aecb17c"/>
+        <rdfs:label xml:lang="en">Chassis Subsystem</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Panhard_Rod -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Panhard_Rod">
@@ -2508,6 +2959,87 @@ According to the type of engine, it is discharged into the atmosphere through an
 
     <rdf:Description rdf:about="http://www.semanticweb.org/gregorymocko/ontologies/2021/1/SimMod#Gradability_Static_Coefficient_Of_Friction">
         <rdfs:comment>What kind of quality is the coefficent of frction? Since it does not inhere in an object but rather from the interaction between two objects how do we classify it?</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ArticleOfClothing"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CombustionChamber"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CommunicationInstrument"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CommunicationSystem"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Container"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ControlSystem"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CounterfeitInstrument"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Decoy"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ElectronicComponent"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Engine"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/EnvironmentControlSystem"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Facility"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Filter"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/FinancialInstrument"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/FluidControlArtifact"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/FluidControlArtifactComponent"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Flywheel"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/FuelSystem"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/FuelSystemComponent"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/HeatSink"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IgnitionSystem"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ImagingInstrument"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingArtifact"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationMediumArtifact"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationProcessingArtifact"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Laser"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/LegalInstrument"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/LightingSystem"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/LubricationSystem"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MachineElement"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/MedicalArtifact"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/NavigationSystem"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/OpticalInstrument"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PortionOfProcessedMaterial"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PowerSource"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PowerSourceComponent"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystem"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/PropulsionSystemComponent"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SensorPlatform"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Tool"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Transducer"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Tripod"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Vehicle"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleCompartment"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleControlSystemComponent"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFrame"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/VehicleFramePart"/>
+            <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Weapon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#Ground_Vehicle_Suspension"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_38c9b8d0_dc67_4c2a_8613_ff2cca3e0f65"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_3b02571e_0b22_4a8e_b7e7_0f729a84fd4d"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_3f304496_2a46_4c4a_815b_3cd07635d83d"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_7b5793d6_d5f8_49e5_bdd8_72bdf041a7bb"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_8137a7a0_5e92_48bb_b135_624d5095ae1b"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_869eb0e4_93f9_47c2_9df0_176a4c5644b9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_8c7c2fe1_1dbf_482c_bfbb_00373702a5c5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a0f13146_c40f_4fc8_9c68_eac7eb81d5e0"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a4b45f0c_ad5c_424b_bda8_2a8b8cbcd749"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a4d13053_d37d_4138_abb6_559f98839b1d"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_a544f193_5b72_4532_a0eb_c894ca82cfe8"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_b41cd856_d9a1_46b2_b5de_2436cdbb7320"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_c44a2148_fedb_4648_8417_864640e09158"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_d8c136e6_543a_4f24_a512_535ff8bb8aac"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_e2ecfc62_4e59_4c86_a761_2155ddc47234"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/minha/ontologies/2021/4/VehArch#OWLClass_f974b0bc_759f_474e_8939_e2f21f0badc0"/>
+        </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
