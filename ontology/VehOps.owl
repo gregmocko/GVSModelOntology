@@ -12,8 +12,12 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2021-03-01/MergedAllCoreOntology</Import>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/Document"/>
@@ -149,9 +153,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000232"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#OWLClass_954e4d65_08d1_49f5_bd7f_c080dc090c84"/>
