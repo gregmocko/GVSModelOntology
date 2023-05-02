@@ -6,12 +6,9 @@ The Ground Vehicle Simulation Ontology (GVSO) suite comprises four domain ontolo
 * Ground Vehicle Operations Ontology (VehOps.owl) - Derived from TOP documents. Decomposes the process of operating a GV to output a KPI in order to evaluate vehicle performance or execute a mission.
 * Environment Ontology (Env.owl) - Derived from TOP documents, J3049, and EnvO. Represents the necessary information to describe the environment in which a GV operates.
 
-=======
-Process
 
 
-
-For every change that is made to the Subontolgies, they will be committed to the GIThub so that we all are using hte correct ontology.
+For every change that is made to the Subontologies, they will be committed to the GIThub so that we all are using hte correct ontology.
 Do not download any ontology locally ....
 
 Step 0: Create integrated ontology and import all sub-ontology
