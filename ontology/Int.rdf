@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#"
      xml:base="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:Int="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -19,7 +20,7 @@
      xmlns:VehArchVer2="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#"
      xmlns:VehOps_ver2="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int">
         <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2023-04-07/MergedAllCoreOntology"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2"/>
@@ -43,6 +44,42 @@
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
     <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#bears_model_connection_port_type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#bears_model_connection_port_type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_battery_modely-inverter_model_variable -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_battery_modely-inverter_model_variable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_engine_model-inverter_model_variable -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_engine_model-inverter_model_variable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_software_environment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_software_environment"/>
     
 
 
@@ -81,27 +118,33 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by -->
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model_of -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#models"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#models"/>
         <rdfs:label>modeled by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#models -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#models -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#models">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#models">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#simulated_by -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#simulated_by -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#simulated_by">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#simulated_by">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
@@ -110,9 +153,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#simulates -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#simulates -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#simulates">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#simulates">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
@@ -139,267 +182,291 @@
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Desired_Vehicle_Operations_Quality -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Desired_Vehicle_Operations_Quality">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Desired_Vehicle_Operations_Quality">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Desired_Vehicle_Model_Quality_Specification"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Desired_Vehicle_Model_Quality_Specification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle"/>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle_Specification -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle_Specification">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle_Specification">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model_Specification"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model_Specification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Driver_Input_Specification -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Driver_Input_Specification">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Driver_Input_Specification">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Input_Model_Specification"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Input_Model_Specification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment"/>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment_Specification -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment_Specification">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment_Specification">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model_Specification"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model_Specification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Component -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Component">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Component">
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Specification -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Specification">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Specification">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model_Specification"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model_Specification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#HMI_Subsystem_Specification -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#HMI_Subsystem_Specification">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#HMI_Subsystem_Specification">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HMI_Subsystem_Model_Specification"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HMI_Subsystem_Model_Specification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Initial_Condition_Specification -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Initial_Condition_Specification">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Initial_Condition_Specification">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition_Specification"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition_Specification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#KeyPerformanceIndicator -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#KeyPerformanceIndicator">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#KeyPerformanceIndicator">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Key_Performance_Indicator"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Key_Performance_Indicator"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Key_Performance_Indicator_Specification -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Key_Performance_Indicator_Specification">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Key_Performance_Indicator_Specification">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_KPI_Specification"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_KPI_Specification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Physical_Quantity_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Physical_Quantity_Specification"/>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Responsible_Vehicle_Subsystem_Specification -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Responsible_Vehicle_Subsystem_Specification">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Responsible_Vehicle_Subsystem_Specification">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model_Specification"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model_Specification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Context -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Context">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Context">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Simulation_Context"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Simulation_Context"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Scenario"/>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Initial_Condition -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Initial_Condition">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Initial_Condition">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Quality -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Quality">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Quality">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -425,23 +492,119 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Model_Quality"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Model_Quality"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Testing_Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Testing_Context"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Testing_Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Testing_Document"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Testing&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Testing&apos;"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Auxiliary_Power_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Auxiliary_Power_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Body-Frame_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Body-Frame_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Braking_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Braking_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Chassis_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Chassis_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Desired_Vehicle_Model_Quality_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Desired_Vehicle_Model_Quality_Specification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model_Specification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driveline_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driveline_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Input_Model_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Input_Model_Specification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Electrical_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Electrical_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model_Specification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Fuel_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Fuel_Subsystem_Model"/>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -456,34 +619,40 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model_Specification"/>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#simulates"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#simulates"/>
                         <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfVehicleUse"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#simulates"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#simulates"/>
                         <owl:allValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfVehicleUse"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -498,13 +667,13 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_System_Model -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_System_Model">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_System_Model">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -533,49 +702,181 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#HMI_Subsystem_Model_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HMI_Subsystem_Model_Specification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Author"/>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#models"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#models"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#models"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#models"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filename -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filename"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filepath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filepath"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Key_Performance_Indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Key_Performance_Indicator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Software_Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Software_Environment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Take-off_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Take-off_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Propulsion_Power_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Propulsion_Power_Subsystem_Model"/>
     
 
 
     <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#simulates"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#simulates"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#simulates"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#simulates"/>
                         <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition_Specification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_KPI_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_KPI_Specification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Steering_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Steering_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Suspension_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Suspension_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Thermal_Management_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Thermal_Management_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Tracks_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Tracks_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Transmission_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Transmission_Subsystem_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Model_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Model_Quality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Simulation_Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Simulation_Context"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Wheels_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Wheels_Subsystem_Model"/>
     
 
 
@@ -586,11 +887,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Auxiliary_Power_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Auxiliary_Power_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -607,11 +908,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Body-Frame_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Body-Frame_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -628,11 +929,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Braking_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Braking_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -649,11 +950,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Chassis_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Chassis_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -676,11 +977,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driveline_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driveline_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -697,11 +998,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Electrical_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Electrical_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -718,11 +1019,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Fuel_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Fuel_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -739,11 +1040,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -760,11 +1061,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_System_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_System_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -781,11 +1082,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -802,11 +1103,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Take-off_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Take-off_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -823,11 +1124,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Propulsion_Power_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Propulsion_Power_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -844,11 +1145,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Steering_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Steering_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -865,11 +1166,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Suspension_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Suspension_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -886,11 +1187,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Thermal_Management_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Thermal_Management_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -907,11 +1208,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Tracks_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Tracks_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -928,11 +1229,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Transmission_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Transmission_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -949,11 +1250,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Wheels_Subsystem_Model"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#is_modeled_by"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#is_modeled_by"/>
                         <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Wheels_Subsystem_Model"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -974,259 +1275,415 @@
     
 
 
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#AtmosphericConditionVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#AtmosphericConditionVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisDynamicsVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisDynamicsVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisPositionVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisPositionVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConductiveThermalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConductiveThermalPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConvectiveThermalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConvectiveThermalPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ElectricalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ElectricalPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#EnthalpyFlowPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#EnthalpyFlowPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#FluidFlowPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#FluidFlowPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#HumanInterfaceVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HumanInterfaceVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#HydraulicPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HydraulicPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticEnergyVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticEnergyVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#PneumaticPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#PneumaticPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#RadiativeThermalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RadiativeThermalPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalEnergyVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalEnergyVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#SurroundingsConditionsVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#SurroundingsConditionsVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermoFluidFlowPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermoFluidFlowPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermodynamicPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermodynamicPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThreeDimensionalMechanicalEnergyVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThreeDimensionalMechanicalEnergyVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#TrafficConditionVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TrafficConditionVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalEnergyVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalEnergyVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalPowerVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehicleDynamicsVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehicleDynamicsVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehiclePositionVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehiclePositionVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Road/TerrainConditionVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Road/TerrainConditionVariable"/>
+    
+
+
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Atmospheric_Conditions -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Atmospheric_Conditions">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#AtmosphericConditionVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Atmospheric_Conditions">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#AtmosphericConditionVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Dynamics -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Dynamics">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisDynamicsVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Dynamics">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisDynamicsVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Position -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Position">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisPositionVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Position">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisPositionVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chemical_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chemical_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chemical_Power"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chemical_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chemical_Power"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Conductive_Thermal_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Conductive_Thermal_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConductiveThermalPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Conductive_Thermal_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConductiveThermalPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Convective_Thermal_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Convective_Thermal_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConvectiveThermalPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Convective_Thermal_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConvectiveThermalPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ElectricalPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ElectricalPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Enthalpy_Flow_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Enthalpy_Flow_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#EnthalpyFlowPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Enthalpy_Flow_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#EnthalpyFlowPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Fluid_Flow_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Fluid_Flow_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#FluidFlowPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Fluid_Flow_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#FluidFlowPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Human_Interface -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Human_Interface">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HumanInterfaceVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Human_Interface">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HumanInterfaceVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Hydraulic_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Hydraulic_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HydraulicPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Hydraulic_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HydraulicPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Magnetic_Energy -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Magnetic_Energy">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticEnergyVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Magnetic_Energy">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticEnergyVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Magnetic_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Magnetic_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Magnetic_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Pneumatic_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Pneumatic_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#PneumaticPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Pneumatic_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#PneumaticPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Radiative_Thermal_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Radiative_Thermal_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RadiativeThermalPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Radiative_Thermal_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RadiativeThermalPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Energy -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Energy">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalEnergyVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Energy">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalEnergyVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Surroundings_Conditions -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Surroundings_Conditions">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#SurroundingsConditionsVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Surroundings_Conditions">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#SurroundingsConditionsVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermo_Fluid_Flow_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermo_Fluid_Flow_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermoFluidFlowPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermo_Fluid_Flow_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermoFluidFlowPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermodynamic_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermodynamic_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermodynamicPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermodynamic_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermodynamicPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Three-Dimensional_Mechanical_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Three-Dimensional_Mechanical_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThreeDimensionalMechanicalEnergyVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Three-Dimensional_Mechanical_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThreeDimensionalMechanicalEnergyVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Traffic_Conditions -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Traffic_Conditions">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TrafficConditionVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Traffic_Conditions">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TrafficConditionVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Translational_Mechanical_Energy -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Translational_Mechanical_Energy">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalEnergyVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Translational_Mechanical_Energy">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalEnergyVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Translational_Mechanical_Power -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Translational_Mechanical_Power">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalPowerVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Translational_Mechanical_Power">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalPowerVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Vehicle_Dynamics -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Vehicle_Dynamics">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehicleDynamicsVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Vehicle_Dynamics">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehicleDynamicsVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Vehicle_Position -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Vehicle_Position">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehiclePositionVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Vehicle_Position">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehiclePositionVariable"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Road/Terrain_Conditions -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Road/Terrain_Conditions">
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Road/TerrainConditionVariable"/>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Road/Terrain_Conditions">
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Road/TerrainConditionVariable"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Angle -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Angle -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Angle">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Angle">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Quality"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#CRRAPlaceholder -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CRRAPlaceholder -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#CRRAPlaceholder">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CRRAPlaceholder">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filepath"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#CRReferenceApplication.slx -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CRReferenceApplication.slx -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#CRReferenceApplication.slx">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CRReferenceApplication.slx">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filename"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Constant_Radius_Discrete_Velocity_Testing_Context -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Discrete_Velocity_Testing_Context -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Constant_Radius_Discrete_Velocity_Testing_Context">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Discrete_Velocity_Testing_Context">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Context"/>
-        <CommonCoreOntologies:prescribed_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Testing_Context"/>
+        <CommonCoreOntologies:prescribed_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Testing_Context"/>
         <rdfs:label>Constant Radius Discrete Velocity Testing Context</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Constant_Radius_Reference_Application -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Reference_Application -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Constant_Radius_Reference_Application">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Reference_Application">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation"/>
         <CommonCoreOntologies:definition>One of the example Simulink simulations from the Vehicle Dynamics Toolbox. Simulates a vehicle entering a track of constant radius at a fixed speed and evaluating lateral acceleration.</CommonCoreOntologies:definition>
         <rdfs:label>Constant Radius Reference Application</rdfs:label>
@@ -1234,62 +1691,62 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Constant_Radius_Testing -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Testing -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Constant_Radius_Testing">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Testing">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Testing&apos;"/>
-        <CommonCoreOntologies:prescribed_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3_Constant_Radius_Test"/>
+        <CommonCoreOntologies:prescribed_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Constant_Radius_Test"/>
         <rdfs:label>Constant Radius Testing</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Constant_Radius_Understeer_Gradient_Discrete_Testing -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Understeer_Gradient_Discrete_Testing -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Constant_Radius_Understeer_Gradient_Discrete_Testing">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Understeer_Gradient_Discrete_Testing">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#KeyPerformanceIndicator"/>
-        <CommonCoreOntologies:prescribed_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_KPI_Specification"/>
+        <CommonCoreOntologies:prescribed_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_KPI_Specification"/>
         <rdfs:label>Constant Radius Understeer Gradient Discrete Testing</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Controllers -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Controllers -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Controllers">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Controllers">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#D019_Power_Subsystem_Model -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#D019_Power_Subsystem_Model -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#D019_Power_Subsystem_Model">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#D019_Power_Subsystem_Model">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
-        <SimModVer2:has_battery_modely-inverter_model_variable rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Inverter_Output"/>
-        <SimModVer2:has_engine_model-inverter_model_variable rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Engine_Output"/>
-        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Battery_Model"/>
-        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Engine_Model"/>
-        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Inverter_Model"/>
+        <SimModVer2:has_battery_modely-inverter_model_variable rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Inverter_Output"/>
+        <SimModVer2:has_engine_model-inverter_model_variable rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Engine_Output"/>
+        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Battery_Model"/>
+        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Engine_Model"/>
+        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Inverter_Model"/>
         <rdfs:label>DO19 Power Subsystem Model</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Battery -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Battery -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Battery">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Battery">
         <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Subsystem"/>
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Battery_Model"/>
         <VehArchVer2:bears_connection_port_type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Power"/>
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Battery_Model"/>
         <rdfs:label>DO19 Battery</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Battery_Model -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Battery_Model -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Battery_Model">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Battery_Model">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
         <SimModVer2:bears_model_connection_port_type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ElectricalPowerVariable"/>
         <rdfs:label>DO19 Battery Model</rdfs:label>
@@ -1297,20 +1754,20 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Engine -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Engine -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Engine">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Engine">
         <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Propulsion_Power_Subsystem"/>
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Engine_Model"/>
         <VehArchVer2:bears_connection_port_type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Power"/>
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Engine_Model"/>
         <rdfs:label>DO19 Engine</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Engine_Model -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Engine_Model -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Engine_Model">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Engine_Model">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
         <SimModVer2:bears_model_connection_port_type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalPowerVariable"/>
         <rdfs:label>DO19 Engine Model</rdfs:label>
@@ -1318,9 +1775,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Engine_Output -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Engine_Output -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Engine_Output">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Engine_Output">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable"/>
         <SimModVer2:bears_model_connection_port_type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalPowerVariable"/>
         <rdfs:label>DO19 Engine Output</rdfs:label>
@@ -1328,21 +1785,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Inverter -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Inverter -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Inverter">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Inverter">
         <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Subsystem"/>
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Inverter_Model"/>
         <VehArchVer2:bears_connection_port_type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Power"/>
         <VehArchVer2:bears_connection_port_type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Power"/>
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Inverter_Model"/>
         <rdfs:label>DO19 Inverter</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Inverter_Model -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Inverter_Model -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Inverter_Model">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Inverter_Model">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
         <SimModVer2:bears_model_connection_port_type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalPowerVariable"/>
         <rdfs:label>DO19 Inverter Model</rdfs:label>
@@ -1350,338 +1807,338 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Inverter_Output -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Inverter_Output -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Inverter_Output">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Inverter_Output">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable"/>
         <rdfs:label>DO19 Inverter Output</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Power_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Power_Subsystem -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Power_Subsystem">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Power_Subsystem">
         <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Power_Subsystem"/>
-        <VehArchVer2:has_artifact rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Battery"/>
-        <VehArchVer2:has_artifact rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Engine"/>
-        <VehArchVer2:has_artifact rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#DO19_Inverter"/>
+        <Int:is_modeled_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#D019_Power_Subsystem_Model"/>
+        <VehArchVer2:has_artifact rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Battery"/>
+        <VehArchVer2:has_artifact rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Engine"/>
+        <VehArchVer2:has_artifact rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Inverter"/>
         <VehArchVer2:has_battery-inverter_connection rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Power"/>
         <VehArchVer2:has_engine-inverter_connection rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Power"/>
-        <is_modeled_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#D019_Power_Subsystem_Model"/>
         <rdfs:label>DO19 Power Subsystem</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Discrete_Constant_Velocity_Drive_Cycle -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Discrete_Constant_Velocity_Drive_Cycle -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Discrete_Constant_Velocity_Drive_Cycle">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Discrete_Constant_Velocity_Drive_Cycle">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle"/>
-        <CommonCoreOntologies:prescribed_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Drive_Cycle_Specification"/>
+        <CommonCoreOntologies:prescribed_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Drive_Cycle_Specification"/>
         <rdfs:label>Discrete Constant Velocity Drive Cycle</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Driver_Commands -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Driver_Commands -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Driver_Commands">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Driver_Commands">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
         <rdfs:label>Driver Commands</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Engine -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Engine -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Engine">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Engine">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Environment -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Environment -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Environment">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Environment">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Flat_Paved_Circular_Track -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Flat_Paved_Circular_Track -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Flat_Paved_Circular_Track">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Flat_Paved_Circular_Track">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment"/>
-        <CommonCoreOntologies:prescribed_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Environment_Specification"/>
+        <CommonCoreOntologies:prescribed_by rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Environment_Specification"/>
         <rdfs:label>Flat Paved Circular Track</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Lateral_G_Measurement_Unit -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Lateral_G_Measurement_Unit -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Lateral_G_Measurement_Unit">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Lateral_G_Measurement_Unit">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementUnitOfAcceleration"/>
         <rdfs:label>Lateral G Measurement Unit</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Longitudinal_Tipover_Angle -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Longitudinal_Tipover_Angle -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Longitudinal_Tipover_Angle">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Longitudinal_Tipover_Angle">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#KeyPerformanceIndicator"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Key_Performance_Indicator"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#MATLAB -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#MATLAB -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#MATLAB">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#MATLAB">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Software_Environment"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#PassVeh14DOF -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#PassVeh14DOF -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#PassVeh14DOF">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#PassVeh14DOF">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filename"/>
         <rdfs:label>PassVeh14DOF.slx</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#PassVeh7DOF.slx -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#PassVeh7DOF.slx -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#PassVeh7DOF.slx">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#PassVeh7DOF.slx">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filename"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Passenger_Vehicle -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Passenger_Vehicle -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Passenger_Vehicle">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Passenger_Vehicle">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
-        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Engine"/>
-        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Pedal_Cluster_and_Cabin"/>
-        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Body,_Suspension,_Wheels"/>
-        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Steering,_Transmission,_Driveline,_and_Brakes"/>
+        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Engine"/>
+        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Pedal_Cluster_and_Cabin"/>
+        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Body,_Suspension,_Wheels"/>
+        <SimModVer2:has_model rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Steering,_Transmission,_Driveline,_and_Brakes"/>
         <rdfs:label>Passenger Vehicle</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Pedal_Cluster_and_Cabin -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Pedal_Cluster_and_Cabin -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Pedal_Cluster_and_Cabin">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Pedal_Cluster_and_Cabin">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
         <rdfs:label>Pedal Cluster and Cabin</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Placeholder_4-Wheeled_Passenger_Vehicle_Specification -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Placeholder_4-Wheeled_Passenger_Vehicle_Specification -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Placeholder_4-Wheeled_Passenger_Vehicle_Specification">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Placeholder_4-Wheeled_Passenger_Vehicle_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Specification"/>
         <rdfs:label>Placeholder 4-Wheeled Passenger Vehicle Specification</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Reference_Generator -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Reference_Generator -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Reference_Generator">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Reference_Generator">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
         <rdfs:label>Reference Generator</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266 -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Testing_Document"/>
         <rdfs:label>SAE J266</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Drive_Cycle_Specification -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Drive_Cycle_Specification -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Drive_Cycle_Specification">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Drive_Cycle_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle_Specification"/>
         <rdfs:label>SAE J266 7.3.2.2 Drive Cycle</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Environment_Specification -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Environment_Specification -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Environment_Specification">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Environment_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment_Specification"/>
         <rdfs:label>SAE J266 7.3.2.2 Environment</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_KPI_Specification -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_KPI_Specification -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_KPI_Specification">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_KPI_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Key_Performance_Indicator_Specification"/>
-        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Testing_Context"/>
-        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Vehicle_Output_Specification"/>
+        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Testing_Context"/>
+        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Vehicle_Output_Specification"/>
         <rdfs:label>SAE J266 7.3.2.2 KPI</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Output_Quality_Specification -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Quality_Specification -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Output_Quality_Specification">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Quality_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Physical_Quantity_Specification"/>
         <rdfs:label>SAE J266 7.3.2.2 Output Quality</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Responsible_Vehicle_Subsystem_Specification"/>
         <rdfs:label>SAE J266 7.3.2.2 Output Vehicle Subsystem</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Testing_Context -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Testing_Context -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Testing_Context">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Testing_Context">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Testing_Context"/>
-        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Drive_Cycle_Specification"/>
-        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Environment_Specification"/>
+        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Drive_Cycle_Specification"/>
+        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Environment_Specification"/>
         <rdfs:label>SAE J266 7.3.2.2 Testing Context</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Vehicle_Output_Specification -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Vehicle_Output_Specification -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Vehicle_Output_Specification">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Vehicle_Output_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Desired_Vehicle_Operations_Quality"/>
-        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Output_Quality_Specification"/>
-        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem"/>
+        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Quality_Specification"/>
+        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem"/>
         <rdfs:label>SAE J266 7.3.2.2 Vehicle Output</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3_Constant_Radius_Test -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Constant_Radius_Test -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3_Constant_Radius_Test">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Constant_Radius_Test">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Scenario"/>
-        <obo:RO_0010001 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266"/>
-        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Placeholder_4-Wheeled_Passenger_Vehicle_Specification"/>
-        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#SAE_J266_7.3.2.2_KPI_Specification"/>
+        <obo:RO_0010001 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266"/>
+        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Placeholder_4-Wheeled_Passenger_Vehicle_Specification"/>
+        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_KPI_Specification"/>
         <rdfs:label>SAE J266 7.3.2.2</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Stationary -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Stationary -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Stationary">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Stationary">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Initial_Condition"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#TOP_Slope_CriticalGrade_V1 -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#TOP_Slope_CriticalGrade_V1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#TOP_Slope_CriticalGrade_V1">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#TOP_Slope_CriticalGrade_V1">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
-        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Longitudinal_Tipover_Angle"/>
-        <SimModVer2:has_model_author rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#&apos;Evan_Hybl&apos;"/>
-        <SimModVer2:has_model_file rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#TOP_Slope_CriticalGrade_V1.m"/>
-        <SimModVer2:has_software_environment rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#MATLAB"/>
+        <obo:BFO_0000051 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Longitudinal_Tipover_Angle"/>
+        <SimModVer2:has_model_author rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#&apos;Evan_Hybl&apos;"/>
+        <SimModVer2:has_model_file rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#TOP_Slope_CriticalGrade_V1.m"/>
+        <SimModVer2:has_software_environment rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#MATLAB"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#TOP_Slope_CriticalGrade_V1.m -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#TOP_Slope_CriticalGrade_V1.m -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#TOP_Slope_CriticalGrade_V1.m">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#TOP_Slope_CriticalGrade_V1.m">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filename"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Vehicle_Understeer_Gradient -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Vehicle_Understeer_Gradient -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Vehicle_Understeer_Gradient">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Vehicle_Understeer_Gradient">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Quality"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#d1 -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#d1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#d1">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#d1">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#grade -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#grade -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#grade">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#grade">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#h1 -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#h1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#h1">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#h1">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#theta -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#theta -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#theta">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#theta">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#&apos;Evan_Hybl&apos; -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#&apos;Evan_Hybl&apos; -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#&apos;Evan_Hybl&apos;">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#&apos;Evan_Hybl&apos;">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Author"/>
         <rdfs:label>EvanHybl</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Body,_Suspension,_Wheels -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Body,_Suspension,_Wheels -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Body,_Suspension,_Wheels">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Body,_Suspension,_Wheels">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
         <rdfs:label>Body, Suspension, Wheels</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Steering,_Transmission,_Driveline,_and_Brakes -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Steering,_Transmission,_Driveline,_and_Brakes -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#Steering,_Transmission,_Driveline,_and_Brakes">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Steering,_Transmission,_Driveline,_and_Brakes">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
         <rdfs:label>Steering, Transmission, Driveline, and Brakes</rdfs:label>
     </owl:NamedIndividual>
@@ -1699,12 +2156,9 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model">
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
+    </owl:Class>
     <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
