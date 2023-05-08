@@ -1,0 +1,1527 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/eloui/ontologies/SimModVer2#"
+     xml:base="http://www.semanticweb.org/eloui/ontologies/SimModVer2"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0010001 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0010001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0010002 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0010002"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/designated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/designates -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/prescribes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#bears_model_connection_port_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#bears_model_connection_port_type">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#model_connection_port_type_inheres_in"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+        <rdfs:label>bearsModelConnectionPortType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_battery_modely-inverter_model_variable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_battery_modely-inverter_model_variable">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model-model_variable"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_battery_model-inverter_model_variable"/>
+        <rdfs:label>hasBatteryModel-InverterModelVariable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_engine_model-inverter_model_variable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_engine_model-inverter_model_variable">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model-model_variable"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_engine_model-inverter_model_variable"/>
+        <rdfs:label>hasEngineModel-InverterModelVariable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_filepath -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_filepath">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_filepath_of"/>
+        <rdfs:label>hasFilepath</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model_of"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+        <rdfs:label>hasModel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model-model_variable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model-model_variable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model-model_variable"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable"/>
+        <rdfs:label>hasModel-ModelVariable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model_author -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model_author">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model_author_of"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Author"/>
+        <rdfs:label>hasModelAuthor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model_file -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model_file">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model_file_of"/>
+        <rdfs:label>hasModelFile</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_software_environment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_software_environment">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_software_environment_of"/>
+        <rdfs:label>hasSoftwareEnvironment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_variable_name -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_variable_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designated_by"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_variable_name_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable_Name"/>
+        <rdfs:label>hasVariableName</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_battery_model-inverter_model_variable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_battery_model-inverter_model_variable">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model-model_variable"/>
+        <rdfs:label>isBatteryModel-InverterModelVariable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_engine_model-inverter_model_variable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_engine_model-inverter_model_variable">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model-model_variable"/>
+        <rdfs:label>isEngineModel-InverterModelVariable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_filepath_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_filepath_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filepath"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>isFilepathOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model-model_variable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model-model_variable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>isModel-ModelVariable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model_author_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model_author_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Author"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>isModelAuthorOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model_file_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model_file_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filename"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>isModelFileOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_model_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>isModelOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_software_environment_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_software_environment_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Software_Environment"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>isSoftwareEnvironmentOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_variable_name_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#is_variable_name_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable_Name"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+        <rdfs:label>isVariableNameOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#model_connection_port_composes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#model_connection_port_composes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#model_connection_port_type_decomposes_into"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+        <rdfs:label>modelConnectionPortComposes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#model_connection_port_type_decomposes_into -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#model_connection_port_type_decomposes_into">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+        <rdfs:label>modelConnectionPortTypeDecomposesInto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#model_connection_port_type_inheres_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#model_connection_port_type_inheres_in">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>modelConnectionPortTypeInheresIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Document -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Document"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Act_of_Vehicle_Operations_Simulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Act_of_Vehicle_Operations_Simulation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
+        <rdfs:label>ActOfVehicleOperationsSimulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Auxiliary_Power_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Auxiliary_Power_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Auxiliary Power Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Body-Frame_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Body-Frame_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Body-Frame Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Braking_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Braking_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Braking Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Chassis_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Chassis_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Chassis Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Desired_Vehicle_Model_Quality_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Desired_Vehicle_Model_Quality_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Model_Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Model_Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>DesiredVehicleModelQualitySpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+        <rdfs:label>DriveCycleModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>DriveCycleModelSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driveline_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driveline_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Driveline Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Input_Model_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Input_Model_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>DriverInputModelSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Driver_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+        <rdfs:label>DriverModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Electrical_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Electrical_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Electrical Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+        <rdfs:label>EnvironmentModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>EnvironmentModelSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Fuel_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Fuel_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Fuel Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>GroundVehicleModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>GroundVehicleModelSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_System_Model"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_System_Model"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Key_Performance_Indicator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Simulation_Context"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Act_of_Vehicle_Operations_Simulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>GroundVehicleOperationsSimulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model"/>
+        <rdfs:label>GroundVehicleSubsystemModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_System_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_System_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#has_model"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Drive_Cycle_Model"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Environment_Model"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>GroundVehicleSystemModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#HMI_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HMI_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>HMI Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#HMI_Subsystem_Model_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HMI_Subsystem_Model_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HMI_Subsystem_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HMI_Subsystem_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>HMISubsystemModelSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Metadata"/>
+        <rdfs:label>ModelAuthor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>ModelConnectionPortType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ModelContent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filename -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filename">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Metadata"/>
+        <rdfs:label>ModelFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filepath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Filepath">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Metadata"/>
+        <rdfs:label>ModelFilepath</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Key_Performance_Indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Key_Performance_Indicator">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>SimulationKeyPerformanceIndicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Metadata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Metadata">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/designates"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ModelMetadata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Metadata"/>
+        <rdfs:comment>Tentatively deprecating this entry. The IBE should suffice to &apos;name&apos; a model. There is no need for a designative ICE to repeat the model name.
+
+-Ed</rdfs:comment>
+        <rdfs:label>Model Name</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Software_Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Software_Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Metadata"/>
+        <rdfs:label>ModelSoftwareEnvironment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Power Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Take-off_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Power_Take-off_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Power Take-off Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Propulsion_Power_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Propulsion_Power_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Propulsion Power Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Context_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Context_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Simulation_Context"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Simulation_Context"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>VehicleSimulationContextSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Simulation Initial Conditions are a specifically dependent continuant that constitutes the vehicle model state at the instant a vehicle simulation begins. Initial conditions include the vehicle&apos;s velocity, position, HMI subsystem state, heading, fuel quantity, etc</CommonCoreOntologies:definition>
+        <rdfs:label>SimulationInitialCondition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_Initial_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>SimulationInitialConditionSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_KPI_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Simulation_KPI_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Key_Performance_Indicator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Key_Performance_Indicator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>SimulationKPISpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Steering_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Steering_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Steering Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Suspension_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Suspension_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Suspension Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Thermal_Management_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Thermal_Management_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Thermal Management Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Tracks_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Tracks_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Tracks Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Transmission_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Transmission_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Transmission Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationBearingEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#bears_model_connection_port_type"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable_Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Variable_Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Metadata"/>
+        <rdfs:comment>unique identifier for a generic model connection port type. There are likely to be many &apos;Rotational Mechanical Power Variables&apos; in a vehicle simulation, so the Variable Name and &apos;has variable name&apos; object property assign a unique individual to a generic variable representing a physical quantity
+
+that&apos;s the plan, anyway...</rdfs:comment>
+        <rdfs:label>Variable Name</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Model_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Model_Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>VehicleModelQuality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Operations_Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Operations_Document">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Document"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Metadata"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>A Vehicle Operations Document is an Information Bearing Artifact that contains the Information Content that prescribes some Act of Vehicle Operation</CommonCoreOntologies:definition>
+        <rdfs:label>VehicleOperationsDocument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Operations_Simulation_Scenario_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Operations_Simulation_Scenario_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Content"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Operations_Simulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>VehicleOperationsSimulationScenarioSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Simulation_Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Simulation_Context">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Vehicle Simulation Context is part of the decomposition of a Model KPI, the other being Desired Vehicle Model Quality. Simulation Context refers to everything that needs to happen/be in place in order for a vehicle model to exhibit some desired performance quality. This is the drive cycle the vehicle model must undergo, and the environment model in which the drive cycle is simulated.</rdfs:label>
+        <rdfs:label>VehicleSimulationContext</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Wheels_Subsystem_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Wheels_Subsystem_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Ground_Vehicle_Subsystem_Model"/>
+        <rdfs:label>Wheels Subsystem Model</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#AtmosphericConditionVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#AtmosphericConditionVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisDynamicsVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisDynamicsVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisPositionVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChassisPositionVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChemicalPower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ChemicalPower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+        <rdfs:label>ChemicalPowerVariable</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConductiveThermalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConductiveThermalPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConvectiveThermalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ConvectiveThermalPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ElectricalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ElectricalPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#EnthalpyFlowPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#EnthalpyFlowPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#FluidFlowPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#FluidFlowPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#HumanInterfaceVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HumanInterfaceVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#HydraulicPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#HydraulicPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticEnergyVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticEnergyVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#MagneticPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#PneumaticPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#PneumaticPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#RadiativeThermalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RadiativeThermalPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalEnergyVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalEnergyVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#RotationalMechanicalPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#SurroundingsConditionsVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#SurroundingsConditionsVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermoFluidFlowPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermoFluidFlowPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermodynamicPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThermodynamicPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThreeDimensionalMechanicalEnergyVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#ThreeDimensionalMechanicalEnergyVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#TrafficConditionVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TrafficConditionVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalEnergyVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalEnergyVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalPowerVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#TranslationalMechanicalPowerVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehicleDynamicsVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehicleDynamicsVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehiclePositionVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#VehiclePositionVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/SimModVer2#Road/TerrainConditionVariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Road/TerrainConditionVariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimModVer2#Model_Connection_Port_Types"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

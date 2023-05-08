@@ -1,0 +1,806 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#"
+     xml:base="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/acronym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/acronym"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/alternative_label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/alternative_label"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0010001 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0010001"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/prescribed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/prescribed_by"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/prescribes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#is_logical_decomposition_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#is_logical_decomposition_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <rdfs:label>isLogicalDecompositionOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <rdfs:label>logicallyDecomposesInto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:comment>To the best of my understanding, generically dependent continuants have two key defining features: being &apos;about&apos; something, and being dependent on something. G-dependent continuants differ from specifically dependent continuants in that what they are about and what they depend on can be different things. For example, the &quot;knowledge&quot; of how to assemble a piece of furniture depends on that Information Content being printed in an instructions manual - if the instructions manual ceases to exist, the information content goes with it. The &quot;knowledge&quot;, however, is about the piece of furniture itself.
+
+This is contrasted with a specifically dependent continuant, in which the &apos;about&apos; and dependency conditions must apply to the same thing, such as the mass of the furniture. The mass &apos;is about&apos; or is an attribute of the furniture, as well as depending on that piece of furniture to exist for it to also exist.
+- Ed Louis</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ActOfVehicleUse -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfVehicleUse"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/AgentCapability -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/AgentCapability"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Artifact -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Document -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Document"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Component"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Desired_Vehicle_Operations_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Desired_Vehicle_Operations_Quality">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Physical_Quantity_Specification"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Responsible_Vehicle_Subsystem_Specification"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Desired Vehicle Operations Quality Specification prescribes the quality the vehicle is intended to output during the course of the vehicle operation and the subsystem(s) responsible for outputting the quality.</CommonCoreOntologies:definition>
+        <rdfs:label>DesiredVehicleOutputSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000116>not super sure that this is an occurrent, since it is made up of things that are not occurents...
+Ed Louis</obo:IAO_0000116>
+        <CommonCoreOntologies:definition>The set of things a driver shall or may do over the course of an Act of Vehicle Use that makes the vehicle exhibit the desired KPI</CommonCoreOntologies:definition>
+        <rdfs:label>DriveCycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Drive Cycle Specification prescribes the driver&apos;s inputs to a vehicle during an Act of Vehicle use, containing the initial conditions, HMI subsystems, and inputs a driver may give the vehicle in order to correctly execute a Vehicle Operations Scenario</CommonCoreOntologies:definition>
+        <rdfs:label>DriveCycleSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Driver_Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Driver_Input">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/AgentCapability"/>
+        <obo:IAO_0000116>THIS NEEDS TO INHERE IN A DRIVER. ADD DRIVER TO VEHOPS
+Ed Louis</obo:IAO_0000116>
+        <CommonCoreOntologies:definition>Driver Input refers to the inputs a driver has the capability to give to a vehicle via the HMI subsystems</CommonCoreOntologies:definition>
+        <rdfs:label>DriverInput</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Driver_Input_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Driver_Input_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Driver_Input"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Driver Input Specification refers to the signals a driver shall/may provide to the subsystems defined by &apos;HMI Subsystem&apos; in order for a desired KPI to be output during an Act of Vehicle Use. This can either be a direct instruction: &quot;Apply 50% throttle&quot;, or set boundaries or vehicle state targets to inform what signals the driver may give the HMI subsystems: &quot;Adhere to the posted speed limits, doing whatever necessary to the brake and accelerator HMI subsystems to achieve this&quot;, or &quot;Give whatever steering inputs necessary to keep the vehicle on the path prescribed by the environment topography&quot;.</CommonCoreOntologies:definition>
+        <rdfs:label>DriverInputSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <CommonCoreOntologies:definition>The Environment encompasses the space surrounding the driver, passengers, and vehicle</CommonCoreOntologies:definition>
+        <rdfs:label>Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Environment Specification prescribes the environment in which a ground vehicle is to operate during an Act of Vehicle Use in order to correctly execute an Operations Scenario</CommonCoreOntologies:definition>
+        <rdfs:label>EnvironmentSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Component">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>A part or subsystem of a ground vehicle</CommonCoreOntologies:definition>
+        <rdfs:comment>Technically belongs in the VehArch domain (as does Ground Vehicle), but this term is necessary for the closure of VehOps. Will likely have an equivalency assertion in the integration ontology
+-Ed</rdfs:comment>
+        <rdfs:label>GroundVehicleSubsystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Ground Vehicle Specification prescribes the vehicle, or type of vehicle, to be used in a vehicle operations scenario.</CommonCoreOntologies:definition>
+        <rdfs:label>GroundVehicleSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#HMI_Subsystem_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#HMI_Subsystem_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Human_Machine_Interface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>HMI Subsystem Specification prescribes the interfaces the driver may interact with during a Vehicle Operations Scenario in order to output a desired KPI</CommonCoreOntologies:definition>
+        <rdfs:label>HMISubsystemSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Human_Machine_Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Human_Machine_Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Component"/>
+        <CommonCoreOntologies:alternative_label>HMI</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:alternative_label>HMI Subsystem</CommonCoreOntologies:alternative_label>
+        <CommonCoreOntologies:definition>Human Machine Interfaces are components/subsystems of a vehicle designed to pass inputs/outputs between the drivers/passengers and the ground vehicle in order to control the vehicle or provide vehicle state feedback to the drivers/passengers</CommonCoreOntologies:definition>
+        <rdfs:label>Human Machine Interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Initial_Condition_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Initial_Condition_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Initial_Condition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Initial Condition Specification prescribes the vehicle state at the instant a vehicle operation begins. Initial conditions include the vehicle&apos;s velocity, position, HMI subsystem state, heading, fuel quantity, etc</CommonCoreOntologies:definition>
+        <rdfs:label>InitialConditionSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#KeyPerformanceIndicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#KeyPerformanceIndicator">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribed_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Key_Performance_Indicator_Specification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>The Key Peformance Indicator is the vehicle behavior, quality, or output by which the vehicle operation is deemed a success or failure.</CommonCoreOntologies:definition>
+        <rdfs:label>KeyPerformanceIndicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Key_Performance_Indicator_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Key_Performance_Indicator_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Desired_Vehicle_Operations_Quality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Context"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:acronym>KPI Specification</CommonCoreOntologies:acronym>
+        <CommonCoreOntologies:definition>The Key Performance Indicator Specification, or KPI Specification, is the prescription of the success criterion the vehicle is desired to exhibit during an Act of Vehicle Use, and the context in which the vehicle must exhibit the success criterion during a Vehicle Operations Scenario</CommonCoreOntologies:definition>
+        <rdfs:label>KeyPerformanceIndicatorSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Mission_Scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Mission_Scenario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Scenario_Specification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Mission_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Mission_Execution&apos;"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Mission Scenario is an abstract term to describe everything that must exist (either physically or in the form of knowledge) for a Ground Vehicle Mission to occur. Mission Scenario prescribes a Ground Vehicle Mission, an Intentional Act. As a generically dependent continuant, Mission Scenario depends on some Mission Document.</CommonCoreOntologies:definition>
+        <rdfs:label>MissionScenario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Physical_Quantity_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Physical_Quantity_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Output Quality Specification prescribes what physical quantities, such as torque, speed, force, etc, make up the KPI of a vehicle operations scenario.</CommonCoreOntologies:definition>
+        <rdfs:label>OutputQualitySpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Responsible_Vehicle_Subsystem_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Responsible_Vehicle_Subsystem_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Component"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Output Vehicle Subsystem Specification prescribes the vehicle subystem that outputs the physical quantity, making up the KPI</CommonCoreOntologies:definition>
+        <rdfs:label>OutputVehicleSubsystemSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Context">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribed_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Context"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Vehicle Operations Context is part of the decomposition of an Operational/Model KPI, the other being Desired Vehicle Quality. Testing Context refers to everything that needs to happen/be in place in order for a vehicle to exhibit some desired performance quality. This is the drive cycle the vehicle must undergo, and the environment in which the drive cycle occurs.</CommonCoreOntologies:definition>
+        <rdfs:label>VehicleOperationsContext</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Scenario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Scenario_Specification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Testing_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Testing&apos;"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Testing Scenario is an abstract term to describe everything that must exist (either physically or in the form of knowledge) for a Vehicle Testing Operation to occur. Testing Scenario prescribes a Ground Vehicle Test, an Intentional Act. As a generically dependent continuant, Testing Scenario depends on some Testing Document.</CommonCoreOntologies:definition>
+        <rdfs:label>TestingScenario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Initial_Condition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Initial_Condition">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>A Vehicle Initial Condition is a specifically dependent continuant that constitutes the vehicle state at the instant a vehicle operation begins. Initial conditions include the vehicle&apos;s velocity, position, HMI subsystem state, heading, fuel quantity, etc</CommonCoreOntologies:definition>
+        <rdfs:label>VehicleInitialCondition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Mission_Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Mission_Context">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Context"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Mission_Execution&apos;"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Vehicle Mission Context is part of the decomposition of an Operational/Model KPI, the other being Desired Vehicle Quality. Vehicle Mission Context refers to everything that needs to happen/be in place in order for a vehicle to exhibit some desired performance quality. This is the Drive Cycle the vehicle must undergo, and the Environment in which the vehicle operates during the Act of Vehicle Mission Execution.</CommonCoreOntologies:definition>
+        <rdfs:label>VehicleMissionContextSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Mission_Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Mission_Document">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+        <CommonCoreOntologies:definition>A Vehicle Mission Document is an Information Bearing Artifact that contains the Information Content that prescribes a Mission Scenario.</CommonCoreOntologies:definition>
+        <rdfs:label>VehicleMissionDocument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Context">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Drive_Cycle_Specification"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Environment_Specification"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Testing_Context"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Vehicle Operations Context Specification prescribes the Vehicle Operations Context.</CommonCoreOntologies:definition>
+        <rdfs:label>VehicleOperationsContextSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Document"/>
+        <CommonCoreOntologies:definition>A Vehicle Operations Document is an Information Bearing Artifact that contains the Information Content that prescribes some Act of Vehicle Operation</CommonCoreOntologies:definition>
+        <rdfs:label>VehicleOperationsDocument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Scenario_Specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Scenario_Specification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Ground_Vehicle_Specification"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#logically_decomposes_into"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Key_Performance_Indicator_Specification"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0010001"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfVehicleUse"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Vehicle Operations Scenario Specification is an abstract term to prescribe everything that must exist (either physically or in the form of knowledge) for a Ground Vehicle Operation to occur. Vehicle Operations Scenario Specification prescribes a Ground Vehicle Operation, an Intentional Act. As a generically dependent continuant, Mission Scenario depends on some Vehicle Operations Document.</CommonCoreOntologies:definition>
+        <rdfs:label>VehicleOperationsScenarioSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Quality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <CommonCoreOntologies:definition>Vehicle Qualities are qualities that a vehicle can exhibit or output. These can be any observable physical quantity.</CommonCoreOntologies:definition>
+        <rdfs:label>DesiredVehicleOutputQuality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Testing_Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Testing_Context">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Context"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Testing&apos;"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition>Vehicle Testing Context is part of the decomposition of an Operational/Model KPI, the other being Desired Vehicle Quality. Vehicle Testing Context refers to everything that needs to happen/be in place in order for a vehicle to exhibit some desired performance quality. This is the Drive Cycle the vehicle must undergo, and the Environment in which the vehicle operates during the Act of Vehicle Testing.</CommonCoreOntologies:definition>
+        <rdfs:label>VehicleTestingContextSpecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Testing_Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Testing_Document">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#Vehicle_Operations_Document"/>
+        <CommonCoreOntologies:definition>A Vehicle Testing Document is an Information Bearing Artifact that bears the Information Content that prescribes a Test Scenario.</CommonCoreOntologies:definition>
+        <rdfs:label>VehicleTestingDocument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Mission_Execution&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Mission_Execution&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfVehicleUse"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Testing&apos;"/>
+        <CommonCoreOntologies:definition>Act of Vehicle Mission Execution refers to the execution of a specific vehicle mission over some temporal span. The Directive Content Entity which prescribes the Act is a Mission Scenario, and the Agent playing a causative role is the Driver/Remote Driver.</CommonCoreOntologies:definition>
+        <rdfs:label>ActOfVehicleMissionExecution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Testing&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#&apos;Act_of_Vehicle_Testing&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfVehicleUse"/>
+        <CommonCoreOntologies:definition>Act of Vehicle Mission Execution refers to the execution of a specific vehicle mission over some temporal span. The Directive Content Entity which prescribes the Act is a Mission Scenario, and the Agent playing a causative role is the Driver/Remote Driver.</CommonCoreOntologies:definition>
+        <rdfs:label>ActOfVehicleTesting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:comment>To the best of my understanding, generically dependent continuants have two key defining features: being &apos;about&apos; something, and being dependent on something. G-dependent continuants differ from specifically dependent continuants in that what they are about and what they depend on can be different things. For example, the &quot;knowledge&quot; of how to assemble a piece of furniture depends on that Information Content being printed in an instructions manual - if the instructions manual ceases to exist, the information content goes with it. The &quot;knowledge&quot;, however, is about the piece of furniture itself.
+
+This is contrasted with a specifically dependent continuant, in which the &apos;about&apos; and dependency conditions must apply to the same thing, such as the mass of the furniture. The mass &apos;is about&apos; or is an attribute of the furniture, as well as depending on that piece of furniture to exist for it to also exist.
+- Ed Louis</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
