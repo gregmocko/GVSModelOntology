@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch"/>
     
 
 
@@ -51,49 +51,49 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#bears_connection_port_type -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#bears_connection_port_type -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#bears_connection_port_type">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#bears_connection_port_type">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#connection_port_inheres_in"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#connection_port_inheres_in"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_System"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_System"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>bearsConnectionPortType</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#connection_port_decomposes_into -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#connection_port_decomposes_into -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#connection_port_decomposes_into">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#connection_port_decomposes_into">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#connection_port_type_composes"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#connection_port_type_composes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>connectionPortTypeDecomposesInto</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#connection_port_inheres_in -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#connection_port_inheres_in -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#connection_port_inheres_in">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#connection_port_inheres_in">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_System"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_System"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -102,22 +102,22 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#connection_port_type_composes -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#connection_port_type_composes -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#connection_port_type_composes">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#connection_port_type_composes">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>connectionPortTypeComposes</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_artifact -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_artifact -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_artifact">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_artifact">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_artifact_of"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_artifact_of"/>
         <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
         <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
         <rdfs:label>hasArtifact</rdfs:label>
@@ -125,70 +125,70 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_battery-inverter_connection -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_battery-inverter_connection -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_battery-inverter_connection">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_subsystem-subsystem_connection"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_battery-inverter_connection_of"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_battery-inverter_connection">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_subsystem-subsystem_connection"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_battery-inverter_connection_of"/>
         <rdfs:label>hasBattery-InverterConnection</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_connection_port_type -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_connection_port_type -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_connection_port_type">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_connection_port_type">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_connection_port_type_of"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_connection_port_type_of"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>has connection port type</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_engine-inverter_connection -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_engine-inverter_connection -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_engine-inverter_connection">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_subsystem-subsystem_connection"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_engine-inverter_connection_of"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_engine-inverter_connection">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_subsystem-subsystem_connection"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_engine-inverter_connection_of"/>
         <rdfs:label>hasEngine-InverterConnection</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_subsystem-subsystem_connection -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_subsystem-subsystem_connection -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_subsystem-subsystem_connection">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_subsystem-subsystem_connection">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_subsystem-subsystem_connection_of"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_subsystem-subsystem_connection_of"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_System"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_System"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>hasSubsystem-SubsystemConnection</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_artifact_of -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_artifact_of -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_artifact_of">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_artifact_of">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
         <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
@@ -197,26 +197,26 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_battery-inverter_connection_of -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_battery-inverter_connection_of -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_battery-inverter_connection_of">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_subsystem-subsystem_connection_of"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_battery-inverter_connection_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_subsystem-subsystem_connection_of"/>
         <rdfs:label>isBattery-InverterConnectionOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_connection_port_type_of -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_connection_port_type_of -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_connection_port_type_of">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_connection_port_type_of">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -226,26 +226,26 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_engine-inverter_connection_of -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_engine-inverter_connection_of -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_engine-inverter_connection_of">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_subsystem-subsystem_connection_of"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_engine-inverter_connection_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_subsystem-subsystem_connection_of"/>
         <rdfs:label>isEngine-InverterConnectionOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_subsystem-subsystem_connection_of -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_subsystem-subsystem_connection_of -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_subsystem-subsystem_connection_of">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_subsystem-subsystem_connection_of">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_System"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_System"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -259,11 +259,11 @@ SAE J3049 treats connection port types as bi-directional interfaces, not a flow 
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#physically_connects_with -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#physically_connects_with -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#physically_connects_with">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#physically_connects_with">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#physically_connects_with"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#physically_connects_with"/>
         <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
         <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
         <rdfs:label>physicallyConnectsWith</rdfs:label>
@@ -313,12 +313,12 @@ SAE J3049 treats connection port types as bi-directional interfaces, not a flow 
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_artifact"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_artifact"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_artifact"/>
-                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_artifact"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -333,56 +333,56 @@ SAE J3049 treats connection port types as bi-directional interfaces, not a flow 
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Auxiliary_Power_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Auxiliary_Power_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Auxiliary_Power_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Auxiliary_Power_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>AuxiliaryPowerSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Body-Frame_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Body-Frame_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Body-Frame_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Body-Frame_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>BodyFrameSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Braking_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Braking_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Braking_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Braking_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>BrakingSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Chassis_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Chassis_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>ChassisSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type">
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_System"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_System"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_System"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_System"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -392,63 +392,63 @@ SAE J3049 treats connection port types as bi-directional interfaces, not a flow 
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Driveline_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Driveline_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Driveline_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Driveline_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>DrivelineSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Driver -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Driver -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Driver">
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Driver">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Electrical_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Electrical_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>ElectricalSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Environment -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Environment -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Environment">
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Environment">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Fuel_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Fuel_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Fuel_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Fuel_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>FuelSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem">
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_artifact_of"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_artifact_of"/>
                         <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#is_artifact_of"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#is_artifact_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
@@ -458,31 +458,31 @@ SAE J3049 treats connection port types as bi-directional interfaces, not a flow 
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_System -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_System -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_System">
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_System">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Artifact"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Driver"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Driver"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Environment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Environment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Passenger"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Passenger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#has_artifact"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#has_artifact"/>
                 <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -491,90 +491,90 @@ SAE J3049 treats connection port types as bi-directional interfaces, not a flow 
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Passenger -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Passenger -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Passenger">
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Passenger">
         <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Power_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Power_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Power_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Power_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>PowerSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Power_Take-off_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Power_Take-off_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Power_Take-off_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Power_Take-off_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>PowerTakeOffSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Propulsion_Power_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Propulsion_Power_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Propulsion_Power_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Propulsion_Power_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>PropulsionPowerSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Steering_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Steering_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Steering_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Steering_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>SteeringSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Suspension_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Suspension_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Suspension_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Suspension_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>SuspensionSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermal_Management_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Thermal_Management_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermal_Management_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Thermal_Management_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>ThermalManagementSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Tracks_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Tracks_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Tracks_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Tracks_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>TracksSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Transmission_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Transmission_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Transmission_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Transmission_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>TransmissionSubsystem</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Wheels_Subsystem -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Wheels_Subsystem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Wheels_Subsystem">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Ground_Vehicle_Subsystem"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Wheels_Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Ground_Vehicle_Subsystem"/>
         <rdfs:label>WheelsSubsystem</rdfs:label>
     </owl:Class>
     
@@ -591,244 +591,244 @@ SAE J3049 treats connection port types as bi-directional interfaces, not a flow 
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Atmospheric_Conditions -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Atmospheric_Conditions -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Atmospheric_Conditions">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Atmospheric_Conditions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>AtmosphericConditions</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Dynamics -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Chassis_Dynamics -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Dynamics">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Chassis_Dynamics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>ChassisDynamics</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Position -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Chassis_Position -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chassis_Position">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Chassis_Position">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>ChassisPosition</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chemical_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Chemical_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Chemical_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Chemical_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>ChemicalPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Conductive_Thermal_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Conductive_Thermal_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Conductive_Thermal_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Conductive_Thermal_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>ConductiveThermalPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Convective_Thermal_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Convective_Thermal_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Convective_Thermal_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Convective_Thermal_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>ConvectiveThermalPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Electrical_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Electrical_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Electrical_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>ElectricalPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Enthalpy_Flow_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Enthalpy_Flow_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Enthalpy_Flow_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Enthalpy_Flow_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>EnthalpyFlowPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Fluid_Flow_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Fluid_Flow_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Fluid_Flow_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Fluid_Flow_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>FluidFlowPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Human_Interface -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Human_Interface -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Human_Interface">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Human_Interface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>HumanInterface</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Hydraulic_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Hydraulic_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Hydraulic_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Hydraulic_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>HydraulicPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Magnetic_Energy -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Magnetic_Energy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Magnetic_Energy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Magnetic_Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>MagneticEnergy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Magnetic_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Magnetic_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Magnetic_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Magnetic_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>MagneticPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Pneumatic_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Pneumatic_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Pneumatic_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Pneumatic_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>PneumaticPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Radiative_Thermal_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Radiative_Thermal_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Radiative_Thermal_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Radiative_Thermal_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>RadiativeThermalPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Energy -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Rotational_Mechanical_Energy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Energy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Rotational_Mechanical_Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>RotationalMechanicalEnergy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Rotational_Mechanical_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Rotational_Mechanical_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Rotational_Mechanical_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>RotationalMechanicalPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Surroundings_Conditions -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Surroundings_Conditions -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Surroundings_Conditions">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Surroundings_Conditions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>SurroundingsConditions</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermo_Fluid_Flow_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Thermo_Fluid_Flow_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermo_Fluid_Flow_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Thermo_Fluid_Flow_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>ThermoFluidFlowPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermodynamic_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Thermodynamic_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Thermodynamic_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Thermodynamic_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>ThermodynamicPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Three-Dimensional_Mechanical_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Three-Dimensional_Mechanical_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Three-Dimensional_Mechanical_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Three-Dimensional_Mechanical_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>ThreeDimensionalMechanicalEnergy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Traffic_Conditions -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Traffic_Conditions -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Traffic_Conditions">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Traffic_Conditions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>TrafficConditions</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Translational_Mechanical_Energy -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Translational_Mechanical_Energy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Translational_Mechanical_Energy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Translational_Mechanical_Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>TranslationalMechanicalEnergy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Translational_Mechanical_Power -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Translational_Mechanical_Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Translational_Mechanical_Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Translational_Mechanical_Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>TranslationalMechanicalPower</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Vehicle_Dynamics -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Vehicle_Dynamics -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Vehicle_Dynamics">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Vehicle_Dynamics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>VehicleDynamics</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Vehicle_Position -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Vehicle_Position -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Vehicle_Position">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Vehicle_Position">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>VehiclePosition</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Road/Terrain_Conditions -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Road/Terrain_Conditions -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Road/Terrain_Conditions">
-        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#Connection_Port_Type"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Road/Terrain_Conditions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#Connection_Port_Type"/>
         <rdfs:label>Road/TerrainConditions</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
