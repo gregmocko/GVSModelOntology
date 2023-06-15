@@ -1,0 +1,7 @@
+SAEJ266 KPIs
+
+Comment:
+Finds all KPIs contained in the SAE J266 Testing Standard
+
+Query [COPY EVERYTHING BELOW THIS LINE INTO PROTEGE]:
+VehOps:KeyPerformanceIndicator(?m) ^ obo:RO_0010002(Int:SAE_J266, ?a) ^ VehOps:logicallydecomposesinto(?a, ?b) ^ CommonCoreOntologies:prescribes(?b, ?c)  .  sqwrl:makeBag(?s1, ?m) ^ sqwrl:makeBag(?s2, ?c)  .  sqwrl:intersection(?s3, ?s1, ?s2) ^ sqwrl:element(?c, ?s3) -> sqwrl:select(?c)

@@ -1,0 +1,9 @@
+Intersection Test
+
+***Establishes basic decomp tree-based queries. Establish a variable containing the set of everything individual of the class you are looking for. In this case I want to find models that Evan Hybl wrote, so I establish variable ?m containing all individuals of class 'Model'. Then I push down the decomp tree (in this case I directly query for the range of the statment EvanHyble isModelAuthorOf ____) and establish a variable containing all individuals at that level of the decomp tree, regardless of superclass. Use the SQWRL Collection Built-In to assign each variable to a set, find the intersection of the sets (i.e. every individual that is both a model and has been written by Evan Hybl), and select elements that meet both criteria using sqwrl:element.
+
+Comment:
+Queries for the intersection of the set of all models and the set of everything Evan Hybl is author of.
+
+Query [COPY EVERYTHING BELOW THIS LINE INTO PROTEGE]:
+SimMod:Model(?m) ^ SimMod:ismodelauthorof(Int:EvanHybl, ?em)  .  sqwrl:makeBag(?s1, ?m) ^ sqwrl:makeBag(?s2, ?em)  .  sqwrl:intersection(?s3, ?s2, ?s1) ^ sqwrl:element(?m, ?s3) -> sqwrl:select(?m)
