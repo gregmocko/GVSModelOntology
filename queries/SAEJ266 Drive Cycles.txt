@@ -1,0 +1,7 @@
+SAEJ266 Drive Cycles
+
+Comment:
+returns SAE J266 Drive Cycles
+
+Query [COPY EVERYTHING BELOW THIS LINE INTO PROTEGE]:
+VehOps:DriveCycle(?dc) ^ obo:RO_0010002(Int:SAE_J266, ?a) ^ VehOps:logicallydecomposesinto(?a, ?b) ^ VehOps:logicallydecomposesinto(?b, ?c) ^ VehOps:logicallydecomposesinto(?c, ?d) ^ CommonCoreOntologies:prescribes(?d, ?e)  .  sqwrl:makeBag(?s1, ?dc) ^ sqwrl:makeBag(?s2, ?e)  .  sqwrl:intersection(?s3, ?s1, ?s2) ^ sqwrl:element(?e, ?s3) -> sqwrl:select(?e)
