@@ -255,6 +255,12 @@
     
 
 
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ActOfVehicleUse -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfVehicleUse"/>
+    
+
+
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
@@ -270,7 +276,7 @@
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ActOfVehicleMissionExecution -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ActOfVehicleMissionExecution">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#VehicleOperationScenario"/>
     </owl:Class>
     
 
@@ -278,7 +284,7 @@
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ActOfVehicleTesting -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ActOfVehicleTesting">
-        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/IntentionalAct"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#VehicleOperationScenario"/>
     </owl:Class>
     
 
@@ -354,9 +360,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenario -->
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenarioSpecification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenario"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenarioSpecification"/>
     
 
 
@@ -433,6 +439,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#VehicleOperationScenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#VehicleOperationScenario">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfVehicleUse"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -460,7 +474,9 @@
 
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CRReferenceApplication.slx -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CRReferenceApplication.slx"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CRReferenceApplication.slx">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimMod#ModelFilename"/>
+    </owl:NamedIndividual>
     
 
 
@@ -468,6 +484,24 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CUFSAE_2023_Car">
         <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusTesting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusTesting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ActOfVehicleTesting"/>
+        <rdfs:label>ConstantRadiusTesting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusUndersteerGradientDiscreteVelocity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusUndersteerGradientDiscreteVelocity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
+        <rdfs:label>ConstantRadiusUndersteerGradientDiscreteVelocity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -484,24 +518,10 @@
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Reference_Application -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Reference_Application">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimMod#Simulation"/>
+        <SimMod:hasModelFile rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CRReferenceApplication.slx"/>
         <CommonCoreOntologies:definition>One of the example Simulink simulations from the Vehicle Dynamics Toolbox. Simulates a vehicle entering a track of constant radius at a fixed speed and evaluating lateral acceleration.</CommonCoreOntologies:definition>
         <rdfs:label>Constant Radius Reference Application</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Testing -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Testing">
-        <rdfs:label>Constant Radius Testing</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Understeer_Gradient_Discrete_Testing -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Understeer_Gradient_Discrete_Testing">
-        <rdfs:label>Constant Radius Understeer Gradient Discrete Testing</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -612,10 +632,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Discrete_Constant_Velocity_Drive_Cycle -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DiscreteConstantVelocityDriveCycle -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Discrete_Constant_Velocity_Drive_Cycle">
-        <rdfs:label>Discrete Constant Velocity Drive Cycle</rdfs:label>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DiscreteConstantVelocityDriveCycle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DriveCycle"/>
+        <rdfs:label>DiscreteConstantVelocityDriveCycle</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -759,7 +780,8 @@
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenario"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenarioSpecification"/>
+        <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusTesting"/>
         <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Placeholder_4-Wheeled_Passenger_Vehicle_Specification"/>
         <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_KPI_Specification"/>
         <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Placeholder_4-Wheeled_Passenger_Vehicle_Specification"/>
@@ -773,6 +795,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Drive_Cycle_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DriveCycleSpecification"/>
+        <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DiscreteConstantVelocityDriveCycle"/>
         <rdfs:label>SAE J266 7.3.2.2 Drive Cycle</rdfs:label>
     </owl:NamedIndividual>
     
@@ -837,6 +860,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Vehicle_Output_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQualitySpecification"/>
+        <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Quality_Specification"/>
+        <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem"/>
         <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Quality_Specification"/>
         <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem"/>
         <rdfs:label>SAE J266 7.3.2.2 Desired Vehicle Output Quality Specification</rdfs:label>
@@ -962,6 +987,15 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s3">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#dc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
@@ -991,9 +1025,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#MATLAB"/>
-    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#d">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch#hasartifact">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
@@ -1029,6 +1060,318 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>copy of S35, isolates KPIs of SAEJ266 using sqwrl:intersection</rdfs:comment>
+        <rdfs:label>S45</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#makeBag"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s1"/>
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#makeBag"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s2"/>
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#intersection"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s3"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s1"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s2"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#element"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s3"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Pushes down one level of scenario spec tree</rdfs:comment>
+        <rdfs:label>S11</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicatorSpecification"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#t"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S29</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleOperationsDocument"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#vtd"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#vtd"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>returns all vehops documents and their scenarios</rdfs:comment>
+        <rdfs:label>S30</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleOperationsDocument"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#vtd"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#vtd"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#vtd"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Pushes up one level of scenario spec tree</rdfs:comment>
+        <rdfs:label>S10</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleTestingContextSpecification"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#islogicaldecompositionof"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#t"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
@@ -1201,81 +1544,6 @@
                         <swrl:arguments rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m"/>
                             <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
-                        </swrl:arguments>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>returns the KPI and GV of SAE J266</rdfs:comment>
-        <rdfs:label>S36</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
-                        <swrl:arguments rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
                         </swrl:arguments>
                     </rdf:Description>
                 </rdf:first>
@@ -1887,81 +2155,6 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>returns the KPI and GV of SAE J266</rdfs:comment>
-        <rdfs:label>S35</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
-                        <swrl:arguments rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
-                        </swrl:arguments>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>Testing SQWRL Collection Library</rdfs:comment>
         <rdfs:label>S37</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -2051,6 +2244,40 @@
                         <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
                         <swrl:arguments rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S48</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DriveCycle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#dc"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#dc"/>
                         </swrl:arguments>
                     </rdf:Description>
                 </rdf:first>
@@ -2192,6 +2419,94 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S49</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#d"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#d"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#e"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>returns KPI Spec and GV Spec of SAEJ266</rdfs:comment>
         <rdfs:label>S32</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -2232,6 +2547,243 @@
                         <swrl:arguments rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
                             <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S50</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#d"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#d"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>returns SAE J266 Drive Cycles</rdfs:comment>
+        <rdfs:label>S47</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DriveCycle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#dc"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#d"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#e"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#makeBag"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s1"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#dc"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#makeBag"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s2"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#e"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#intersection"/>
+                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s3"/>
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s1"/>
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s2"/>
+                                                                                        </swrl:arguments>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#element"/>
+                                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#e"/>
+                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s3"/>
+                                                                                                </swrl:arguments>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#e"/>
                         </swrl:arguments>
                     </rdf:Description>
                 </rdf:first>
@@ -2619,140 +3171,6 @@
                         <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
                         <swrl:arguments rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#op"/>
-                        </swrl:arguments>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>copy of S35, isolates KPIs of SAEJ266 using sqwrl:intersection</rdfs:comment>
-        <rdfs:label>S45</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#makeBag"/>
-                                                        <swrl:arguments rdf:parseType="Collection">
-                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s1"/>
-                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m"/>
-                                                        </swrl:arguments>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                        <rdf:first>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#makeBag"/>
-                                                                <swrl:arguments rdf:parseType="Collection">
-                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s2"/>
-                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
-                                                                </swrl:arguments>
-                                                            </rdf:Description>
-                                                        </rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                <rdf:first>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#intersection"/>
-                                                                        <swrl:arguments rdf:parseType="Collection">
-                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s3"/>
-                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s1"/>
-                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s2"/>
-                                                                        </swrl:arguments>
-                                                                    </rdf:Description>
-                                                                </rdf:first>
-                                                                <rdf:rest>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                        <rdf:first>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#element"/>
-                                                                                <swrl:arguments rdf:parseType="Collection">
-                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
-                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s3"/>
-                                                                                </swrl:arguments>
-                                                                            </rdf:Description>
-                                                                        </rdf:first>
-                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                    </rdf:Description>
-                                                                </rdf:rest>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
-                        <swrl:arguments rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
                         </swrl:arguments>
                     </rdf:Description>
                 </rdf:first>
@@ -3243,6 +3661,140 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>returns ground vehicles that can/have been tested using SAE J266</rdfs:comment>
+        <rdfs:label>S46</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/GroundVehicle"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#makeBag"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s1"/>
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#makeBag"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s2"/>
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#intersection"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s3"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s1"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s2"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#element"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#s3"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment>Returns all KPIs in the ontology</rdfs:comment>
         <rdfs:label>S34</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -3277,8 +3829,8 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>Pushes down one level of scenario spec tree</rdfs:comment>
-        <rdfs:label>S11</rdfs:label>
+        <rdfs:comment>returns the KPI and GV of SAE J266</rdfs:comment>
+        <rdfs:label>S35</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -3286,90 +3838,8 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicatorSpecification"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#t"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
-                        <swrl:arguments rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#t"/>
-                        </swrl:arguments>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
-        <rdfs:label>S29</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleOperationsDocument"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#vtd"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
-                        <swrl:arguments rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#vtd"/>
-                        </swrl:arguments>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>returns all vehops documents and their scenarios</rdfs:comment>
-        <rdfs:label>S30</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleOperationsDocument"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#vtd"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -3379,11 +3849,37 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#vtd"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
                             </rdf:Description>
                         </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
                     </rdf:Description>
                 </rdf:rest>
             </rdf:Description>
@@ -3396,8 +3892,9 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
                         <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
                         <swrl:arguments rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#vtd"/>
                             <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
                         </swrl:arguments>
                     </rdf:Description>
                 </rdf:first>
@@ -3407,8 +3904,8 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>Pushes up one level of scenario spec tree</rdfs:comment>
-        <rdfs:label>S10</rdfs:label>
+        <rdfs:comment>returns the KPI and GV of SAE J266</rdfs:comment>
+        <rdfs:label>S36</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -3416,8 +3913,8 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleTestingContextSpecification"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#m"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -3426,12 +3923,38 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#islogicaldecompositionof"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#t"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0010002"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
                             </rdf:Description>
                         </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#logicallydecomposesinto"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/prescribes"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
                     </rdf:Description>
                 </rdf:rest>
             </rdf:Description>
@@ -3444,8 +3967,9 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
                         <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
                         <swrl:arguments rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#k"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#t"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#a"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#b"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/IntegrationOntology#c"/>
                         </swrl:arguments>
                     </rdf:Description>
                 </rdf:first>
