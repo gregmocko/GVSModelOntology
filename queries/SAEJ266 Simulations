@@ -1,0 +1,6 @@
+SAEJ266 Simulations
+Comment:
+Returns simulations based on SAE J266
+
+Query [COPY EVERYTHING BELOW THIS LINE INTO PROTEGE]:
+obo:RO_0010002(Int:SAE_J266, ?a) ^ CommonCoreOntologies:prescribes(?a, ?b) ^ Int:simulatedby(?b, ?c) -> sqwrl:select(?c)
