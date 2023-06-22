@@ -1,0 +1,7 @@
+SAEJ266 Vehicle Output Quality
+
+Comment:
+Returns the Vehicle Output Qualities prescribed by SAE J266
+
+Query [COPY EVERYTHING BELOW THIS LINE INTO PROTEGE]:
+VehOps:DesiredVehicleOutputQuality(?m) ^ obo:RO_0010002(Int:SAE_J266, ?a) ^ VehOps:logicallydecomposesinto(?a, ?b) ^ VehOps:logicallydecomposesinto(?b, ?c) ^ CommonCoreOntologies:prescribes(?c, ?d)  .  sqwrl:makeBag(?s1, ?m) ^ sqwrl:makeBag(?s2, ?d)  .  sqwrl:intersection(?s3, ?s1, ?s2) ^ sqwrl:element(?d, ?s3) -> sqwrl:select(?d)
