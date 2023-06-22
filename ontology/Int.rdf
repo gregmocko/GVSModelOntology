@@ -289,6 +289,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
+    
+
+
     <!-- http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQualitySpecification -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQualitySpecification"/>
@@ -815,8 +821,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_KPI_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicatorSpecification"/>
-        <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Vehicle_Understeer_Gradient"/>
-        <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#YawRate"/>
+        <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusUndersteerGradientDiscreteVelocity"/>
         <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Testing_Context"/>
         <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Vehicle_Output_Specification"/>
         <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Testing_Context"/>
@@ -861,6 +866,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Vehicle_Output_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQualitySpecification"/>
+        <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#VehicleUndersteerGradient"/>
+        <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#YawRate"/>
         <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Quality_Specification"/>
         <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem"/>
         <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Quality_Specification"/>
@@ -897,10 +904,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Vehicle_Understeer_Gradient -->
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#VehicleUndersteerGradient -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Vehicle_Understeer_Gradient">
-        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#VehicleUndersteerGradient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
     </owl:NamedIndividual>
     
 
@@ -908,7 +915,7 @@
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#YawRate -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#YawRate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
     </owl:NamedIndividual>
     
 
