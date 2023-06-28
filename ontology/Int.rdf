@@ -23,7 +23,13 @@
      xmlns:VehArchVer2="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArchVer2#"
      xmlns:VehOps_ver2="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps_ver2#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int">
+        <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2023-04-07/MergedAllCoreOntology"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimMod"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/5/VehArch"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Env"/>
+    </owl:Ontology>
     
 
 
@@ -464,6 +470,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#AckermannSteerAngle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#AckermannSteerAngle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Angle -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Angle">
@@ -494,21 +508,37 @@
     
 
 
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CharacteristicSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CharacteristicSpeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusContinuousDriveCycleUndersteerGradient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusContinuousDriveCycleUndersteerGradient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusDiscreteDriveCycleUndersteerGradient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusDiscreteDriveCycleUndersteerGradient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
+        <rdfs:label>ConstantRadiusDiscreteDriveCycleUndersteerGradient</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusTesting -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusTesting">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ActOfVehicleTesting"/>
         <Int:simulatedby rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Constant_Radius_Reference_Application"/>
         <rdfs:label>ConstantRadiusTesting</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusUndersteerGradientDiscreteVelocity -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusUndersteerGradientDiscreteVelocity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicator"/>
-        <rdfs:label>ConstantRadiusUndersteerGradientDiscreteVelocity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -537,6 +567,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Controllers">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/SimMod#Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CriticalSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#CriticalSpeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
     </owl:NamedIndividual>
     
 
@@ -635,6 +673,14 @@
         <VehArchVer2:has_artifact rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Engine"/>
         <VehArchVer2:has_artifact rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DO19_Inverter"/>
         <rdfs:label>DO19 Power Subsystem</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DirectionalCoefficient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DirectionalCoefficient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
     </owl:NamedIndividual>
     
 
@@ -778,22 +824,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleOperationsDocument"/>
-        <obo:RO_0010002 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2"/>
+        <obo:RO_0010002 rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3DiscreteTestSpecification"/>
         <rdfs:label>SAE J266</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenarioSpecification"/>
-        <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusTesting"/>
-        <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Placeholder_4-Wheeled_Passenger_Vehicle_Specification"/>
-        <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_KPI_Specification"/>
-        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Placeholder_4-Wheeled_Passenger_Vehicle_Specification"/>
-        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_KPI_Specification"/>
-        <rdfs:label>SAE J266 7.3.2.2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -803,7 +835,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Drive_Cycle_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DriveCycleSpecification"/>
         <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#DiscreteConstantVelocityDriveCycle"/>
-        <rdfs:label>SAE J266 7.3.2.2 Drive Cycle</rdfs:label>
+        <rdfs:label>SAE J266 7.3 Discrete Drive Cycle Specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -812,7 +844,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Environment_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#EnvironmentSpecification"/>
-        <rdfs:label>SAE J266 7.3.2.2 Environment</rdfs:label>
+        <rdfs:label>SAE J266 7.3 Discrete Environment Specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -821,12 +853,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_KPI_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicatorSpecification"/>
-        <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusUndersteerGradientDiscreteVelocity"/>
+        <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusDiscreteDriveCycleUndersteerGradient"/>
         <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Testing_Context"/>
         <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Vehicle_Output_Specification"/>
         <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Testing_Context"/>
         <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Vehicle_Output_Specification"/>
-        <rdfs:label>SAE J266 7.3.2.2 KPI</rdfs:label>
+        <rdfs:label>SAE J266 7.3 Discrete KPI Specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -835,7 +867,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Quality_Specification">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#PhysicalQuantitySpecification"/>
-        <rdfs:label>SAE J266 7.3.2.2 Output Quality</rdfs:label>
+        <rdfs:label>SAE J266 7.3 Discrete Output Quality Specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -844,7 +876,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ResponsibleVehicleSubsystemSpecification"/>
-        <rdfs:label>SAE J266 7.3.2.2 Output Vehicle Subsystem</rdfs:label>
+        <rdfs:label>SAE J266 7.3 Discrete Output Vehicle Subsystem Specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -857,7 +889,7 @@
         <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Environment_Specification"/>
         <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Drive_Cycle_Specification"/>
         <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Environment_Specification"/>
-        <rdfs:label>SAE J266 7.3.2.2 Testing Context</rdfs:label>
+        <rdfs:label>SAE J266 7.3 Discrete Testing Context Specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -872,7 +904,421 @@
         <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem"/>
         <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Quality_Specification"/>
         <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_Output_Vehicle_Subsystem"/>
-        <rdfs:label>SAE J266 7.3.2.2 Desired Vehicle Output Quality Specification</rdfs:label>
+        <rdfs:label>SAE J266 7.3 Discrete Desired Vehicle Output Quality Specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3ContinuousDriveCycleSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3ContinuousDriveCycleSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DriveCycleSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3ContinuousTestSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3ContinuousTestSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenarioSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3ContinuousTestingContextSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3ContinuousTestingContextSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleTestingContextSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3DiscreteTestSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3DiscreteTestSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenarioSpecification"/>
+        <CommonCoreOntologies:prescribes rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#ConstantRadiusTesting"/>
+        <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Placeholder_4-Wheeled_Passenger_Vehicle_Specification"/>
+        <VehOps:logicallydecomposesinto rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_KPI_Specification"/>
+        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Placeholder_4-Wheeled_Passenger_Vehicle_Specification"/>
+        <VehOps_ver2:logically_decomposes_into rdf:resource="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3.2.2_KPI_Specification"/>
+        <rdfs:label>SAE_J266_7.3DiscreteTestSpecification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Continuous_Desired_Vehicle_Output_Quality_Specification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Continuous_Desired_Vehicle_Output_Quality_Specification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQualitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Continuous_Environment_Specification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Continuous_Environment_Specification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#EnvironmentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Continuous_KPI_Specification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Continuous_KPI_Specification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicatorSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Continuous_Output_Quality_Specification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Continuous_Output_Quality_Specification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#PhysicalQuantitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Continuous_Output_Vehicle_Subsystem_Specification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.3_Continuous_Output_Vehicle_Subsystem_Specification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ResponsibleVehicleSubsystemSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousDesiredVehicleOutputQualitySpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousDesiredVehicleOutputQualitySpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQualitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousDriveCycleSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousDriveCycleSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DriveCycleSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousEnvironmentSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousEnvironmentSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#EnvironmentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousKPISpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousKPISpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicatorSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousOutputQualitySpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousOutputQualitySpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#PhysicalQuantitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousOutputVehicleSubsystemSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousOutputVehicleSubsystemSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ResponsibleVehicleSubsystemSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousTestSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousTestSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenarioSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousVehicleTestingContextSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4ContinuousVehicleTestingContextSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleTestingContextSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteDesiredVehicleOutputQualitySpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteDesiredVehicleOutputQualitySpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQualitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteDriveCycleSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteDriveCycleSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DriveCycleSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteEnvironmentSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteEnvironmentSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#EnvironmentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteKPISpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteKPISpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicatorSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteOutputQualitySpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteOutputQualitySpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#PhysicalQuantitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteOutputVehicleSubsystemSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteOutputVehicleSubsystemSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ResponsibleVehicleSubsystemSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteTestSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteTestSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenarioSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteVehicleTestingContextSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.4DiscreteVehicleTestingContextSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleTestingContextSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5DesiredVehicleOutputQualitySpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5DesiredVehicleOutputQualitySpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQualitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5DriveCycleSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5DriveCycleSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DriveCycleSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5EnvironmentSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5EnvironmentSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#EnvironmentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5KPISpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5KPISpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicatorSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5OutputQualitySpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5OutputQualitySpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#PhysicalQuantitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5OutputVehicleSubsystemSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5OutputVehicleSubsystemSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ResponsibleVehicleSubsystemSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5TestSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5TestSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenarioSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5VehicleTestingContextSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.5VehicleTestingContextSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleTestingContextSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6DesiredVehicleOutputQualitySpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6DesiredVehicleOutputQualitySpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQualitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6DriveCycleSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6DriveCycleSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DriveCycleSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6EnvironmentSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6EnvironmentSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#EnvironmentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6KPISpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6KPISpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicatorSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6OutputQualitySpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6OutputQualitySpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#PhysicalQuantitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6OutputVehicleSubsystemSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6OutputVehicleSubsystemSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ResponsibleVehicleSubsystemSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6TestSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6TestSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenarioSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6VehicleTestingContextSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.6VehicleTestingContextSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleTestingContextSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7DesiredVehicleOutputQualitySpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7DesiredVehicleOutputQualitySpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQualitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7DriveCycleSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7DriveCycleSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DriveCycleSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7EnvironmentSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7EnvironmentSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#EnvironmentSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7KPISpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7KPISpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#KeyPerformanceIndicatorSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7OutputQualitySpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7OutputQualitySpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#PhysicalQuantitySpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7OutputVehicleSubsystemSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7OutputVehicleSubsystemSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#ResponsibleVehicleSubsystemSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7TestSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7TestSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#TestingScenarioSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7VehicleTestingContextSpecification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SAE_J266_7.7VehicleTestingContextSpecification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#VehicleTestingContextSpecification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SideslipAngleGradient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SideslipAngleGradient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#StabilityFactor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#StabilityFactor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
     </owl:NamedIndividual>
     
 
@@ -880,6 +1326,14 @@
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Stationary -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#Stationary"/>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SteeringWheelTorqueGradient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#SteeringWheelTorqueGradient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
+    </owl:NamedIndividual>
     
 
 
@@ -904,6 +1358,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#VehicleRollAngleGradient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#VehicleRollAngleGradient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#VehicleUndersteerGradient -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#VehicleUndersteerGradient">
@@ -915,6 +1377,14 @@
     <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#YawRate -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#YawRate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/elouis/ontologies/2022/6/Int#YawVelocityGainVersusSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/elouis/ontologies/2022/6/Int#YawVelocityGainVersusSpeed">
         <rdf:type rdf:resource="http://www.semanticweb.org/eloui/ontologies/2022/1/VehOps#DesiredVehicleOutputQuality"/>
     </owl:NamedIndividual>
     
